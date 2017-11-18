@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: gw-app
+
+  cloud:
+    config:
+      label: master
+      profile: product
+      discovery:
+        enabled: true
+        service-id: config-app
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/

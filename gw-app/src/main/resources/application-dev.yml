@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gw-app
+
+server:
+  port: 8999
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    account-app:
+      path: /account/**
+      serviceId: account-app
+    article-app:
+      path: /article/**
+      serviceId: article-app

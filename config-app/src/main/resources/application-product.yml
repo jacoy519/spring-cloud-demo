@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-app
+
+  cloud:
+    config:
+      label: master
+
+      server:
+        git:
+          uri: https://github.com/jacoy519/config-repo/
+          searchPaths: repo
+
+
+server:
+  port: 10101
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
