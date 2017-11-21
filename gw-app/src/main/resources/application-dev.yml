@@ -18,3 +18,5 @@ zuul:
     article-app:
       path: /article/**
       serviceId: article-app
+  sensitive-headers:
+
