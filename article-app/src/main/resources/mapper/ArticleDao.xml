@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.devchen.article.dal.dao.ArticleDao">
+	<resultMap id="ArticleResultMap" type="com.devchen.article.dal.entity.ArticleEntity">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="author" property="author" jdbcType="VARCHAR"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="article_type" property="articleType" jdbcType="VARCHAR"/>
+        <result column="created_at" property="createdAt" jdbcType="DATE"/>
+        <result column="created_by" property="createdBy" jdbcType="INTEGER"/>
+        <result column="updated_at" property="updatedAt" jdbcType="DATE"/>
+        <result column="updated_by" property="updatedBy" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <resultMap id="typeCountMap" type="java.util.HashMap">
+        <result property="type" column="article_type"/>
+        <result property="count" column="number"/>
+    </resultMap>
+
+    <resultMap id="articleId" type="java.lang.Integer">
+        <result property="id" column="id"/>
+    </resultMap>
+
+    <select id="selectArticleByArticleId" resultMap="ArticleResultMap">
+        select * from t_article where id = #{articleId,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectAllArticle" resultMap="ArticleResultMap">
+        select * from t_article order by id desc
+    </select>
+
+    <select id="selectAllArticleId"  resultMap="articleId">
+        select id from t_article order by id desc
+    </select>
+
+    <select id="selectAllArticleIdByType"  resultMap="articleId">
+        select id from t_article where article_type = #{articleType,jdbcType=VARCHAR} order by id desc
+    </select>
+
+    <select id="selectAllArticleIdBySearchKey"  resultMap="articleId">
+        select id from t_article where title LIKE concat(concat('%',#{searchKey, jdbcType=VARCHAR}),'%') order by id desc
+    </select>
+
+    <select id="selectTypeNumberMap" resultMap="typeCountMap">
+        select article_type, count(*) as number from t_article group by article_type
+    </select>
+
+    <delete id="deleteArticleByArticleId">
+        delete from t_article where id = #{articleId,jdbcType=INTEGER}
+    </delete>
+
+    <insert id="insertArticle">
+        insert into t_article(title,author,content,article_type,created_at, created_by, updated_at, updated_by)
+        value(#{article.title},#{article.author},#{article.content},#{article.articleType},sysdate(),'article-app',sysdate(), 'article-app')
+    </insert>
+
+    <update id="updateArticle">
+        update t_article
+        set title=#{article.title},
+        author=#{article.author} ,
+        content=#{article.content},
+        article_type=#{article.articleType},
+        updated_at = sysdate(),
+        updated_by='article-app'
+        where id=#{article.id}
+    </update>
+
+    <!--
+
+    <select id="selectAllArticleInfo" resultMap="ArticleResultMap">
+    		select 
+    		article_id,title,author,article_type,keywords,visit_count,create_year,create_month,create_day,create_time,modify_year,modify_month,modify_day,modify_time
+    		from article order by article_id desc
+	</select>
+
+    <select id="selectArticleByArticleType" resultMap="ArticleResultMap">
+			select * from article where article_type = #{articleType,jdbcType=VARCHAR}
+	</select>
+
+    <delete id="deleteArticleByArticleId">
+			delete from article where article_id = #{articleId,jdbcType=INTEGER}
+	</delete>
+
+
+
+    <insert id="insertArticle">
+			insert into article(title,author,content,article_type,keywords,visit_count,create_year,create_month,create_day,create_time,modify_year,modify_month,modify_day,modify_time)
+  			value(#{article.title},#{article.author},#{article.content},#{article.articleType},#{article.keywords},0,date_format(now(),'%Y'),date_format(now(),'%m'),date_format(now(),'%d'),date_format(now(),'%r'),date_format(now(),'%Y'),date_format(now(),'%m'),date_format(now(),'%d'),date_format(now(),'%r'))
+  </insert>
+
+  -->
+
+</mapper>
