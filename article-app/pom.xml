@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.devchen</groupId>
-	<artifactId>acount-app</artifactId>
+	<artifactId>article-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>account-app</name>
-	<description>account-app</description>
+	<name>article-app</name>
+	<description>article-app</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -153,11 +153,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
-
+		<!--
 		<dependency>
 			<groupId>com.github.linux-china</groupId>
 			<artifactId>spring-boot-starter-redisson</artifactId>
 			<version>3.3.2</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson</artifactId>
+			<version>3.5.7</version>
 		</dependency>
 
 		<!-- GSON -->

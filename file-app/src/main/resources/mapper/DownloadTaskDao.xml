@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.devchen.file.dal.dao.DownloadTaskDao">
+	<resultMap id="DownloadTaskResultMap" type="com.devchen.file.dal.entity.DownloadTaskEntity">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="remote_address" property="remoteAddress" jdbcType="VARCHAR"/>
+        <result column="local_save_dir" property="localSaveDir" jdbcType="VARCHAR"/>
+        <result column="task_id" property="taskId" jdbcType="VARCHAR"/>
+        <result column="download_type" property="downloadType" jdbcType="VARCHAR"/>
+        <result column="download_status" property="downloadStatus" jdbcType="VARCHAR"/>
+        <result column="created_at" property="createdAt" jdbcType="DATE"/>
+        <result column="created_by" property="createdBy" jdbcType="INTEGER"/>
+        <result column="updated_at" property="updatedAt" jdbcType="DATE"/>
+        <result column="updated_by" property="updatedBy" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="selectTopAcceptArticle" resultMap="DownloadTaskResultMap">
+        select * from t_download_task where download_status = 'AC' order by id limit 5
+    </select>
+
+    <select id="selectDownloadTaskByTaskId" resultMap="DownloadTaskResultMap">
+        select * from t_download_task where task_id = #{taskId}
+    </select>
+
+
+    <insert id="insertDownloadTask">
+        insert into t_download_task(remote_address,local_save_dir,task_id,download_type,download_status, created_at,created_by, updated_at, updated_by)
+        value(#{task.remoteAddress},#{task.localSaveDir},#{task.taskId},#{task.downloadType},'AC',sysdate(),'file-app',sysdate(), 'file-app')
+    </insert>
+
+    <update id="updateTaskDownloadStatusById">
+        update t_download_task
+        set download_status= #{status},
+        updated_at = sysdate()
+        where id= #{id}
+    </update>
+
+</mapper>
