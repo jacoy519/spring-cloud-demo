@@ -1,0 +1,528 @@
+[INFO] [2018-01-20 18:52:52][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.service.MergeDownLoadServiceTest], using SpringBootContextLoader
+[INFO] [2018-01-20 18:52:52][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.service.MergeDownLoadServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 18:52:52][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.service.MergeDownLoadServiceTest]: MergeDownLoadServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 18:52:52][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.service.MergeDownLoadServiceTest
+[INFO] [2018-01-20 18:52:52][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 18:52:52][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@732c2a62, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@272ed83b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@41fecb8b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@120f102b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@625732, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51dcb805, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66498326, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@cad498c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e6454ec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2accdbb5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@b62d79, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6631f5ca]
+[INFO] [2018-01-20 18:52:53][com.devchen.file.service.MergeDownLoadServiceTest]Starting MergeDownLoadServiceTest on chenqi173-VirtualBox with PID 6211 (started by root in /root/projects/spring-cloud-demo/file-app)
+[INFO] [2018-01-20 18:52:53][com.devchen.file.service.MergeDownLoadServiceTest]No active profile set, falling back to default profiles: default
+[INFO] [2018-01-20 18:52:53][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:52:53 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:52:54][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-01-20 18:52:55][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'commonMsgHandler'
+[INFO] [2018-01-20 18:52:55][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'errorMsgHandler'
+[INFO] [2018-01-20 18:52:56][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'downloadTaskHandler'
+[INFO] [2018-01-20 18:52:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:52:53 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:52:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-01-20 18:52:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-01-20 18:52:56][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:52:56][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:52:57][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:52:58][org.flywaydb.core.internal.util.VersionPrinter]Flyway 3.2.1 by Boxfuse
+[INFO] [2018-01-20 18:52:58][org.flywaydb.core.internal.dbsupport.DbSupportFactory]Database: jdbc:mysql://192.168.0.106/file?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC (MySQL 5.7)
+[INFO] [2018-01-20 18:52:58][org.flywaydb.core.internal.command.DbValidate]Validated 1 migration (execution time 00:00.067s)
+[INFO] [2018-01-20 18:52:58][org.flywaydb.core.internal.command.DbMigrate]Current version of schema `file`: 20180108
+[INFO] [2018-01-20 18:52:58][org.flywaydb.core.internal.command.DbMigrate]Schema `file` is up to date. No migration necessary.
+[INFO] [2018-01-20 18:52:58][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2018-01-20 18:52:58][com.devchen.file.service.MergeDownLoadServiceTest]Started MergeDownLoadServiceTest in 5.757 seconds (JVM running for 7.124)
+[INFO] [2018-01-20 18:53:20][com.devchen.file.service.TransmissionDownloadService]神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E08.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:53:20][com.devchen.file.service.TransmissionDownloadService]生活大爆炸.The.Big.Bang.Theory.S11E14.中英字幕.HDTVrip.720P-人人影视.v2.mp4 : 0.0%
+[INFO] [2018-01-20 18:53:20][com.devchen.file.service.TransmissionDownloadService]罪恶黑名单.The.Blacklist.S05E11.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:53:20][com.devchen.file.service.TransmissionDownloadService]我们的生活.This.Is.Us.S02E12.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:53:20][com.devchen.file.service.TransmissionDownloadService]9号秘事.Inside.No.9.S04E03.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:53:58][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:52:53 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:53:58][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'downloadTaskHandler'
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:23bd4b349775e8c0088a8cb1ba7e456e84c13867&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《神盾局特工》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:107)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:c6eadba37c2cdcc5015296270bc05a10317607a3&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《罪恶黑名单》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:107)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:15c59e01af231067e71a6d539019cedbab6fe9ce&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《生活大爆炸》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:107)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:4ee329e61acf5545d31ee57405ae6df158e5d2ba&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【英剧】《9号秘事》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:107)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:a7f0c3e3fe34a416d96a9efc2af38a09e72f1104&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《我们的生活》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:107)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.TransmissionDownloadService]9号秘事.Inside.No.9.S04E03.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.TransmissionDownloadService]生活大爆炸.The.Big.Bang.Theory.S11E14.中英字幕.HDTVrip.720P-人人影视.v2.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.TransmissionDownloadService]罪恶黑名单.The.Blacklist.S05E11.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] [2018-01-20 18:53:58][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'errorMsgHandler'
+[INFO] [2018-01-20 18:53:58][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'commonMsgHandler'
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.TransmissionDownloadService]神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E08.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:53:58][com.devchen.file.service.TransmissionDownloadService]我们的生活.This.Is.Us.S02E12.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] [2018-01-20 18:54:35][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.service.MergeDownLoadServiceTest], using SpringBootContextLoader
+[INFO] [2018-01-20 18:54:35][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.service.MergeDownLoadServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 18:54:35][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.service.MergeDownLoadServiceTest]: MergeDownLoadServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 18:54:36][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.service.MergeDownLoadServiceTest
+[INFO] [2018-01-20 18:54:36][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 18:54:36][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@732c2a62, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@272ed83b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@41fecb8b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@120f102b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@625732, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51dcb805, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66498326, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@cad498c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e6454ec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2accdbb5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@b62d79, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6631f5ca]
+[INFO] [2018-01-20 18:54:36][com.devchen.file.service.MergeDownLoadServiceTest]Starting MergeDownLoadServiceTest on chenqi173-VirtualBox with PID 6347 (started by root in /root/projects/spring-cloud-demo/file-app)
+[INFO] [2018-01-20 18:54:36][com.devchen.file.service.MergeDownLoadServiceTest]No active profile set, falling back to default profiles: default
+[INFO] [2018-01-20 18:54:36][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:54:36 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:54:37][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-01-20 18:54:38][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'commonMsgHandler'
+[INFO] [2018-01-20 18:54:38][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'errorMsgHandler'
+[INFO] [2018-01-20 18:54:39][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'downloadTaskHandler'
+[INFO] [2018-01-20 18:54:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:54:36 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:54:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-01-20 18:54:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-01-20 18:54:40][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:54:40][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:54:40][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:54:41][org.flywaydb.core.internal.util.VersionPrinter]Flyway 3.2.1 by Boxfuse
+[INFO] [2018-01-20 18:54:41][org.flywaydb.core.internal.dbsupport.DbSupportFactory]Database: jdbc:mysql://192.168.0.106/file?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC (MySQL 5.7)
+[INFO] [2018-01-20 18:54:41][org.flywaydb.core.internal.command.DbValidate]Validated 1 migration (execution time 00:00.130s)
+[INFO] [2018-01-20 18:54:41][org.flywaydb.core.internal.command.DbMigrate]Current version of schema `file`: 20180108
+[INFO] [2018-01-20 18:54:41][org.flywaydb.core.internal.command.DbMigrate]Schema `file` is up to date. No migration necessary.
+[INFO] [2018-01-20 18:54:41][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2018-01-20 18:54:41][com.devchen.file.service.MergeDownLoadServiceTest]Started MergeDownLoadServiceTest in 5.614 seconds (JVM running for 6.88)
+[INFO] [2018-01-20 18:54:42][com.devchen.file.service.DownloadService]try clean download process
+[INFO] [2018-01-20 18:54:50][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:54:36 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:54:50][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'downloadTaskHandler'
+[ERROR] [2018-01-20 18:54:50][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:9ec6ae676f5910d8189e80f52dfbcf7366d5503c&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《归乡路漫漫》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:108)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] [2018-01-20 18:54:50][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'errorMsgHandler'
+[INFO] [2018-01-20 18:54:50][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'commonMsgHandler'
+[INFO] [2018-01-20 18:55:08][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.service.MergeDownLoadServiceTest], using SpringBootContextLoader
+[INFO] [2018-01-20 18:55:08][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.service.MergeDownLoadServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 18:55:08][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.service.MergeDownLoadServiceTest]: MergeDownLoadServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 18:55:09][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.service.MergeDownLoadServiceTest
+[INFO] [2018-01-20 18:55:09][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 18:55:09][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@732c2a62, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@272ed83b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@41fecb8b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@120f102b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@625732, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51dcb805, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66498326, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@cad498c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e6454ec, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2accdbb5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@b62d79, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6631f5ca]
+[INFO] [2018-01-20 18:55:09][com.devchen.file.service.MergeDownLoadServiceTest]Starting MergeDownLoadServiceTest on chenqi173-VirtualBox with PID 6470 (started by root in /root/projects/spring-cloud-demo/file-app)
+[INFO] [2018-01-20 18:55:09][com.devchen.file.service.MergeDownLoadServiceTest]No active profile set, falling back to default profiles: default
+[INFO] [2018-01-20 18:55:09][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:55:09 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:55:10][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-01-20 18:55:11][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'commonMsgHandler'
+[INFO] [2018-01-20 18:55:11][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'errorMsgHandler'
+[INFO] [2018-01-20 18:55:12][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'downloadTaskHandler'
+[INFO] [2018-01-20 18:55:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:55:09 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:55:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-01-20 18:55:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-01-20 18:55:13][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:55:13][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:55:13][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-01-20 18:55:14][org.flywaydb.core.internal.util.VersionPrinter]Flyway 3.2.1 by Boxfuse
+[INFO] [2018-01-20 18:55:14][org.flywaydb.core.internal.dbsupport.DbSupportFactory]Database: jdbc:mysql://192.168.0.106/file?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC (MySQL 5.7)
+[INFO] [2018-01-20 18:55:14][org.flywaydb.core.internal.command.DbValidate]Validated 1 migration (execution time 00:00.050s)
+[INFO] [2018-01-20 18:55:14][org.flywaydb.core.internal.command.DbMigrate]Current version of schema `file`: 20180108
+[INFO] [2018-01-20 18:55:14][org.flywaydb.core.internal.command.DbMigrate]Schema `file` is up to date. No migration necessary.
+[INFO] [2018-01-20 18:55:14][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2018-01-20 18:55:14][com.devchen.file.service.MergeDownLoadServiceTest]Started MergeDownLoadServiceTest in 5.41 seconds (JVM running for 6.671)
+[INFO] [2018-01-20 18:55:14][com.devchen.file.service.DownloadService]try clean download process
+[INFO] [2018-01-20 18:55:30][com.devchen.file.service.TransmissionDownloadService]神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E08.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:55:30][com.devchen.file.service.TransmissionDownloadService]生活大爆炸.The.Big.Bang.Theory.S11E14.中英字幕.HDTVrip.720P-人人影视.v2.mp4 : 0.0%
+[INFO] [2018-01-20 18:55:30][com.devchen.file.service.TransmissionDownloadService]罪恶黑名单.The.Blacklist.S05E11.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:55:30][com.devchen.file.service.TransmissionDownloadService]我们的生活.This.Is.Us.S02E12.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:55:30][com.devchen.file.service.TransmissionDownloadService]9号秘事.Inside.No.9.S04E03.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
+[INFO] [2018-01-20 18:57:27][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@17a1e4ca: startup date [Sat Jan 20 18:55:09 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 18:57:27][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'downloadTaskHandler'
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:15c59e01af231067e71a6d539019cedbab6fe9ce&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《生活大爆炸》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:108)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:a7f0c3e3fe34a416d96a9efc2af38a09e72f1104&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《我们的生活》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:108)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:c6eadba37c2cdcc5015296270bc05a10317607a3&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《罪恶黑名单》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:108)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:4ee329e61acf5545d31ee57405ae6df158e5d2ba&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【英剧】《9号秘事》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:108)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:23bd4b349775e8c0088a8cb1ba7e456e84c13867&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《神盾局特工》
+java.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:35)
+	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:78)
+	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:108)
+	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:22)
+	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.TransmissionDownloadService]罪恶黑名单.The.Blacklist.S05E11.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.TransmissionDownloadService]我们的生活.This.Is.Us.S02E12.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.TransmissionDownloadService]生活大爆炸.The.Big.Bang.Theory.S11E14.中英字幕.HDTVrip.720P-人人影视.v2.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] [2018-01-20 18:57:27][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'errorMsgHandler'
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.TransmissionDownloadService]神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E08.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2018-01-20 18:57:27][com.devchen.file.service.TransmissionDownloadService]9号秘事.Inside.No.9.S04E03.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:37)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:134)
+	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:121)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] [2018-01-20 18:57:27][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'commonMsgHandler'
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest], using SpringBootContextLoader
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: DownloadTaskDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.dal.dao.DownloadTaskDaoTest
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d127a61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2bbaf4f0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11c20519, org.springframework.test.context.support.DirtiesContextTestExecutionListener@70beb599, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e41089d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32a068d1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33cb5951, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@365c30cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@701fc37a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4148db48, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@282003e1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7fad8c79]
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.FileAppApplicationTests], using SpringBootContextLoader
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.FileAppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.FileAppApplicationTests]: FileAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.FileAppApplicationTests
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5d20e46, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@709ba3fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d36e4cd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a472554, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7ff2a664, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@525b461a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58c1c010, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@b7f23d9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@61d47554, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69b794e2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f200884, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4d339552]
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.service.MergeDownLoadServiceTest], using SpringBootContextLoader
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.service.MergeDownLoadServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.service.MergeDownLoadServiceTest]: MergeDownLoadServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.service.MergeDownLoadServiceTest
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45f45fa1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c6e276e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@534df152, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52e677af, org.springframework.test.context.transaction.TransactionalTestExecutionListener@35083305, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8e0379d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@341b80b2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55a1c291, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2145433b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2890c451, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40e6dfe1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b083826]
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest], using SpringBootContextLoader
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:00:14][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: DownloadTaskDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.dal.dao.DownloadTaskDaoTest
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:00:14][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45dd4eda, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@60611244, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3745e5c6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5e4c8041, org.springframework.test.context.transaction.TransactionalTestExecutionListener@71c8becc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19d37183, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1a0dcaa, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3bd40a57, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@fdefd3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@d83da2e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a4102b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@11dc3715]
+[INFO] [2018-01-20 19:00:14][com.devchen.file.dal.dao.DownloadTaskDaoTest]Starting DownloadTaskDaoTest on chenqi173-VirtualBox with PID 6728 (started by root in /root/projects/spring-cloud-demo/file-app)
+[INFO] [2018-01-20 19:00:14][com.devchen.file.dal.dao.DownloadTaskDaoTest]No active profile set, falling back to default profiles: default
+[INFO] [2018-01-20 19:00:14][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@75d3a5e0: startup date [Sat Jan 20 19:00:14 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 19:00:15][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-01-20 19:00:15][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'commonMsgHandler'
+[INFO] [2018-01-20 19:00:15][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'errorMsgHandler'
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest], using SpringBootContextLoader
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: DownloadTaskDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.dal.dao.DownloadTaskDaoTest
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d127a61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2bbaf4f0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11c20519, org.springframework.test.context.support.DirtiesContextTestExecutionListener@70beb599, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e41089d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32a068d1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33cb5951, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@365c30cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@701fc37a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4148db48, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@282003e1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7fad8c79]
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.FileAppApplicationTests], using SpringBootContextLoader
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.FileAppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.FileAppApplicationTests]: FileAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.FileAppApplicationTests
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5d20e46, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@709ba3fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d36e4cd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a472554, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7ff2a664, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@525b461a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58c1c010, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@b7f23d9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@61d47554, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69b794e2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f200884, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4d339552]
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.service.MergeDownLoadServiceTest], using SpringBootContextLoader
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.service.MergeDownLoadServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.service.MergeDownLoadServiceTest]: MergeDownLoadServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.service.MergeDownLoadServiceTest
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45f45fa1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c6e276e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@534df152, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52e677af, org.springframework.test.context.transaction.TransactionalTestExecutionListener@35083305, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8e0379d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@341b80b2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55a1c291, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2145433b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2890c451, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40e6dfe1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b083826]
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest], using SpringBootContextLoader
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-01-20 19:34:34][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: DownloadTaskDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.dal.dao.DownloadTaskDaoTest
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-01-20 19:34:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45dd4eda, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@60611244, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3745e5c6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5e4c8041, org.springframework.test.context.transaction.TransactionalTestExecutionListener@71c8becc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19d37183, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1a0dcaa, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3bd40a57, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@fdefd3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@d83da2e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a4102b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@11dc3715]
+[INFO] [2018-01-20 19:34:35][com.devchen.file.dal.dao.DownloadTaskDaoTest]Starting DownloadTaskDaoTest on chenqi173-VirtualBox with PID 7490 (started by root in /root/projects/spring-cloud-demo/file-app)
+[INFO] [2018-01-20 19:34:35][com.devchen.file.dal.dao.DownloadTaskDaoTest]No active profile set, falling back to default profiles: default
+[INFO] [2018-01-20 19:34:35][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@75d3a5e0: startup date [Sat Jan 20 19:34:35 CST 2018]; root of context hierarchy
+[INFO] [2018-01-20 19:34:35][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-01-20 19:34:36][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'commonMsgHandler'
+[INFO] [2018-01-20 19:34:36][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'errorMsgHandler'

@@ -2,7 +2,7 @@ package com.devchen.file.common;
 
 public class Constant {
 
-    public final static  String TRANSMISSION_MERGE_DOWNLOAD_CMD_FORMAT = "transmission-cli %s --download-dir %s";
+    public final static  String TRANSMISSION_MERGE_DOWNLOAD_CMD_FORMAT = "transmission-cli %s --download-dir %s --port %s";
 
     public final static long DOWNLOAD_TASK_MAX_RUN_TIME = 24L * 3600L * 1000L;
 

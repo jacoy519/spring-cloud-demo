@@ -103,4 +103,10 @@ public class DownloadTaskEntity {
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    @Override
+    public String toString() {
+        return String.format("[taskId:%s, localSaveDir:%s, remoteAdress:%s]", taskId, localSaveDir, remoteAddress);
+    }
+
 }

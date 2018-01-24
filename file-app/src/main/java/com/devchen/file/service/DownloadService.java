@@ -38,12 +38,13 @@ public class DownloadService {
     private final AtomicInteger currentRunTaskNum = new AtomicInteger(0);
 
     public void acceptMagnetDownloadTask(String magentDownloadAddress, String localSaveDir, String fileName) {
-        if(isSameTaskExist(magentDownloadAddress)) {
-            logger.info(String.format("same task exist with localSaveDir %s and magentDownloadAddress %s", localSaveDir, magentDownloadAddress));
+        if(isSameTaskExist(fileName)) {
             return;
         }
+
         DownloadTaskEntity task = DownloadTaskFactory.createMagnetDownloadTask(magentDownloadAddress, localSaveDir, fileName);
         downloadTaskDao.insertDownloadTask(task);
+        logger.info("accpet download task " + task.toString());
     }
 
     @Scheduled(fixedDelay = Constant.TEN_MINUTE)
@@ -62,6 +63,7 @@ public class DownloadService {
         for(int i=0 ;i< currentHandleTaskNumber && i< tasks.size(); i++) {
             final DownloadTaskEntity task = tasks.get(i);
             updateTaskStatusToRun(task);
+            logger.info("run task " + task.toString());
             currentRunTaskNum.getAndAdd(1);
             downloadTaskHandler.submit(new Runnable() {
                 @Override
@@ -111,8 +113,10 @@ public class DownloadService {
             logger.info("download magent fail ", e);
         } finally {
             if(result!=null && result.isSuccess()) {
+                logger.info("magent download task success " + taskEntity.toString());
                 updateTaskStatusToSuccess(taskEntity);
             } else{
+                logger.info("magent download task fail " + taskEntity.toString());
                 updateTaskStatusToFail(taskEntity);
             }
         };

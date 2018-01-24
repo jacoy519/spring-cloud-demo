@@ -33,7 +33,7 @@ public class MergeDownLoadServiceTest {
     @Test
     public void testDownload() {
 
-        videoDownloadScheduler.findVideoDownload();
+//        videoDownloadScheduler.findVideoDownload();
 
         downloadService.handleDownloadTask();
 

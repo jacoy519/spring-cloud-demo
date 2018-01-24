@@ -3,6 +3,7 @@ package com.devchen.file.dal.dao;
 
 import com.devchen.file.dal.entity.DownloadTaskEntity;
 import com.devchen.file.factory.DownloadTaskFactory;
+import com.devchen.file.service.DownloadService;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -33,6 +34,9 @@ public class DownloadTaskDaoTest {
         for(DownloadTaskEntity test : tests) {
             downloadTaskDao.updateTaskDownloadStatusById(test.getId(), "BASD");
         }
+
+        DownloadTaskEntity taskEntity = downloadTaskDao.selectDownloadTaskByTaskId("神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E08.中英字幕.HDTVrip.720P-人人影视.mp4");
+        int i=0;
 
 
     }

@@ -22,12 +22,13 @@ public abstract class ProcessDownloadService {
 
 
     protected DownloadResult runDownloadCmd(String cmd, ThreadPoolTaskExecutor commonMsgMonitor, ThreadPoolTaskExecutor errorMsgMonitor, String fileName) {
+        logger.info(String.format("create download process. fileName:%s, cmd:%s", fileName, cmd));
         Process process = null;
         ProcessContext processContext = null;
         DownloadResult downloadResult = null;
         try {
             process = Runtime.getRuntime().exec(cmd);
-            processContext = createProcessContext(process);
+            processContext = createProcessContext(process, fileName);
             processContextSet.add(processContext);
             Future<DownloadResult> commonFuture = commonMsgMonitor.submit(new CommonMsgMonitorCallable(process, fileName));
             Future<DownloadResult> errorFuture = errorMsgMonitor.submit(new ErrorMsgMonitorCallable(process, fileName));
@@ -52,20 +53,21 @@ public abstract class ProcessDownloadService {
         Date currentDate = new Date();
         Set<ProcessContext> needCloseProcessSet = new HashSet<>();
         for(ProcessContext processContext: processContextSet) {
-            if(processContext.getOutTime() > currentDate.getTime()) {
+            if(processContext.getOutTime() < currentDate.getTime()) {
                 needCloseProcessSet.add(processContext);
             }
         }
         for(ProcessContext needCloseProcessContext : needCloseProcessSet) {
+            logger.info("the download process " + needCloseProcessContext.fileName + " is out of time and force to be closed");
             needCloseProcessContext.getProcess().destroyForcibly();
             processContextSet.remove(needCloseProcessContext);
         }
     }
 
 
-    private ProcessContext createProcessContext(Process process) {
+    private ProcessContext createProcessContext(Process process, String fileName) {
         Date currentDate = new Date();
-        return new ProcessContext(currentDate.getTime() + Constant.DOWNLOAD_TASK_MAX_RUN_TIME, process);
+        return new ProcessContext(currentDate.getTime() + Constant.DOWNLOAD_TASK_MAX_RUN_TIME, process, fileName);
     }
 
 
@@ -104,9 +106,12 @@ public abstract class ProcessDownloadService {
 
         private Long outTime;
 
-        ProcessContext(Long outTime,Process process) {
+        private String fileName;
+
+        ProcessContext(Long outTime,Process process, String fileName) {
             this.outTime = outTime;
             this.process = process;
+            this.fileName = fileName;
         }
 
         public Long getOutTime() {
