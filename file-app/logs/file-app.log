@@ -324,3 +324,8 @@
 [INFO] [2018-01-24 22:30:47][com.devchen.file.FileAppApplication]Started FileAppApplication in 3.721 seconds (JVM running for 4.314)
 [INFO] [2018-01-24 22:31:16][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization started
 [INFO] [2018-01-24 22:31:16][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+[INFO] [2018-01-24 22:51:00][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29176cc1: startup date [Wed Jan 24 22:30:43 CST 2018]; root of context hierarchy
+[INFO] [2018-01-24 22:51:00][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2018-01-24 22:51:00][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'downloadTaskHandler'
+[INFO] [2018-01-24 22:51:00][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'errorMsgHandler'
+[INFO] [2018-01-24 22:51:00][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'commonMsgHandler'
