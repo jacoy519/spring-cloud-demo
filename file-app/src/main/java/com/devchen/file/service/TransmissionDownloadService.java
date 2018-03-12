@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.io.BufferedReader;
@@ -73,6 +74,7 @@ public class TransmissionDownloadService extends ProcessDownloadService {
     private String getTransmissionDownloadCmd(String mergeAddress, String downLoadDir) {
         long randLong = (new Random()).nextLong();
         long ipLong = 50000L + (randLong%10000);
+        downLoadDir = downLoadDir.replaceAll(" ","");
         return String.format(Constant.TRANSMISSION_MERGE_DOWNLOAD_CMD_FORMAT, mergeAddress, downLoadDir, String.valueOf(ipLong));
     }
 
