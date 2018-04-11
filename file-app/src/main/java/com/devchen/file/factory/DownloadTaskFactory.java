@@ -13,4 +13,14 @@ public class DownloadTaskFactory {
         downloadTask.setDownloadStatus("AC");
         return downloadTask;
     }
+
+    public static DownloadTaskEntity createRemoteTorrentDownloadTask(String remoteTorrentAddress, String localSaveDir) {
+        DownloadTaskEntity downloadTask = new DownloadTaskEntity();
+        downloadTask.setRemoteAddress(remoteTorrentAddress);
+        downloadTask.setDownloadType("RT");
+        downloadTask.setLocalSaveDir(localSaveDir);
+        downloadTask.setTaskId(remoteTorrentAddress);
+        downloadTask.setDownloadStatus("AC");
+        return downloadTask;
+    }
 }

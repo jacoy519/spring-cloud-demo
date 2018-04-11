@@ -16,6 +16,7 @@ import javax.annotation.Resource;
 import java.io.File;
 import java.sql.ResultSet;
 import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service("downloadService")
@@ -36,6 +37,16 @@ public class DownloadService {
     private ThreadPoolTaskExecutor downloadTaskHandler;
 
     private final AtomicInteger currentRunTaskNum = new AtomicInteger(0);
+
+
+    public void acceptRemoteTorrentDownloadTask(String remoteTorrentAddress, String localSaveDir) {
+        if(isSameTaskExist(remoteTorrentAddress)) {
+            return;
+        }
+        DownloadTaskEntity task = DownloadTaskFactory.createRemoteTorrentDownloadTask(remoteTorrentAddress, localSaveDir);
+        downloadTaskDao.insertDownloadTask(task);
+        logger.info("accpet download task " + task.toString());
+    }
 
     public void acceptMagnetDownloadTask(String magentDownloadAddress, String localSaveDir, String fileName) {
         if(isSameTaskExist(fileName)) {
@@ -73,6 +84,9 @@ public class DownloadService {
                             case "MD" :
                                 handleMagentDownloadTask(task);
                                 break;
+                            case "RT" :
+                                handleMagentDownloadTask(task);
+                                break;
                             default:
                                 break;
                         }
@@ -98,6 +112,39 @@ public class DownloadService {
         downloadTaskDao.updateTaskDownloadStatusById(taskEntity.getId(), "FA");
     }
 
+    private void handleWebgDownloadTask(DownloadTaskEntity taskEntity) {
+        String downloadAddress = taskEntity.getRemoteAddress();
+        String localSaveDir = taskEntity.getLocalSaveDir();
+        String torrentSavePath = createTempTorrentSavePath();
+        DownloadResult result = null;
+        try {
+            if(!isDirExist("/torrent")) {
+                FileUtils.forceMkdir(new File("/torrent"));
+            }
+            result = webgDownloadService.submitDownloadTask(torrentSavePath, downloadAddress);
+            if(result.isSuccess()) {
+                result = transmissionDownloadService.submitDownloadTask(torrentSavePath, localSaveDir, torrentSavePath);
+            }
+
+        } catch (Exception e) {
+            logger.info("download torrent fail ", e);
+        } finally {
+            if(result!=null && result.isSuccess()) {
+                logger.info("torrent download task success " + taskEntity.toString());
+                updateTaskStatusToSuccess(taskEntity);
+            } else{
+                logger.info("torrent download task fail " + taskEntity.toString());
+                updateTaskStatusToFail(taskEntity);
+            }
+        }
+    }
+
+    private String createTempTorrentSavePath() {
+        String tempName = UUID.randomUUID().toString();
+        return String.format("/torrent/%s.torrent", tempName);
+    }
+
+
     private void handleMagentDownloadTask(DownloadTaskEntity taskEntity) {
         String magentDownloadAddress = taskEntity.getRemoteAddress();
         String localSaveDir = taskEntity.getLocalSaveDir();
@@ -119,7 +166,7 @@ public class DownloadService {
                 logger.info("magent download task fail " + taskEntity.toString());
                 updateTaskStatusToFail(taskEntity);
             }
-        };
+        }
 
     }
 

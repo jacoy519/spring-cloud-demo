@@ -52,7 +52,8 @@ public class VideoDownloadScheduler {
             loginPost.setEntity(new UrlEncodedFormEntity(params));
             HttpResponse response = httpclient.execute(loginPost);response.getEntity();
             loginPost.releaseConnection();
-            String memberpage = "http://www.zmz2017.com/user/fav";
+            String memberpage = "http://www.zimuzu.tv/user/fav";
+            logger.info("visit " + memberpage);
             favGet = new HttpGet(memberpage);
             response = httpclient.execute(favGet); // 必须是同一个HttpClient！
 

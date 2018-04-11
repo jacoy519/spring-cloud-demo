@@ -33,7 +33,7 @@ public class WebgDownloadService extends ProcessDownloadService {
 
 
     private String createWebgCmd(String torrentSaveAddress, String downloadAddress) {
-        String downloadCmd = "wget --no-check-certificate -O %s %s ";
+        String downloadCmd = "wget --tries=40 --no-check-certificate -O %s %s ";
         return String.format(downloadCmd,torrentSaveAddress,downloadAddress);
     }
 
