@@ -6,9 +6,12 @@ import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
@@ -17,6 +20,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import java.lang.reflect.Executable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -33,12 +37,12 @@ public class VideoDownloadScheduler {
 
     @Scheduled(fixedDelay = Constant.FIVE_MINUTE)
     public void findVideoDownload() {
-        HttpClient httpclient = null;
+        CloseableHttpClient httpclient = null;
         HttpPost loginPost = null;
         HttpGet favGet = null;
 
         try {
-            httpclient = new DefaultHttpClient();
+            httpclient = HttpClientBuilder.create().build();
 
             String loginUrl = "http://www.zimuzu.tv/User/Login/ajaxLogin";
 
@@ -50,7 +54,7 @@ public class VideoDownloadScheduler {
             params.add(new BasicNameValuePair("remember", "1"));
             params.add(new BasicNameValuePair("url_back", "http://www.zmz2017.com/"));
             loginPost.setEntity(new UrlEncodedFormEntity(params));
-            HttpResponse response = httpclient.execute(loginPost);response.getEntity();
+            CloseableHttpResponse response = httpclient.execute(loginPost);response.getEntity();
             loginPost.releaseConnection();
             String memberpage = "http://www.zimuzu.tv/user/fav";
             logger.info("visit " + memberpage);
@@ -87,6 +91,7 @@ public class VideoDownloadScheduler {
                     downloadService.acceptMagnetDownloadTask(address,truthDownloadDir,newFileName);
                 }
             }
+            response.close();
         } catch (Exception e) {
             logger.error(e);
         } finally {
@@ -96,6 +101,12 @@ public class VideoDownloadScheduler {
             if(loginPost != null) {
                 loginPost.releaseConnection();
             }
+            try {
+                httpclient.close();
+            } catch (Exception e) {
+                logger.error(e);
+            }
+
         }
 
 
