@@ -2,7 +2,6 @@ package com.devchen.file.resource;
 
 
 import com.devchen.file.resource.entity.UnionResponse;
-import com.devchen.file.scheduler.VideoDownloadScheduler;
 import com.devchen.file.service.DownloadService;
 import org.apache.log4j.Logger;
 import org.springframework.util.StringUtils;
@@ -19,6 +18,22 @@ public class DownloadTaskResource {
 
 
     private final static Logger logger = Logger.getLogger(DownloadTaskResource.class);
+
+    @RequestMapping(value = "/submit-magnet-download-task-with-file-name", method = RequestMethod.POST)
+    public UnionResponse submitMagnetDownLoadTaskWithFileName(@RequestParam("magentAddress") String magnet, @RequestParam("saveDir") String saveDir, @RequestParam("fileName") String fileName) {
+        logger.info(String.format("get magnet download task %s %s %s",magnet, saveDir,fileName));
+        if(StringUtils.isEmpty(magnet) || StringUtils.isEmpty(saveDir)) {
+            UnionResponse response = new UnionResponse();
+            response.setResCode("0000");
+            response.setResMsg("fail");
+            return response;
+        }
+        downloadService.acceptMagnetDownloadTask(magnet,saveDir,fileName);
+        UnionResponse response = new UnionResponse();
+        response.setResCode("0000");
+        response.setResMsg("success");
+        return response;
+    }
 
 
     @RequestMapping(value = "/submit-magnet-download-task", method = RequestMethod.POST)
