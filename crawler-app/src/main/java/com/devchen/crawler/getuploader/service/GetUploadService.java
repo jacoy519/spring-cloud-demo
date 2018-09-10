@@ -2,6 +2,8 @@ package com.devchen.crawler.getuploader.service;
 
 import com.devchen.crawler.common.AppProperty;
 import com.devchen.crawler.common.Constant;
+import com.devchen.crawler.common.factory.HttpClientFactory;
+import com.devchen.crawler.common.util.HttpUtils;
 import com.devchen.crawler.other.SockTest;
 import com.netflix.ribbon.proxy.annotation.Http;
 import org.apache.commons.io.FileUtils;
@@ -46,18 +48,22 @@ public class GetUploadService {
 
     private final static Logger logger = Logger.getLogger(GetUploadService.class);
 
-    private final  static CloseableHttpClient httpClient = getHttpClient();
-
     @Resource
     private AppProperty appProperty;
 
+    @Resource
+    private HttpClientFactory httpClientFactory;
+
     @Scheduled(fixedDelay = Constant.THREE_HOUR)
-    public void fetchAllFiles() {
+    public void fetchAllFiles() throws Exception{
+
         logger.info("start to fetch file");
+        CloseableHttpClient httpClient = httpClientFactory.createSocksHttpClient();
         List<String> list = new ArrayList<>();
         list.add("tokinagare");
         list.add("melala001");
         list.add("test_20160728");
+        list.add("cm3d2_");
         list.add("cm3d2_j");
         list.add("cm3d2_i");
         list.add("cm3d2_h");
@@ -69,25 +75,28 @@ public class GetUploadService {
         list.add("cm3d2_b");
         list.add("cm3d2");
         for(String mainTag: list) {
-            fetchFiles(mainTag);
+            fetchFiles(mainTag, httpClient);
         }
+        logger.info("end to fetch file");
+        httpClient.close();
     }
 
-    public void fetchFiles(String mainTag) {
+    public void fetchFiles(String mainTag, CloseableHttpClient httpClient) {
         for(int i=1; i<30 ; i++) {
             String filePageUrl = String.format("http://ux.getuploader.com/%s/index/%s/date/desc", mainTag, i);
-            fetchOneFilePage(filePageUrl);
+            fetchOneFilePage(filePageUrl, httpClient);
             String bkFilePageUrl = String.format("http://ux.getuploader.com/%s/index/date/desc/%s", mainTag, i);
-            fetchOneFilePage(bkFilePageUrl);
+            fetchOneFilePage(bkFilePageUrl, httpClient);
         }
     }
 
-    private void fetchOneFilePage(String url) {
+    private void fetchOneFilePage(String url, CloseableHttpClient httpClient) {
         try {
-            String html = getHtml(url);
+            logger.info(String.format("visit file list page url %s", url));
+            String html = HttpUtils.getHtml(url, httpClient);
             List<FileInfo> fileInfos = getFileInfoUrlFromHtml(html);
             for(FileInfo info : fileInfos) {
-                fetchFile(info);
+                fetchFile(info, httpClient);
             }
         } catch (Exception e){
             logger.error(e);
@@ -95,6 +104,7 @@ public class GetUploadService {
     }
 
     private List<FileInfo> getFileInfoUrlFromHtml(String html) {
+
         List<FileInfo> fileInfos = new ArrayList<>();
         Pattern fileInfoTablePattern = Pattern.compile("<tbody>([\\s\\S]*?)</tbody>");
         Matcher fileInfoTableMatcher = fileInfoTablePattern.matcher(html);
@@ -114,10 +124,11 @@ public class GetUploadService {
         return fileInfos;
     }
 
-    private void fetchFile(FileInfo fileInfo) {
+    private void fetchFile(FileInfo fileInfo, CloseableHttpClient httpClient) {
         try {
             String fileInfoUrl = fileInfo.getFileInfoUrl();
-            String html = getHtml(fileInfoUrl);
+            logger.info(String.format("visit file info page url %s", fileInfoUrl));
+            String html = HttpUtils.getHtml(fileInfoUrl, httpClient);
             String token = getFileToken(html);
             if(StringUtils.isEmpty(token)) {
                 return;
@@ -145,7 +156,7 @@ public class GetUploadService {
             fileDownloadPath.add(downLoadPath);
             fileDownloadPath.add(bkDownLoadPath);
             for(String download: fileDownloadPath) {
-                downloadFile(localFileSavePath, download);
+                downloadFile(localFileSavePath, download, httpClient);
                 if(isFileExist(localFileSavePath)) {
                     logger.info(String.format("download %s in %s from %s",fileName, localFileSavePath, download));
                     return;
@@ -161,67 +172,16 @@ public class GetUploadService {
         return file.exists();
     }
 
-    private void downloadFile(String savePath, String downloadUrl) {
-        OutputStream out = null;
-        InputStream in = null;
+    private void downloadFile(String savePath, String downloadUrl, CloseableHttpClient httpClient) {
         try {
-            InetSocketAddress socksaddr = new InetSocketAddress(appProperty.getProxyIp(), appProperty.getProxySocket());
-            HttpClientContext context = HttpClientContext.create();
-            context.setAttribute("socks.address", socksaddr);
 
             HttpGet request = new HttpGet(downloadUrl);
             request.setHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36");
-            System.out.println("Executing request " + request  + " via SOCKS proxy " + socksaddr);
-            HttpResponse httpResponse = httpClient.execute( request, context);
-            HttpEntity entity = httpResponse.getEntity();
-            in = entity.getContent();
-            long length = entity.getContentLength();
-            if (length <= 0) {
-               return;
-            }
-            File file = new File(savePath);
-            if(!file.exists()){
-                file.createNewFile();
-            }
-            out = new FileOutputStream(file);
-            byte[] buffer = new byte[4096];
-            int readLength = 0;
-            while ((readLength=in.read(buffer)) > 0) {
-                byte[] bytes = new byte[readLength];
-                System.arraycopy(buffer, 0, bytes, 0, readLength);
-                out.write(bytes);
-            }
-
-            out.flush();
+            HttpUtils.downloadFile(request,savePath, httpClient);
         }catch (Exception e) {
-            logger.error(e);
-            if(isFileExist(savePath)) {
-                try {
-                    FileUtils.forceDelete(new File(savePath));
-                } catch (Exception e2) {
-                    logger.error(e2);
-                }
-
-            }
-        } finally {
-            try {
-                if(in != null){
-                    in.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            try {
-                if(out != null){
-                    out.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            logger.error(String.format("download error %s %s", savePath, downloadUrl));
         }
     }
-
 
     private String getFileToken(String html) {
         Pattern tokenPattern = Pattern.compile("<input type=\"hidden\" name=\"token\" value=\"(.*)\" />");
@@ -230,80 +190,6 @@ public class GetUploadService {
             return matcher.group(1);
         }
         return null;
-    }
-
-
-    private String getHtml(String url) throws Exception{
-        InetSocketAddress socksaddr = new InetSocketAddress(appProperty.getProxyIp(), appProperty.getProxySocket());
-        HttpClientContext context = HttpClientContext.create();
-        context.setAttribute("socks.address", socksaddr);
-
-        HttpGet request = new HttpGet(url);
-        request.setHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36");
-        System.out.println("Executing request " + request  + " via SOCKS proxy " + socksaddr);
-        HttpResponse response = httpClient.execute( request, context);
-        String html = EntityUtils.toString(response.getEntity(), "utf-8");
-        return html;
-    }
-
-
-
-
-    private static CloseableHttpClient getHttpClient() {
-        RequestConfig params = RequestConfig.custom().setConnectTimeout(3000).setConnectionRequestTimeout(1000).setSocketTimeout(4000)
-                .setExpectContinueEnabled(true).build();
-        Registry<ConnectionSocketFactory> reg = RegistryBuilder.<ConnectionSocketFactory>create()
-                .register("http", new HttpSocksConnectionSocketFactory())
-                .register("https", new MyConnectionSocketFactory(SSLContexts.createSystemDefault()))
-                .build();
-        PoolingHttpClientConnectionManager pccm = new PoolingHttpClientConnectionManager(reg);
-        pccm.setMaxTotal(300); // 连接池最大并发连接数
-        pccm.setDefaultMaxPerRoute(50); // 单路由最大并发数
-
-        HttpRequestRetryHandler retryHandler = new HttpRequestRetryHandler() {
-            public boolean retryRequest(IOException exception , int executionCount , HttpContext context) {
-                // 重试1次,从1开始
-                if (executionCount > 5) {
-                    return false;
-                }
-                if (exception instanceof NoHttpResponseException) {
-                    logger.info(
-                            "[NoHttpResponseException has retry request:" + context.toString() + "][executionCount:" + executionCount + "]");
-                    return true;
-                }
-                else if (exception instanceof SocketException) {
-                    logger.info("[SocketException has retry request:" + context.toString() + "][executionCount:" + executionCount + "]");
-                    return true;
-                }
-                return false;
-            }
-        };
-        return HttpClients.custom().setConnectionManager(pccm).setDefaultRequestConfig(params).setRetryHandler(retryHandler)
-                .build();
-    }
-
-    static class HttpSocksConnectionSocketFactory extends PlainConnectionSocketFactory {
-        @Override
-        public Socket createSocket(final HttpContext context) throws IOException {
-            InetSocketAddress socksaddr = (InetSocketAddress) context.getAttribute("socks.address");
-            Proxy proxy = new Proxy(Proxy.Type.SOCKS, socksaddr);
-            return new Socket(proxy);
-        }
-    }
-
-    static class MyConnectionSocketFactory extends SSLConnectionSocketFactory {
-
-        public MyConnectionSocketFactory(final SSLContext sslContext) {
-            super(sslContext);
-        }
-
-        @Override
-        public Socket createSocket(final HttpContext context) throws IOException {
-            InetSocketAddress socksaddr = (InetSocketAddress) context.getAttribute("socks.address");
-            Proxy proxy = new Proxy(Proxy.Type.SOCKS, socksaddr);
-            return new Socket(proxy);
-        }
-
     }
 
     private class FileInfo {

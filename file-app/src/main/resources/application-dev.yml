@@ -1,6 +1,6 @@
 spring:
   application:
-    name: file-app
+    name: file-app-test
 
   redis:
     host: localhost

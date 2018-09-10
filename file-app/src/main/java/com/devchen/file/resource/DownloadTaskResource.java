@@ -53,7 +53,7 @@ public class DownloadTaskResource {
     }
 
     @RequestMapping(value = "/submit-remote-torrent-download-task", method = RequestMethod.POST)
-    public UnionResponse submitRemoteTorrentDownLoadTask(@RequestParam("remoteTorrent") String remoteTorrent, @RequestParam("saveDir") String saveDir) {
+    public UnionResponse submitRemoteTorrentDownLoadTask(@RequestParam("remoteTorrent") String remoteTorrent, @RequestParam("saveDir") String saveDir, @RequestParam("fileName") String fileName) {
         logger.info(String.format("get remote torrent download task %s %s",remoteTorrent, saveDir));
         if(StringUtils.isEmpty(remoteTorrent) || StringUtils.isEmpty(saveDir)) {
             UnionResponse response = new UnionResponse();
@@ -61,7 +61,7 @@ public class DownloadTaskResource {
             response.setResMsg("fail");
             return response;
         }
-        downloadService.acceptRemoteTorrentDownloadTask(remoteTorrent, saveDir);
+        downloadService.acceptRemoteTorrentDownloadTask(remoteTorrent, saveDir, fileName);
         UnionResponse response = new UnionResponse();
         response.setResCode("0000");
         response.setResMsg("success");

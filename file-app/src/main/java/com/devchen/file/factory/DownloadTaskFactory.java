@@ -14,12 +14,12 @@ public class DownloadTaskFactory {
         return downloadTask;
     }
 
-    public static DownloadTaskEntity createRemoteTorrentDownloadTask(String remoteTorrentAddress, String localSaveDir) {
+    public static DownloadTaskEntity createRemoteTorrentDownloadTask(String remoteTorrentAddress, String localSaveDir,String fileName) {
         DownloadTaskEntity downloadTask = new DownloadTaskEntity();
         downloadTask.setRemoteAddress(remoteTorrentAddress);
         downloadTask.setDownloadType("RT");
         downloadTask.setLocalSaveDir(localSaveDir);
-        downloadTask.setTaskId(remoteTorrentAddress);
+        downloadTask.setTaskId(fileName);
         downloadTask.setDownloadStatus("AC");
         return downloadTask;
     }

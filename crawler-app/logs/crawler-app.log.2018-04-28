@@ -1,0 +1,311 @@
+[INFO] [2018-04-28 22:28:05][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.getuploader.GetUploadServiceTest], using SpringBootContextLoader
+[INFO] [2018-04-28 22:28:05][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.getuploader.GetUploadServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-04-28 22:28:05][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.getuploader.GetUploadServiceTest]: GetUploadServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-04-28 22:28:06][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.getuploader.GetUploadServiceTest
+[INFO] [2018-04-28 22:28:06][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-04-28 22:28:06][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@32ee6fee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d0f2471, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7133da86, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3232a28a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@73e22a3d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@47faa49c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@28f2a10f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@f736069, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6da21078, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7fee8714, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4229bb3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@56cdfb3b]
+[INFO] [2018-04-28 22:28:06][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@d3957fe: startup date [Sat Apr 28 22:28:06 CST 2018]; root of context hierarchy
+[INFO] [2018-04-28 22:28:07][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-04-28 22:28:07][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-04-28 22:28:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$352a477b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-04-28 22:28:08][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-04-28 22:28:08][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-04-28 22:28:08][com.devchen.crawler.getuploader.GetUploadServiceTest]The following profiles are active: dev
+[INFO] [2018-04-28 22:28:08][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6136998b: startup date [Sat Apr 28 22:28:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@d3957fe
+[WARN] [2018-04-28 22:28:09][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-04-28 22:28:10][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=650bb334-faf3-31a3-927b-dfa98457f4dc
+[INFO] [2018-04-28 22:28:10][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-04-28 22:28:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$352a477b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-04-28 22:28:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1910447e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-04-28 22:28:11][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2018-04-28 22:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6136998b: startup date [Sat Apr 28 22:28:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@d3957fe
+[INFO] [2018-04-28 22:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-04-28 22:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-04-28 22:28:12][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-04-28 22:28:12][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-04-28 22:28:12][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-04-28 22:28:13][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-04-28 22:28:13][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-04-28 22:28:13][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-04-28 22:28:13][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-04-28 22:28:14][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-04-28 22:28:14][com.devchen.crawler.getuploader.GetUploadServiceTest]Started GetUploadServiceTest in 7.753 seconds (JVM running for 10.502)
+[INFO] [2018-04-28 22:28:16][com.devchen.crawler.pixiv.service.PixivService]e9f500f325478c12dfba7e0691840058
+[INFO] [2018-04-28 22:28:16][com.devchen.crawler.pixiv.service.PixivService]{"error":false,"message":"","body":{"success":{"return_to":"https:\/\/www.pixiv.net\/"}}}
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:3066815 name:もねてぃ◎例大祭あ-10b
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:3066815 name:もねてぃ◎例大祭あ-10b
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:912652 name:西條サトル
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:912652 name:西條サトル
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:1031224 name:天凪
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:1031224 name:天凪
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:551282 name:みけおう
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:551282 name:みけおう
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:316240 name:もとみやみつき
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:316240 name:もとみやみつき
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:24392 name:おりょう
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:24392 name:おりょう
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2473967 name:あゆま紗由
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2473967 name:あゆま紗由
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:204506 name:にの子
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:204506 name:にの子
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:9343974 name:富士やま
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:9343974 name:富士やま
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:538551 name:黒井弘騎
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:538551 name:黒井弘騎
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:226272 name:三色網戸。
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:226272 name:三色網戸。
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:19949745 name:過ぎた卵白
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:19949745 name:過ぎた卵白
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:15305293 name:ましゅー
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:15305293 name:ましゅー
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:12088 name:丸和太郎
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:12088 name:丸和太郎
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:1305983 name:kanata
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:1305983 name:kanata
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:871625 name:lambda
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:871625 name:lambda
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:6751 name:RYO
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:6751 name:RYO
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2379837 name:みじんこ
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2379837 name:みじんこ
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:194231 name:にろ＠コミ１-か43a
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:194231 name:にろ＠コミ１-か43a
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:920720 name:しおこんぶ
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:920720 name:しおこんぶ
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:4361214 name:千羅万象
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:4361214 name:千羅万象
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:1864423 name:魔太郎■コミ1『あ62b』
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:1864423 name:魔太郎■コミ1『あ62b』
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:961772 name:水無
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:961772 name:水無
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:641955 name:ホロすけ＠仕事募集中
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:641955 name:ホロすけ＠仕事募集中
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:4872213 name:N.G.
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:4872213 name:N.G.
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:9565067 name:僵僵僵酱
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:9565067 name:僵僵僵酱
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:490219 name:Hiten
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:490219 name:Hiten
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:117402 name:momi（もみ）
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:117402 name:momi（もみ）
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:197076 name:ぴょん吉
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:197076 name:ぴょん吉
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2323358 name:きくらげ
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2323358 name:きくらげ
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:7059005 name:逆流茶会
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:7059005 name:逆流茶会
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:190454 name:v-mag
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:190454 name:v-mag
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:68791 name:天路あや＠コミ1 ふ20a
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:68791 name:天路あや＠コミ1 ふ20a
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:711526 name:ダイアル(片織トケイ）
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:711526 name:ダイアル(片織トケイ）
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2267440 name:空維深夜
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:2267440 name:空維深夜
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:3210645 name:秋蕎麦
+[INFO] [2018-04-28 22:28:18][com.devchen.crawler.pixiv.service.PixivService]find id:3210645 name:秋蕎麦
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]異界娼館CG集発売中 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=66877667
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]三蔵 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=67774631
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]頼光触手 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=67585169
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]ジャンヌ https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=65825005
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]ジャンヌ・オルタ https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=66200593
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]綾波かわいい！ https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=66636585
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]C94サークルカット投稿用 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=67189200
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]殺生院キアラ https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=67967973
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]謹賀新年 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=66566696
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]練習 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=67876549
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]「予告」異界娼館 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=66467987
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]ジャック https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=65445993
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]ユニコーン https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=67354265
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]セントルイス https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=68242392
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]RO ルーンナイト https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=65057524
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]武蔵ちゃん https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=67999526
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]赤城 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=65914365
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]「予告」RPG 操魔の器 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=65341959
+[INFO] [2018-04-28 22:28:49][com.devchen.crawler.pixiv.service.PixivService]操魔の器 発売中 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=65841237
+[INFO] [2018-04-28 22:28:49][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@6136998b: startup date [Sat Apr 28 22:28:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@d3957fe
+[INFO] [2018-04-28 22:28:49][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-04-28 22:28:49][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-04-28 22:28:49][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1524925730081 with initial instances count: 2
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]式部帆夏 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=60803887
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]巫女 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=60265125
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]青葉ちゃん https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=60839971
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]無題 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=59846185
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]ネロ https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=64591577
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]チアせっちゃん https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=59857904
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]チャイナドレス https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=60157686
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]RPG 花開く魔種 発売中 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=59911291
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]RPG 耐出-妊婦エルフと森の館- 発売中 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=64864024
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]沖田総司FGO https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=62405958
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]痛い人 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=60356470
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]ターニャ https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=61444446
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]「予告」RPG 耐出-妊婦エルフと森の館- https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=63991095
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]エロマンガ先生 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=62598788
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]伊万莉まりあ https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=58923453
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]ゴッドブロー!!! https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=62211838
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]ネロ水着 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=63944973
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]go! https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=58416915
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]「予告」RPG 花開く魔種 https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=59305320
+[INFO] [2018-04-28 22:28:50][com.devchen.crawler.pixiv.service.PixivService]ダクネス https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=62263361
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2018-04-28 22:28:50][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-04-28 22:28:50][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-04-28 22:28:50][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-04-28 22:28:50][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-04-28 22:33:21][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.getuploader.GetUploadServiceTest], using SpringBootContextLoader
+[INFO] [2018-04-28 22:33:21][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.getuploader.GetUploadServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-04-28 22:33:21][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.getuploader.GetUploadServiceTest]: GetUploadServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-04-28 22:33:21][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.getuploader.GetUploadServiceTest
+[INFO] [2018-04-28 22:33:21][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-04-28 22:33:21][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@32ee6fee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d0f2471, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7133da86, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3232a28a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@73e22a3d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@47faa49c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@28f2a10f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@f736069, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6da21078, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7fee8714, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4229bb3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@56cdfb3b]
+[INFO] [2018-04-28 22:33:22][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@732f29af: startup date [Sat Apr 28 22:33:22 CST 2018]; root of context hierarchy
+[INFO] [2018-04-28 22:33:23][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-04-28 22:33:23][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-04-28 22:33:23][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$203f65cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-04-28 22:33:24][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-04-28 22:33:24][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-04-28 22:33:24][com.devchen.crawler.getuploader.GetUploadServiceTest]The following profiles are active: dev
+[INFO] [2018-04-28 22:33:24][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1a35993f: startup date [Sat Apr 28 22:33:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@732f29af
+[WARN] [2018-04-28 22:33:25][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-04-28 22:33:25][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=650bb334-faf3-31a3-927b-dfa98457f4dc
+[INFO] [2018-04-28 22:33:25][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-04-28 22:33:25][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$203f65cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-04-28 22:33:25][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42562cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-04-28 22:33:26][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2018-04-28 22:33:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1a35993f: startup date [Sat Apr 28 22:33:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@732f29af
+[INFO] [2018-04-28 22:33:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-04-28 22:33:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-04-28 22:33:27][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-04-28 22:33:27][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-04-28 22:33:27][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-04-28 22:33:28][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-04-28 22:33:28][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-04-28 22:33:28][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-04-28 22:33:28][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-04-28 22:33:28][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-04-28 22:33:28][com.devchen.crawler.getuploader.GetUploadServiceTest]Started GetUploadServiceTest in 7.019 seconds (JVM running for 8.843)
+[INFO] [2018-04-28 22:33:30][com.devchen.crawler.pixiv.service.PixivService]b2d9d4eebceec806833b926b8d765ed8
+[INFO] [2018-04-28 22:33:30][com.devchen.crawler.pixiv.service.PixivService]{"error":false,"message":"","body":{"success":{"return_to":"https:\/\/www.pixiv.net\/"}}}
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2696273 name:ゆらん@ｺﾐﾄﾚ4号ア04b
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2696273 name:ゆらん@ｺﾐﾄﾚ4号ア04b
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:292644 name:えふぇ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:292644 name:えふぇ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1601715 name:M.vv
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1601715 name:M.vv
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:7356311 name:けけもつ@3日目東I-13a
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:7356311 name:けけもつ@3日目東I-13a
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:3066815 name:もねてぃ◎例大祭あ-10b
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:3066815 name:もねてぃ◎例大祭あ-10b
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:912652 name:西條サトル
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:912652 name:西條サトル
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1031224 name:天凪
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1031224 name:天凪
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:551282 name:みけおう
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:551282 name:みけおう
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:316240 name:もとみやみつき
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:316240 name:もとみやみつき
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:24392 name:おりょう
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:24392 name:おりょう
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2473967 name:あゆま紗由
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2473967 name:あゆま紗由
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:204506 name:にの子
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:204506 name:にの子
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:9343974 name:富士やま
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:9343974 name:富士やま
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:538551 name:黒井弘騎
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:538551 name:黒井弘騎
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:226272 name:三色網戸。
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:226272 name:三色網戸。
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:19949745 name:過ぎた卵白
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:19949745 name:過ぎた卵白
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:15305293 name:ましゅー
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:15305293 name:ましゅー
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:12088 name:丸和太郎
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:12088 name:丸和太郎
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1305983 name:kanata
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1305983 name:kanata
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:871625 name:lambda
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:871625 name:lambda
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:6751 name:RYO
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:6751 name:RYO
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2379837 name:みじんこ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2379837 name:みじんこ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:194231 name:にろ＠コミ１-か43a
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:194231 name:にろ＠コミ１-か43a
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:920720 name:しおこんぶ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:920720 name:しおこんぶ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:4361214 name:千羅万象
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:4361214 name:千羅万象
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1864423 name:魔太郎■コミ1『あ62b』
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:1864423 name:魔太郎■コミ1『あ62b』
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:961772 name:水無
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:961772 name:水無
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:641955 name:ホロすけ＠仕事募集中
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:641955 name:ホロすけ＠仕事募集中
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:4872213 name:N.G.
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:4872213 name:N.G.
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:9565067 name:僵僵僵酱
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:9565067 name:僵僵僵酱
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:490219 name:Hiten
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:490219 name:Hiten
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:117402 name:momi（もみ）
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:117402 name:momi（もみ）
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:197076 name:ぴょん吉
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:197076 name:ぴょん吉
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2323358 name:きくらげ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2323358 name:きくらげ
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:7059005 name:逆流茶会
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:7059005 name:逆流茶会
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:190454 name:v-mag
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:190454 name:v-mag
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:68791 name:天路あや＠コミ1 ふ20a
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:68791 name:天路あや＠コミ1 ふ20a
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:711526 name:ダイアル(片織トケイ）
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:711526 name:ダイアル(片織トケイ）
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2267440 name:空維深夜
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:2267440 name:空維深夜
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:3210645 name:秋蕎麦
+[INFO] [2018-04-28 22:33:32][com.devchen.crawler.pixiv.service.PixivService]find id:3210645 name:秋蕎麦
+[INFO] [2018-04-28 22:58:43][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@1a35993f: startup date [Sat Apr 28 22:33:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@732f29af
+[INFO] [2018-04-28 22:58:43][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-04-28 22:58:43][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2018-04-28 22:58:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-04-28 22:58:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-04-28 22:58:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-04-28 22:58:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-04-28 22:58:43][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1524927524284 with initial instances count: 2
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2018-04-28 22:58:44][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-04-28 22:58:44][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-04-28 22:58:44][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-04-28 22:58:44][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'

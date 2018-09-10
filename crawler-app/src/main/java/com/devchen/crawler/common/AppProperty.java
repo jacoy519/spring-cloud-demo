@@ -33,6 +33,9 @@ public class AppProperty {
     @Value("${sock5.socket}")
     private int proxySocket;
 
+    @Value("${pixiv.localSaveDir}")
+    private String pixivSaveDir;
+
 
     public String getZimuzuAccount() {
         return zimuzuAccount;
@@ -59,4 +62,6 @@ public class AppProperty {
     public String getProxyIp() {return proxyIp;}
 
     public int getProxySocket() {return proxySocket;}
+
+    public String getPixivSaveDir() {return pixivSaveDir;}
 }

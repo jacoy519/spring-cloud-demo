@@ -39,11 +39,11 @@ public class DownloadService {
     private final AtomicInteger currentRunTaskNum = new AtomicInteger(0);
 
 
-    public void acceptRemoteTorrentDownloadTask(String remoteTorrentAddress, String localSaveDir) {
+    public void acceptRemoteTorrentDownloadTask(String remoteTorrentAddress, String localSaveDir, String fileName) {
         if(isSameTaskExist(remoteTorrentAddress)) {
             return;
         }
-        DownloadTaskEntity task = DownloadTaskFactory.createRemoteTorrentDownloadTask(remoteTorrentAddress, localSaveDir);
+        DownloadTaskEntity task = DownloadTaskFactory.createRemoteTorrentDownloadTask(remoteTorrentAddress, localSaveDir, fileName);
         downloadTaskDao.insertDownloadTask(task);
         logger.info("accpet download task " + task.toString());
     }
@@ -116,14 +116,15 @@ public class DownloadService {
         String downloadAddress = taskEntity.getRemoteAddress();
         String localSaveDir = taskEntity.getLocalSaveDir();
         String torrentSavePath = createTempTorrentSavePath();
+        Long taskId = taskEntity.getId();
         DownloadResult result = null;
         try {
             if(!isDirExist("/torrent")) {
                 FileUtils.forceMkdir(new File("/torrent"));
             }
-            result = webgDownloadService.submitDownloadTask(torrentSavePath, downloadAddress);
+            result = webgDownloadService.submitDownloadTask(torrentSavePath, downloadAddress, taskId);
             if(result.isSuccess()) {
-                result = transmissionDownloadService.submitDownloadTask(torrentSavePath, localSaveDir, torrentSavePath);
+                result = transmissionDownloadService.submitDownloadTask(torrentSavePath, localSaveDir, taskId);
             }
 
         } catch (Exception e) {
@@ -148,13 +149,13 @@ public class DownloadService {
     private void handleMagentDownloadTask(DownloadTaskEntity taskEntity) {
         String magentDownloadAddress = taskEntity.getRemoteAddress();
         String localSaveDir = taskEntity.getLocalSaveDir();
-        String fileName = taskEntity.getTaskId();
+        Long id = taskEntity.getId();
         DownloadResult result = null;
         try {
             if(!isDirExist(localSaveDir)) {
                 FileUtils.forceMkdir(new File(localSaveDir));
             }
-            result = transmissionDownloadService.submitDownloadTask(magentDownloadAddress, localSaveDir, fileName);
+            result = transmissionDownloadService.submitDownloadTask(magentDownloadAddress, localSaveDir, id);
 
         } catch (Exception e) {
             logger.info("download magent fail ", e);

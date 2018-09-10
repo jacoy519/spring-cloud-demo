@@ -53,3 +53,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://192.168.0.106:10001/eureka/
+
+download:
+  logSaveDir: /root/spring-cloud/file-app/download-logs

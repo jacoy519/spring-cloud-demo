@@ -24,13 +24,10 @@ public class WebgDownloadService extends ProcessDownloadService {
     @Resource
     private ThreadPoolTaskExecutor errorMsgHandler;
 
-    public DownloadResult submitDownloadTask(String torrentSaveAddress, String downloadAddress) {
+    public DownloadResult submitDownloadTask(String torrentSaveAddress, String downloadAddress,Long taskId) {
         String cmd = createWebgCmd(torrentSaveAddress, downloadAddress);
-        return runDownloadCmd(cmd, commonMsgHandler, errorMsgHandler, "");
+        return runDownloadCmd(cmd, commonMsgHandler, errorMsgHandler, taskId);
     }
-
-
-
 
     private String createWebgCmd(String torrentSaveAddress, String downloadAddress) {
         String downloadCmd = "wget --tries=40 --no-check-certificate -O %s %s ";
@@ -38,7 +35,7 @@ public class WebgDownloadService extends ProcessDownloadService {
     }
 
     @Override
-    protected DownloadResult handleCommonMsg(InputStream is, String processName) {
+    protected DownloadResult handleCommonMsg(InputStream is, Long taskId) {
         Reader reader = new InputStreamReader(is);
         BufferedReader bufferedReader = new BufferedReader(reader);
         String line = null;
@@ -53,7 +50,7 @@ public class WebgDownloadService extends ProcessDownloadService {
     }
 
     @Override
-    protected DownloadResult handleErrorMsg(InputStream is, String processName) {
+    protected DownloadResult handleErrorMsg(InputStream is,  Long taskId) {
         Reader reader = new InputStreamReader(is);
         BufferedReader bufferedReader = new BufferedReader(reader);
         String line = null;

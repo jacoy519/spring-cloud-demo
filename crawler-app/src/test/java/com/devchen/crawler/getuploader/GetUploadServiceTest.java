@@ -1,6 +1,7 @@
 package com.devchen.crawler.getuploader;
 
 import com.devchen.crawler.getuploader.service.GetUploadService;
+import com.devchen.crawler.pixiv.service.PixivService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,9 +16,17 @@ public class GetUploadServiceTest {
     @Resource
     private GetUploadService getUploadService;
 
-    @Test
-    public void test() {
+    @Resource
+    private PixivService pixivService;
+
+    //@Test
+    public void test() throws Exception{
         String mainTag = "cm3d2_j";
-        getUploadService.fetchFiles(mainTag);
+        getUploadService.fetchAllFiles();
+    }
+
+    @Test
+    public void test2() {
+        pixivService.visitPixiv();
     }
 }

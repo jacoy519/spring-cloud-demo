@@ -21,17 +21,17 @@ public abstract class ProcessDownloadService {
     private Set<ProcessContext> processContextSet = ConcurrentHashMap.<ProcessContext> newKeySet();
 
 
-    protected DownloadResult runDownloadCmd(String cmd, ThreadPoolTaskExecutor commonMsgMonitor, ThreadPoolTaskExecutor errorMsgMonitor, String fileName) {
-        logger.info(String.format("create download process. fileName:%s, cmd:%s", fileName, cmd));
+    protected DownloadResult runDownloadCmd(String cmd, ThreadPoolTaskExecutor commonMsgMonitor, ThreadPoolTaskExecutor errorMsgMonitor, Long taskId) {
+        logger.info(String.format("create download process. taskId:%s, cmd:%s", taskId, cmd));
         Process process = null;
         ProcessContext processContext = null;
         DownloadResult downloadResult = null;
         try {
             process = Runtime.getRuntime().exec(cmd);
-            processContext = createProcessContext(process, fileName);
+            processContext = createProcessContext(process, taskId);
             processContextSet.add(processContext);
-            Future<DownloadResult> commonFuture = commonMsgMonitor.submit(new CommonMsgMonitorCallable(process, fileName));
-            Future<DownloadResult> errorFuture = errorMsgMonitor.submit(new ErrorMsgMonitorCallable(process, fileName));
+            Future<DownloadResult> commonFuture = commonMsgMonitor.submit(new CommonMsgMonitorCallable(process, taskId));
+            Future<DownloadResult> errorFuture = errorMsgMonitor.submit(new ErrorMsgMonitorCallable(process, taskId));
 
             DownloadResult commonResult = commonFuture.get();
             DownloadResult errorResult = errorFuture.get();
@@ -58,16 +58,16 @@ public abstract class ProcessDownloadService {
             }
         }
         for(ProcessContext needCloseProcessContext : needCloseProcessSet) {
-            logger.info("the download process " + needCloseProcessContext.fileName + " is out of time and force to be closed");
+            logger.info("the download process " + needCloseProcessContext.taskId + " is out of time and force to be closed");
             needCloseProcessContext.getProcess().destroyForcibly();
             processContextSet.remove(needCloseProcessContext);
         }
     }
 
 
-    private ProcessContext createProcessContext(Process process, String fileName) {
+    private ProcessContext createProcessContext(Process process, Long taskId) {
         Date currentDate = new Date();
-        return new ProcessContext(currentDate.getTime() + Constant.DOWNLOAD_TASK_MAX_RUN_TIME, process, fileName);
+        return new ProcessContext(currentDate.getTime() + Constant.DOWNLOAD_TASK_MAX_RUN_TIME, process, taskId);
     }
 
 
@@ -96,9 +96,9 @@ public abstract class ProcessDownloadService {
         return new DownloadResult(true,null);
     }
 
-    protected abstract DownloadResult handleCommonMsg(InputStream inputStream, String processName);
+    protected abstract DownloadResult handleCommonMsg(InputStream inputStream, Long taskId);
 
-    protected abstract DownloadResult handleErrorMsg(InputStream inputStream, String processName);
+    protected abstract DownloadResult handleErrorMsg(InputStream inputStream, Long taskId);
 
     private class ProcessContext {
 
@@ -106,12 +106,12 @@ public abstract class ProcessDownloadService {
 
         private Long outTime;
 
-        private String fileName;
+        private Long taskId;
 
-        ProcessContext(Long outTime,Process process, String fileName) {
+        ProcessContext(Long outTime,Process process, Long taskId) {
             this.outTime = outTime;
             this.process = process;
-            this.fileName = fileName;
+            this.taskId = taskId;
         }
 
         public Long getOutTime() {
@@ -127,16 +127,16 @@ public abstract class ProcessDownloadService {
 
         private Process process;
 
-        private String processName;
+        private Long taskId;
 
-        public CommonMsgMonitorCallable(Process process, String processName) {
+        public CommonMsgMonitorCallable(Process process, Long taskId) {
             this.process = process;
-            this.processName = processName;
+            this.taskId = taskId;
         }
 
         @Override
         public DownloadResult call() throws Exception {
-            return handleCommonMsg(process.getInputStream(), processName);
+            return handleCommonMsg(process.getInputStream(), taskId);
         }
     }
 
@@ -144,16 +144,16 @@ public abstract class ProcessDownloadService {
 
         private Process process;
 
-        private String processName;
+        private Long taskId;
 
-        public ErrorMsgMonitorCallable(Process process, String processName) {
+        public ErrorMsgMonitorCallable(Process process, Long taskId) {
             this.process = process;
-            this.processName = processName;
+            this.taskId = taskId;
         }
 
         @Override
         public DownloadResult call() throws Exception {
-            return handleErrorMsg(process.getErrorStream(), processName);
+            return handleErrorMsg(process.getErrorStream(), taskId);
         }
     }
 }
