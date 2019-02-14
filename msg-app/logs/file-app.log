@@ -1,0 +1,424 @@
+[INFO] [2018-09-12 23:13:50][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b: startup date [Wed Sep 12 23:13:50 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:13:51][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:13:51][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:13:51][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:13:52][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:13:52][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:13:52][com.devchen.msg.MsgAppApplication]No active profile set, falling back to default profiles: default
+[INFO] [2018-09-12 23:13:52][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d1ef78d: startup date [Wed Sep 12 23:13:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[WARN] [2018-09-12 23:13:53][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.msg]' package. Please check your configuration.
+[INFO] [2018-09-12 23:13:54][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=e5105291-7161-3f00-9c71-75c83ab2bf78
+[INFO] [2018-09-12 23:13:54][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:13:54][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:13:54][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$296ba977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:13:54][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 8080 (http)
+[INFO] [2018-09-12 23:13:55][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2641 ms
+[INFO] [2018-09-12 23:13:55][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2018-09-12 23:13:55][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2018-09-12 23:13:55][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2018-09-12 23:13:55][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2018-09-12 23:13:55][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2018-09-12 23:13:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d1ef78d: startup date [Wed Sep 12 23:13:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[INFO] [2018-09-12 23:13:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:13:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:13:56][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:13:56][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:13:56][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-12 23:13:56][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+[INFO] [2018-09-12 23:13:56][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2018-09-12 23:13:56][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+[INFO] [2018-09-12 23:14:50][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b: startup date [Wed Sep 12 23:14:50 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:14:50][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:14:51][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:14:51][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:14:51][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:14:52][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:14:52][com.devchen.msg.MsgAppApplication]No active profile set, falling back to default profiles: default
+[INFO] [2018-09-12 23:14:52][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Wed Sep 12 23:14:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[WARN] [2018-09-12 23:14:53][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.msg]' package. Please check your configuration.
+[INFO] [2018-09-12 23:14:53][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=e5105291-7161-3f00-9c71-75c83ab2bf78
+[INFO] [2018-09-12 23:14:53][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:14:53][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:14:53][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$296ba977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:14:53][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 8080 (http)
+[INFO] [2018-09-12 23:14:53][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1846 ms
+[INFO] [2018-09-12 23:14:54][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2018-09-12 23:14:54][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2018-09-12 23:14:54][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2018-09-12 23:14:54][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2018-09-12 23:14:54][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2018-09-12 23:14:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Wed Sep 12 23:14:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[INFO] [2018-09-12 23:14:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:14:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:14:55][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:14:55][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:14:55][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-12 23:14:55][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+[INFO] [2018-09-12 23:14:55][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2018-09-12 23:14:55][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+[INFO] [2018-09-12 23:16:13][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b: startup date [Wed Sep 12 23:16:13 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:16:13][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:16:13][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:16:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:16:14][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:16:14][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:16:14][com.devchen.msg.MsgAppApplication]No active profile set, falling back to default profiles: default
+[INFO] [2018-09-12 23:16:14][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Wed Sep 12 23:16:14 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[WARN] [2018-09-12 23:16:15][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.msg]' package. Please check your configuration.
+[INFO] [2018-09-12 23:16:15][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=e5105291-7161-3f00-9c71-75c83ab2bf78
+[INFO] [2018-09-12 23:16:15][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:16:15][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:16:15][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$296ba977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:16:16][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 8080 (http)
+[INFO] [2018-09-12 23:16:16][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1637 ms
+[INFO] [2018-09-12 23:16:16][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2018-09-12 23:16:16][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2018-09-12 23:16:16][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2018-09-12 23:16:16][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2018-09-12 23:16:16][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2018-09-12 23:16:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Wed Sep 12 23:16:14 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[INFO] [2018-09-12 23:16:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:16:17][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:16:17][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:16:17][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:16:17][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-12 23:16:17][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+[INFO] [2018-09-12 23:16:17][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2018-09-12 23:16:17][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+[INFO] [2018-09-12 23:17:45][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b: startup date [Wed Sep 12 23:17:45 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:17:46][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:17:46][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:17:46][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:17:46][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:17:46][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:17:46][com.devchen.msg.MsgAppApplication]No active profile set, falling back to default profiles: default
+[INFO] [2018-09-12 23:17:46][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Wed Sep 12 23:17:46 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[WARN] [2018-09-12 23:17:47][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.msg]' package. Please check your configuration.
+[INFO] [2018-09-12 23:17:48][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=e5105291-7161-3f00-9c71-75c83ab2bf78
+[INFO] [2018-09-12 23:17:48][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:17:48][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4585ac74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:17:48][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$296ba977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:17:48][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 8080 (http)
+[INFO] [2018-09-12 23:17:48][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1880 ms
+[INFO] [2018-09-12 23:17:49][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2018-09-12 23:17:49][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2018-09-12 23:17:49][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2018-09-12 23:17:49][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2018-09-12 23:17:49][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2018-09-12 23:17:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Wed Sep 12 23:17:46 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@659a969b
+[INFO] [2018-09-12 23:17:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:17:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:17:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:17:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:17:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-12 23:17:50][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+[INFO] [2018-09-12 23:17:50][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2018-09-12 23:17:50][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+[INFO] [2018-09-12 23:18:16][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@64cd705f: startup date [Wed Sep 12 23:18:16 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:18:17][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:18:17][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:18:17][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60bafb84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:18:18][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:18:18][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/msg-app-test/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:18:18][com.devchen.msg.MsgAppApplication]The following profiles are active: dev
+[INFO] [2018-09-12 23:18:18][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@704f1591: startup date [Wed Sep 12 23:18:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64cd705f
+[WARN] [2018-09-12 23:18:18][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.msg]' package. Please check your configuration.
+[INFO] [2018-09-12 23:18:19][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=54d19a36-df9b-3c37-a3b9-7957f36586ea
+[INFO] [2018-09-12 23:18:19][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:18:19][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60bafb84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:18:19][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$44a0f887] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:18:19][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 12401 (http)
+[INFO] [2018-09-12 23:18:19][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1852 ms
+[INFO] [2018-09-12 23:18:20][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2018-09-12 23:18:20][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2018-09-12 23:18:20][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2018-09-12 23:18:20][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2018-09-12 23:18:20][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2018-09-12 23:18:20][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@704f1591: startup date [Wed Sep 12 23:18:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64cd705f
+[INFO] [2018-09-12 23:18:20][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:18:20][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:18:20][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:18:20][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:18:20][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:18:22][org.flywaydb.core.internal.util.VersionPrinter]Flyway 3.2.1 by Boxfuse
+[INFO] [2018-09-12 23:18:22][org.flywaydb.core.internal.dbsupport.DbSupportFactory]Database: jdbc:mysql://192.168.0.106/msg_test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC (MySQL 5.7)
+[INFO] [2018-09-12 23:18:22][org.flywaydb.core.internal.command.DbValidate]Validated 1 migration (execution time 00:00.023s)
+[INFO] [2018-09-12 23:18:22][org.flywaydb.core.internal.metadatatable.MetaDataTableImpl]Creating Metadata table: `msg_test`.`schema_version`
+[INFO] [2018-09-12 23:18:25][org.flywaydb.core.internal.command.DbMigrate]Current version of schema `msg_test`: << Empty Schema >>
+[INFO] [2018-09-12 23:18:25][org.flywaydb.core.internal.command.DbMigrate]Migrating schema `msg_test` to version 20180108 - INIT T DOWNLOAD TASK
+[INFO] [2018-09-12 23:18:25][org.flywaydb.core.internal.command.DbMigrate]Successfully applied 1 migration to schema `msg_test` (execution time 00:02.777s).
+[WARN] [2018-09-12 23:18:25][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:18:25][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-09-12 23:18:25][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:18:25][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-09-12 23:18:26][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2018-09-12 23:18:26][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'environmentManager' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:18:26][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:18:26][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'refreshScope' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:18:26][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+[INFO] [2018-09-12 23:18:26][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+[INFO] [2018-09-12 23:18:26][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=704f1591,type=ConfigurationPropertiesRebinder]
+[INFO] [2018-09-12 23:18:26][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-09-12 23:18:26][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-09-12 23:18:27][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1536765507977 with initial instances count: 2
+[INFO] [2018-09-12 23:18:28][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Registering application msg-app-test with eureka with status UP
+[INFO] [2018-09-12 23:18:28][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1536765508025, current=UP, previous=STARTING]
+[INFO] [2018-09-12 23:18:28][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401: registering service...
+[INFO] [2018-09-12 23:18:28][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - registration status: 204
+[INFO] [2018-09-12 23:18:28][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 12401 (http)
+[INFO] [2018-09-12 23:18:28][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Updating port to 12401
+[INFO] [2018-09-12 23:18:28][com.devchen.msg.MsgAppApplication]Started MsgAppApplication in 11.914 seconds (JVM running for 12.793)
+[INFO] [2018-09-12 23:23:27][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:28:27][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:33:27][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:38:27][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:43:27][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:45:25][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@704f1591: startup date [Wed Sep 12 23:18:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64cd705f
+[INFO] [2018-09-12 23:45:25][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application msg-app-test with eureka with status DOWN
+[WARN] [2018-09-12 23:45:25][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1536767125355, current=DOWN, previous=UP]
+[INFO] [2018-09-12 23:45:25][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401: registering service...
+[INFO] [2018-09-12 23:45:25][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-09-12 23:45:25][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-09-12 23:45:25][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - deregister  status: 200
+[INFO] [2018-09-12 23:45:25][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-09-12 23:45:25][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-09-12 23:45:25][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2018-09-12 23:45:25][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans
+[INFO] [2018-09-12 23:45:25][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - registration status: 204
+[INFO] [2018-09-12 23:45:32][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@a9cd3b1: startup date [Wed Sep 12 23:45:32 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:45:32][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:45:33][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:45:33][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60bafb84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:45:34][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:45:34][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/msg-app-test/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:45:34][com.devchen.msg.MsgAppApplication]The following profiles are active: dev
+[INFO] [2018-09-12 23:45:34][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@704f1591: startup date [Wed Sep 12 23:45:34 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@a9cd3b1
+[WARN] [2018-09-12 23:45:35][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.msg]' package. Please check your configuration.
+[INFO] [2018-09-12 23:45:35][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=54d19a36-df9b-3c37-a3b9-7957f36586ea
+[INFO] [2018-09-12 23:45:35][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:45:35][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60bafb84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:45:35][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$44a0f887] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:45:36][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 12401 (http)
+[INFO] [2018-09-12 23:45:36][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1731 ms
+[INFO] [2018-09-12 23:45:36][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2018-09-12 23:45:36][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2018-09-12 23:45:36][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2018-09-12 23:45:36][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2018-09-12 23:45:36][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2018-09-12 23:45:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@704f1591: startup date [Wed Sep 12 23:45:34 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@a9cd3b1
+[INFO] [2018-09-12 23:45:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:45:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:45:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:45:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:45:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:45:39][org.flywaydb.core.internal.util.VersionPrinter]Flyway 3.2.1 by Boxfuse
+[INFO] [2018-09-12 23:45:39][org.flywaydb.core.internal.dbsupport.DbSupportFactory]Database: jdbc:mysql://192.168.0.106/msg_test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC (MySQL 5.7)
+[INFO] [2018-09-12 23:45:39][org.flywaydb.core.internal.command.DbValidate]Validated 1 migration (execution time 00:00.033s)
+[INFO] [2018-09-12 23:45:39][org.flywaydb.core.internal.command.DbMigrate]Current version of schema `msg_test`: 20180108
+[INFO] [2018-09-12 23:45:39][org.flywaydb.core.internal.command.DbMigrate]Schema `msg_test` is up to date. No migration necessary.
+[WARN] [2018-09-12 23:45:39][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:45:39][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-09-12 23:45:39][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:45:39][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-09-12 23:45:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2018-09-12 23:45:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'environmentManager' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:45:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:45:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'refreshScope' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:45:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+[INFO] [2018-09-12 23:45:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+[INFO] [2018-09-12 23:45:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=704f1591,type=ConfigurationPropertiesRebinder]
+[INFO] [2018-09-12 23:45:40][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-09-12 23:45:40][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-09-12 23:45:40][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:45:40][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:45:40][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-09-12 23:45:40][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1536767141332 with initial instances count: 3
+[INFO] [2018-09-12 23:45:41][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Registering application msg-app-test with eureka with status UP
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1536767141421, current=UP, previous=STARTING]
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401: registering service...
+[INFO] [2018-09-12 23:45:41][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - registration status: 204
+[INFO] [2018-09-12 23:45:41][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 12401 (http)
+[INFO] [2018-09-12 23:45:41][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Updating port to 12401
+[INFO] [2018-09-12 23:45:41][com.devchen.msg.MsgAppApplication]Started MsgAppApplication in 9.621 seconds (JVM running for 10.499)
+[INFO] [2018-09-12 23:46:23][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@704f1591: startup date [Wed Sep 12 23:45:34 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@a9cd3b1
+[INFO] [2018-09-12 23:46:23][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application msg-app-test with eureka with status DOWN
+[WARN] [2018-09-12 23:46:23][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1536767183904, current=DOWN, previous=UP]
+[INFO] [2018-09-12 23:46:23][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401: registering service...
+[INFO] [2018-09-12 23:46:23][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-09-12 23:46:23][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-09-12 23:46:23][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - deregister  status: 200
+[INFO] [2018-09-12 23:46:23][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - registration status: 204
+[INFO] [2018-09-12 23:46:24][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-09-12 23:46:24][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-09-12 23:46:24][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2018-09-12 23:46:24][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans
+[INFO] [2018-09-12 23:47:00][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449: startup date [Wed Sep 12 23:47:00 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:47:00][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:47:00][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:47:00][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9d390eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:47:01][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:47:01][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/msg-app-test/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:47:01][com.devchen.msg.MsgAppApplication]The following profiles are active: dev
+[INFO] [2018-09-12 23:47:01][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dfddc9a: startup date [Wed Sep 12 23:47:01 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
+[WARN] [2018-09-12 23:47:02][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.msg]' package. Please check your configuration.
+[INFO] [2018-09-12 23:47:02][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=69fe4fc8-bd8d-34bc-8ebb-951c8b210068
+[INFO] [2018-09-12 23:47:02][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:47:02][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9d390eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:47:02][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$edb98dee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:47:03][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 12401 (http)
+[INFO] [2018-09-12 23:47:03][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1937 ms
+[INFO] [2018-09-12 23:47:03][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2018-09-12 23:47:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2018-09-12 23:47:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2018-09-12 23:47:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2018-09-12 23:47:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2018-09-12 23:47:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dfddc9a: startup date [Wed Sep 12 23:47:01 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
+[INFO] [2018-09-12 23:47:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:47:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:47:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:47:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:47:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:47:05][org.flywaydb.core.internal.util.VersionPrinter]Flyway 3.2.1 by Boxfuse
+[INFO] [2018-09-12 23:47:05][org.flywaydb.core.internal.dbsupport.DbSupportFactory]Database: jdbc:mysql://192.168.0.106/msg_test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC (MySQL 5.7)
+[INFO] [2018-09-12 23:47:06][org.flywaydb.core.internal.command.DbValidate]Validated 1 migration (execution time 00:00.033s)
+[INFO] [2018-09-12 23:47:06][org.flywaydb.core.internal.command.DbMigrate]Current version of schema `msg_test`: 20180108
+[INFO] [2018-09-12 23:47:06][org.flywaydb.core.internal.command.DbMigrate]Schema `msg_test` is up to date. No migration necessary.
+[WARN] [2018-09-12 23:47:06][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:47:06][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-09-12 23:47:06][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:47:06][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-09-12 23:47:06][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2018-09-12 23:47:06][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'environmentManager' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:47:06][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:47:06][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'refreshScope' has been autodetected for JMX exposure
+[INFO] [2018-09-12 23:47:06][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+[INFO] [2018-09-12 23:47:06][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+[INFO] [2018-09-12 23:47:06][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=dfddc9a,type=ConfigurationPropertiesRebinder]
+[INFO] [2018-09-12 23:47:07][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-09-12 23:47:07][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-09-12 23:47:07][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:47:07][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1536767228610 with initial instances count: 3
+[INFO] [2018-09-12 23:47:08][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Registering application msg-app-test with eureka with status UP
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1536767228681, current=UP, previous=STARTING]
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401: registering service...
+[INFO] [2018-09-12 23:47:08][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+[INFO] [2018-09-12 23:47:08][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - registration status: 204
+[INFO] [2018-09-12 23:47:08][com.devchen.msg.mq.MsgConsumer]receive msg: test
+[INFO] [2018-09-12 23:47:09][com.devchen.msg.mq.MsgConsumer]receive msg: test
+[INFO] [2018-09-12 23:47:09][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 12401 (http)
+[INFO] [2018-09-12 23:47:09][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Updating port to 12401
+[INFO] [2018-09-12 23:47:09][com.devchen.msg.MsgAppApplication]Started MsgAppApplication in 9.625 seconds (JVM running for 10.545)
+[INFO] [2018-09-12 23:47:16][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dfddc9a: startup date [Wed Sep 12 23:47:01 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@63355449
+[INFO] [2018-09-12 23:47:16][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application msg-app-test with eureka with status DOWN
+[WARN] [2018-09-12 23:47:16][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1536767236920, current=DOWN, previous=UP]
+[INFO] [2018-09-12 23:47:16][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401: registering service...
+[INFO] [2018-09-12 23:47:16][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-09-12 23:47:16][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-09-12 23:47:16][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - deregister  status: 200
+[INFO] [2018-09-12 23:47:16][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-09-12 23:47:16][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+[INFO] [2018-09-12 23:47:16][com.netflix.discovery.DiscoveryClient]DiscoveryClient_MSG-APP-TEST/10.0.2.15:msg-app-test:12401 - registration status: 204
+[INFO] [2018-09-12 23:47:17][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-09-12 23:47:17][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2018-09-12 23:47:17][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans

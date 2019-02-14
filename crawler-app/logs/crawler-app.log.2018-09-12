@@ -1,0 +1,724 @@
+[INFO] [2018-09-12 23:34:09][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.mq.MqServiceTest], using SpringBootContextLoader
+[INFO] [2018-09-12 23:34:09][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.mq.MqServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-09-12 23:34:09][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.mq.MqServiceTest]: MqServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-09-12 23:34:10][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.mq.MqServiceTest
+[INFO] [2018-09-12 23:34:10][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-09-12 23:34:10][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4461c7e3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@351d0846, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@77e4c80f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@35fc6dc4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7fe8ea47, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@226a82c4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@731f8236, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@255b53dc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1dd92fe2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6b53e23f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@64d2d351, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b68b9a4]
+[INFO] [2018-09-12 23:34:11][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@306e95ec: startup date [Wed Sep 12 23:34:11 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:34:11][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:34:11][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:34:11][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$66ad766b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:34:12][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:34:12][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:34:12][com.devchen.crawler.mq.MqServiceTest]No active profile set, falling back to default profiles: default
+[INFO] [2018-09-12 23:34:12][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b04476e: startup date [Wed Sep 12 23:34:12 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@306e95ec
+[WARN] [2018-09-12 23:34:13][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-09-12 23:34:13][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=6301fbf1-a1d7-3da4-88c6-3edb52a987e7
+[INFO] [2018-09-12 23:34:14][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:34:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$66ad766b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:34:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a93736e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN] [2018-09-12 23:34:14][org.springframework.web.context.support.GenericWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appProperty': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zimuzu.loginUrl' in value "${zimuzu.loginUrl}"
+[INFO] [2018-09-12 23:34:14][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2018-09-12 23:34:14][org.springframework.boot.SpringApplication]Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appProperty': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zimuzu.loginUrl' in value "${zimuzu.loginUrl}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zimuzu.loginUrl' in value "${zimuzu.loginUrl}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 40 more
+[ERROR] [2018-09-12 23:34:14][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4461c7e3] to prepare test instance [com.devchen.crawler.mq.MqServiceTest@37864b77]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appProperty': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zimuzu.loginUrl' in value "${zimuzu.loginUrl}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zimuzu.loginUrl' in value "${zimuzu.loginUrl}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 40 more
+[INFO] [2018-09-12 23:35:22][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.mq.MqServiceTest], using SpringBootContextLoader
+[INFO] [2018-09-12 23:35:22][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.mq.MqServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-09-12 23:35:22][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.mq.MqServiceTest]: MqServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-09-12 23:35:22][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.mq.MqServiceTest
+[INFO] [2018-09-12 23:35:22][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-09-12 23:35:22][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4461c7e3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@351d0846, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@77e4c80f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@35fc6dc4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7fe8ea47, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@226a82c4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@731f8236, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@255b53dc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1dd92fe2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6b53e23f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@64d2d351, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b68b9a4]
+[INFO] [2018-09-12 23:35:23][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@66f57048: startup date [Wed Sep 12 23:35:23 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:35:24][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:35:24][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f1571049] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:35:24][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:35:25][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:35:25][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:35:25][com.devchen.crawler.mq.MqServiceTest]The following profiles are active: dev
+[INFO] [2018-09-12 23:35:25][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@32057e6: startup date [Wed Sep 12 23:35:25 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@66f57048
+[WARN] [2018-09-12 23:35:27][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-09-12 23:35:27][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=db16b91d-fe1b-3ac9-87b7-3f2bf9e942cd
+[INFO] [2018-09-12 23:35:27][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:35:28][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f1571049] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:35:28][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d53d0d4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN] [2018-09-12 23:35:28][org.springframework.web.context.support.GenericWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mqService': Unsatisfied dependency expressed through field 'jmsMessagingTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jms.core.JmsMessagingTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO] [2018-09-12 23:35:29][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2018-09-12 23:35:29][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jmsMessagingTemplate in com.devchen.crawler.service.MqService required a bean of type 'org.springframework.jms.core.JmsMessagingTemplate' that could not be found.
+	- Bean method 'jmsMessagingTemplate' not loaded because Ancestor org.springframework.boot.autoconfigure.jms.JmsAutoConfiguration did not match
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.jms.core.JmsMessagingTemplate' in your configuration.
+
+[ERROR] [2018-09-12 23:35:29][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@4461c7e3] to prepare test instance [com.devchen.crawler.mq.MqServiceTest@3c3a0032]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mqService': Unsatisfied dependency expressed through field 'jmsMessagingTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jms.core.JmsMessagingTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jms.core.JmsMessagingTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 42 more
+[INFO] [2018-09-12 23:41:45][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.mq.MqServiceTest], using SpringBootContextLoader
+[INFO] [2018-09-12 23:41:45][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.mq.MqServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-09-12 23:41:45][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.mq.MqServiceTest]: MqServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-09-12 23:41:45][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.mq.MqServiceTest
+[INFO] [2018-09-12 23:41:45][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-09-12 23:41:45][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62e136d3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c8e4bb0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6279cee3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4206a205, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29ba4338, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@57175e74, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7bb58ca3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@c540f5a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@770c2e6b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1a052a00, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4d826d77, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@61009542]
+[INFO] [2018-09-12 23:41:46][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4310d43: startup date [Wed Sep 12 23:41:46 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:41:47][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:41:47][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$24a3d2db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:41:47][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:41:48][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:41:49][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:41:49][com.devchen.crawler.mq.MqServiceTest]The following profiles are active: dev
+[INFO] [2018-09-12 23:41:49][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@a7e2d9d: startup date [Wed Sep 12 23:41:49 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4310d43
+[WARN] [2018-09-12 23:41:50][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-09-12 23:41:51][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=0d285968-74b7-3fdf-b3f0-019c8a0c8408
+[INFO] [2018-09-12 23:41:51][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:41:51][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$24a3d2db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:41:51][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$889cfde] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN] [2018-09-12 23:41:52][org.springframework.web.context.support.GenericWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mqService': Unsatisfied dependency expressed through field 'jmsTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsMessagingTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$MessagingTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsMessagingTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$JmsTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+[INFO] [2018-09-12 23:41:52][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2018-09-12 23:41:52][org.springframework.boot.SpringApplication]Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mqService': Unsatisfied dependency expressed through field 'jmsTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsMessagingTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$MessagingTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsMessagingTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$JmsTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsMessagingTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$MessagingTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsMessagingTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$JmsTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 42 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$JmsTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 55 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 69 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 82 more
+Caused by: java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.boot.autoconfigure.jms.activemq.ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.pooledJmsConnectionFactory(ActiveMQConnectionFactoryConfiguration.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 83 more
+[ERROR] [2018-09-12 23:41:52][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@62e136d3] to prepare test instance [com.devchen.crawler.mq.MqServiceTest@7b6e5c12]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mqService': Unsatisfied dependency expressed through field 'jmsTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsMessagingTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$MessagingTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsMessagingTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$JmsTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsMessagingTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$MessagingTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsMessagingTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$JmsTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 42 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jmsTemplate' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAutoConfiguration$JmsTemplateConfiguration.class]: Unsatisfied dependency expressed through method 'jmsTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 55 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pooledJmsConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/activemq/ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 69 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.activemq.pool.PooledConnectionFactory]: Factory method 'pooledJmsConnectionFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 82 more
+Caused by: java.lang.NoSuchMethodError: org.apache.activemq.pool.PooledConnectionFactory.setBlockIfSessionPoolIsFullTimeout(J)V
+	at org.springframework.boot.autoconfigure.jms.activemq.ActiveMQConnectionFactoryConfiguration$PooledConnectionFactoryConfiguration.pooledJmsConnectionFactory(ActiveMQConnectionFactoryConfiguration.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 83 more
+[INFO] [2018-09-12 23:42:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.mq.MqServiceTest], using SpringBootContextLoader
+[INFO] [2018-09-12 23:42:34][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.mq.MqServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-09-12 23:42:34][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.mq.MqServiceTest]: MqServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-09-12 23:42:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.mq.MqServiceTest
+[INFO] [2018-09-12 23:42:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-09-12 23:42:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1dd92fe2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b53e23f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64d2d351, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b68b9a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4f9a3314, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b2c72c2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@491666ad, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@176d53b2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@971d0d8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@51931956, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2b4a2ec7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@564718df]
+[INFO] [2018-09-12 23:42:35][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3cebbb30: startup date [Wed Sep 12 23:42:35 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:42:36][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:42:37][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$eb2f1c2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:42:37][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:42:38][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-12 23:42:38][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:42:38][com.devchen.crawler.mq.MqServiceTest]The following profiles are active: dev
+[INFO] [2018-09-12 23:42:38][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7807ac2c: startup date [Wed Sep 12 23:42:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3cebbb30
+[WARN] [2018-09-12 23:42:40][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-09-12 23:42:40][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=0d285968-74b7-3fdf-b3f0-019c8a0c8408
+[INFO] [2018-09-12 23:42:41][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:42:41][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$eb2f1c2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:42:41][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cf15192f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:42:42][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2018-09-12 23:42:43][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7807ac2c: startup date [Wed Sep 12 23:42:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3cebbb30
+[INFO] [2018-09-12 23:42:44][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:42:44][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:42:44][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:42:44][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:42:44][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-12 23:42:46][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:42:46][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-09-12 23:42:46][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:42:46][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-09-12 23:42:46][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-09-12 23:42:46][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+[INFO] [2018-09-12 23:42:46][com.devchen.crawler.getuploader.service.GetUploadService]start to fetch file
+[INFO] [2018-09-12 23:42:46][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2018-09-12 23:42:46][com.devchen.crawler.mq.MqServiceTest]Started MqServiceTest in 12.014 seconds (JVM running for 14.025)
+[INFO] [2018-09-12 23:42:47][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/1/date/desc
+[INFO] [2018-09-12 23:42:47][com.devchen.crawler.zimuzu.service.ZimuzuService]{"status":1,"info":"\u767b\u5f55\u6210\u529f\uff01","data":{"url_back":"http:\/\/www.zimuzu.tv\/"}}
+[INFO] [2018-09-12 23:42:47][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 40
+[INFO] [2018-09-12 23:42:47][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3bd07b3f: startup date [Wed Sep 12 23:42:47 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@7807ac2c
+[INFO] [2018-09-12 23:42:48][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:42:48][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@7807ac2c: startup date [Wed Sep 12 23:42:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3cebbb30
+[INFO] [2018-09-12 23:42:48][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-09-12 23:42:49][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2018-09-12 23:42:49][com.netflix.config.ChainedDynamicProperty]Flipping property: FILE-APP.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO] [2018-09-12 23:42:49][com.netflix.util.concurrent.ShutdownEnabledTimer]Shutdown hook installed for: NFLoadBalancer-PingTimer-FILE-APP
+[WARN] [2018-09-12 23:42:49][org.springframework.context.annotation.AnnotationConfigApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ribbonLoadBalancingHttpClient' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$HttpClientRibbonConfiguration: Unsatisfied dependency expressed through method 'ribbonLoadBalancingHttpClient' parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+[ERROR] [2018-09-12 23:42:49][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch fav list error
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ribbonLoadBalancingHttpClient' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$HttpClientRibbonConfiguration: Unsatisfied dependency expressed through method 'ribbonLoadBalancingHttpClient' parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.cloud.context.named.NamedContextFactory.createContext(NamedContextFactory.java:110)
+	at org.springframework.cloud.context.named.NamedContextFactory.getContext(NamedContextFactory.java:79)
+	at org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:115)
+	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getInstance(SpringClientFactory.java:111)
+	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getLoadBalancer(SpringClientFactory.java:57)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.getLoadBalancer(RibbonLoadBalancerClient.java:141)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.execute(RibbonLoadBalancerClient.java:72)
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:659)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:566)
+	at com.devchen.crawler.remote.service.FileAppRemoteService.submitMagnetDownLoadTaskWithFileName(FileAppRemoteService.java:41)
+	at com.devchen.crawler.zimuzu.service.ZimuzuService.fetchFavList(ZimuzuService.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 42 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 55 more
+Caused by: java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.<init>(ShutdownEnabledTimer.java:60)
+	at com.netflix.loadbalancer.BaseLoadBalancer.setupPingTask(BaseLoadBalancer.java:257)
+	at com.netflix.loadbalancer.BaseLoadBalancer.setPing(BaseLoadBalancer.java:360)
+	at com.netflix.loadbalancer.BaseLoadBalancer.initWithConfig(BaseLoadBalancer.java:179)
+	at com.netflix.loadbalancer.BaseLoadBalancer.<init>(BaseLoadBalancer.java:156)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.<init>(DynamicServerListLoadBalancer.java:88)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.<init>(DynamicServerListLoadBalancer.java:75)
+	at com.netflix.loadbalancer.ZoneAwareLoadBalancer.<init>(ZoneAwareLoadBalancer.java:76)
+	at com.netflix.loadbalancer.LoadBalancerBuilder.buildDynamicServerListLoadBalancer(LoadBalancerBuilder.java:102)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration.ribbonLoadBalancer(RibbonClientConfiguration.java:240)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$aac63d6d.CGLIB$ribbonLoadBalancer$7(<generated>)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$aac63d6d$$FastClassBySpringCGLIB$$1f4274b2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$aac63d6d.ribbonLoadBalancer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 56 more
+[INFO] [2018-09-12 23:42:49][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2018-09-12 23:42:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:42:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-09-12 23:42:50][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/1
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-09-12 23:42:50][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/2
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-09-12 23:42:50][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1536766971200 with initial instances count: 3
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2018-09-12 23:42:51][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-09-12 23:42:51][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+[INFO] [2018-09-12 23:42:51][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-09-12 23:42:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-09-12 23:42:51][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/3
+[INFO] [2018-09-12 23:42:52][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/4
+[INFO] [2018-09-12 23:42:53][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/5
+[INFO] [2018-09-12 23:42:54][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/6
+[INFO] [2018-09-12 23:42:55][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/7
+[INFO] [2018-09-12 23:42:55][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/8
+[INFO] [2018-09-12 23:42:57][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/9
+[INFO] [2018-09-12 23:42:57][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/10
+[INFO] [2018-09-12 23:42:58][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/11
+[INFO] [2018-09-12 23:42:59][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/13
+[INFO] [2018-09-12 23:43:00][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/14
+[INFO] [2018-09-12 23:43:00][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/15
+[INFO] [2018-09-12 23:43:08][com.devchen.crawler.getuploader.service.GetUploadService]download フルシェード横髪_修正ファイル改.zip in /root/getuploader/tokinagare/フルシェード横髪_修正ファイル改.zip from http://dl1.getuploader.com/g/5b993405-2150-4229-bcb0-1c40a010e467/tokinagare/15/%E3%83%95%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%89%E6%A8%AA%E9%AB%AA_%E4%BF%AE%E6%AD%A3%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%94%B9.zip
+[INFO] [2018-09-12 23:43:08][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/16
+[INFO] [2018-09-12 23:43:21][com.devchen.crawler.getuploader.service.GetUploadService]download ベリーロングポニーテール.zip in /root/getuploader/tokinagare/ベリーロングポニーテール.zip from http://dl1.getuploader.com/g/5b99340c-f64c-4456-b1e1-1c6aa010e467/tokinagare/16/%E3%83%99%E3%83%AA%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%9D%E3%83%8B%E3%83%BC%E3%83%86%E3%83%BC%E3%83%AB.zip
+[INFO] [2018-09-12 23:43:21][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/date/desc/1
+[INFO] [2018-09-12 23:43:23][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/65
+[INFO] [2018-09-12 23:43:23][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/64
+[INFO] [2018-09-12 23:43:24][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/63
+[INFO] [2018-09-12 23:43:25][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/62
+[INFO] [2018-09-12 23:43:25][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/61
+[INFO] [2018-09-12 23:43:34][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.mq.MqServiceTest], using SpringBootContextLoader
+[INFO] [2018-09-12 23:43:34][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.mq.MqServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-09-12 23:43:34][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.mq.MqServiceTest]: MqServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-09-12 23:43:35][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.mq.MqServiceTest
+[INFO] [2018-09-12 23:43:35][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-09-12 23:43:35][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@77e4c80f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35fc6dc4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7fe8ea47, org.springframework.test.context.support.DirtiesContextTestExecutionListener@226a82c4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@731f8236, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@255b53dc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dd92fe2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6b53e23f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@64d2d351, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b68b9a4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4f9a3314, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3b2c72c2]
+[INFO] [2018-09-12 23:43:37][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21282ed8: startup date [Wed Sep 12 23:43:37 CST 2018]; root of context hierarchy
+[INFO] [2018-09-12 23:43:37][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:43:38][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$12b67be6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:43:38][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-12 23:43:39][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[INFO] [2018-09-12 23:43:39][com.devchen.crawler.getuploader.service.GetUploadService]download [COM3D2対応]ラウンドショート改セカンド1.7z in /root/getuploader/tokinagare/[COM3D2対応]ラウンドショート改セカンド1.7z from http://dl1.getuploader.com/g/5b99341e-77d4-4951-840c-1b93a010e467/tokinagare/61/%5BCOM3D2%E5%AF%BE%E5%BF%9C%5D%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E6%94%B9%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%891.7z
+[INFO] [2018-09-12 23:43:39][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/60
+[WARN] [2018-09-12 23:43:39][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-12 23:43:39][com.devchen.crawler.mq.MqServiceTest]The following profiles are active: dev
+[INFO] [2018-09-12 23:43:39][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7bb3a9fe: startup date [Wed Sep 12 23:43:39 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21282ed8
+[WARN] [2018-09-12 23:43:41][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-09-12 23:43:42][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=bec9f146-e490-32fc-9746-de96a071ce57
+[INFO] [2018-09-12 23:43:42][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-12 23:43:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$12b67be6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:43:42][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f69c78e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-12 23:43:44][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2018-09-12 23:43:45][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7bb3a9fe: startup date [Wed Sep 12 23:43:39 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21282ed8
+[INFO] [2018-09-12 23:43:45][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-12 23:43:45][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-12 23:43:45][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:43:45][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-12 23:43:46][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-12 23:43:47][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:43:47][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-09-12 23:43:47][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-12 23:43:47][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-09-12 23:43:48][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-09-12 23:43:48][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+[INFO] [2018-09-12 23:43:48][com.devchen.crawler.mq.MqServiceTest]Started MqServiceTest in 12.881 seconds (JVM running for 14.795)
+[INFO] [2018-09-12 23:43:49][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@7bb3a9fe: startup date [Wed Sep 12 23:43:39 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21282ed8
+[INFO] [2018-09-12 23:43:49][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-09-12 23:43:49][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2018-09-12 23:43:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:43:49][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1536767030946 with initial instances count: 3
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-09-12 23:43:50][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-09-12 23:43:51][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2018-09-12 23:43:51][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-09-12 23:43:51][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+[INFO] [2018-09-12 23:43:51][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-09-12 23:43:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-09-12 23:43:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[WARN] [2018-09-12 23:43:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Timed out while waiting for executor 'taskScheduler' to terminate
+[INFO] [2018-09-12 23:43:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-09-12 23:44:12][com.devchen.crawler.getuploader.service.GetUploadService]download [COM3D対応]_ヴァイオレット・エヴァーガーデン　髪型.7z in /root/getuploader/tokinagare/[COM3D対応]_ヴァイオレット・エヴァーガーデン　髪型.7z from http://download1.getuploader.com/g/5b99342c-baf4-48f6-ac0f-1c62a010e467/tokinagare/60/%5BCOM3D%E5%AF%BE%E5%BF%9C%5D_%E3%83%B4%E3%82%A1%E3%82%A4%E3%82%AA%E3%83%AC%E3%83%83%E3%83%88%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%80%80%E9%AB%AA%E5%9E%8B.7z
+[INFO] [2018-09-12 23:44:12][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/59
+[INFO] [2018-09-12 23:44:27][com.devchen.crawler.getuploader.service.GetUploadService]download [COM3D対応]_OL人魚姫　髪型セット.7z in /root/getuploader/tokinagare/[COM3D対応]_OL人魚姫　髪型セット.7z from http://dl1.getuploader.com/g/5b99344c-df30-401e-a2c2-1caca010e467/tokinagare/59/%5BCOM3D%E5%AF%BE%E5%BF%9C%5D_OL%E4%BA%BA%E9%AD%9A%E5%A7%AB%E3%80%80%E9%AB%AA%E5%9E%8B%E3%82%BB%E3%83%83%E3%83%88.7z
+[INFO] [2018-09-12 23:44:27][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/58
+[INFO] [2018-09-12 23:44:39][com.devchen.crawler.getuploader.service.GetUploadService]download 雛口紗姫_髪型.7z in /root/getuploader/tokinagare/雛口紗姫_髪型.7z from http://download1.getuploader.com/g/5b99345c-186c-45fe-b644-1c68a010e467/tokinagare/58/%E9%9B%9B%E5%8F%A3%E7%B4%97%E5%A7%AB_%E9%AB%AA%E5%9E%8B.7z
+[INFO] [2018-09-12 23:44:39][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/56
+[INFO] [2018-09-12 23:44:48][com.devchen.crawler.getuploader.service.GetUploadService]download ヴァイオレット・エヴァーガーデン　髪型.7z in /root/getuploader/tokinagare/ヴァイオレット・エヴァーガーデン　髪型.7z from http://download1.getuploader.com/g/5b993467-3d60-457a-a041-1c48a010e467/tokinagare/56/%E3%83%B4%E3%82%A1%E3%82%A4%E3%82%AA%E3%83%AC%E3%83%83%E3%83%88%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%80%80%E9%AB%AA%E5%9E%8B.7z
+[INFO] [2018-09-12 23:44:48][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/54
+[WARN] [2018-09-12 23:44:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Timed out while waiting for executor 'taskScheduler' to terminate

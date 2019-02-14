@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.devchen.spider.dal.dao.SpiderTaskDAO">
+	<resultMap id="SpiderTaskEntityResult" type="com.devchen.spider.dal.entity.SpiderTaskEntity">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="created_at" property="createdAt" jdbcType="TIMESTAMP"/>
+        <result column="created_by" property="createdBy" jdbcType="VARCHAR"/>
+        <result column="updated_at" property="updatedAt" jdbcType="TIMESTAMP"/>
+        <result column="updated_by" property="updatedBy" jdbcType="VARCHAR"/>
+        <result column="task_type" property="taskType" jdbcType="VARCHAR"/>
+        <result column="spider_id" property="spiderId" jdbcType="VARCHAR"/>
+        <result column="task_job" property="taskJob" jdbcType="VARCHAR"/>
+        <result column="task_status" property="taskStatus" jdbcType="VARCHAR"/>
+        <result column="task_time" property="taskTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+
+
+    <insert id="insertOne">
+        insert into spider_task(
+        task_type,
+        spider_id,
+        task_job,
+        task_time,
+        task_status,
+        version,
+        created_at,
+        created_by,
+        updated_at,
+        updated_by)
+        value(
+        #{spiderTask.taskType},
+        #{spiderTask.spiderId},
+        #{spiderTask.taskJob},
+        #{spiderTask.taskTime},
+        'NEW',
+        0,
+        sysdate(),
+        'spider-app',
+        sysdate(),
+        'spider-app')
+    </insert>
+
+    <update id="updateStatus">
+        update spider_task
+        set task_status= #{spiderTask.taskStatus},
+        version = version + 1,
+        updated_at = sysdate()
+        where id= #{spiderTask.id}
+        and version= #{spiderTask.version}
+    </update>
+
+    <update id="updateStatusWithoutVersion">
+        update spider_task
+        set task_status= #{spiderTask.taskStatus},
+        version = version + 1,
+        updated_at = sysdate()
+        where id= #{spiderTask.id}
+    </update>
+
+    <update id="updateUpdatedAt">
+        update spider_task
+        set updated_at = sysdate()
+        where id= #{id}
+    </update>
+
+    <select id="selectByTaskTypeAndTaskJobAndStatus" resultMap="SpiderTaskEntityResult">
+        select *
+        from spider_task
+        where
+        task_status in
+        <foreach collection="taskStatusList" index="index" item="taskStatus" open="(" separator="," close=")">
+            #{taskStatus}
+        </foreach>
+        and task_type = #{taskType}
+        and task_job = #{taskJob}
+    </select>
+
+    <select id="selectBySpiderIdAndTaskStatusAndTaskJob" resultMap="SpiderTaskEntityResult">
+        select *
+        from spider_task
+        where
+        task_status in
+        <foreach collection="taskStatusList" index="index" item="taskStatus" open="(" separator="," close=")">
+            #{taskStatus}
+        </foreach>
+        and spider_id = #{spiderId}
+        and task_job = #{taskJob}
+    </select>
+
+    <select id="selectByTaskTypeAndTaskTimeAndTaskJobAndStatusList" resultMap="SpiderTaskEntityResult">
+        select *
+        from spider_task
+        where task_type = #{taskType}
+        and task_time = #{taskTime}
+        and task_status in
+        <foreach collection="taskStatusList" index="index" item="taskStatus" open="(" separator="," close=")">
+            #{taskStatus}
+        </foreach>
+        and task_job = #{taskJob}
+    </select>
+
+    <select id="selectOneById" resultMap="SpiderTaskEntityResult">
+        select *
+        from spider_task
+        where id = #{id}
+    </select>
+
+</mapper>

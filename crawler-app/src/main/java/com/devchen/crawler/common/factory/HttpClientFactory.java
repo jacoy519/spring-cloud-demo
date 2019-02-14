@@ -41,7 +41,7 @@ public class HttpClientFactory {
     private AppProperty appProperty;
 
     @PostConstruct
-    private void init() {
+    public void init() {
         npccm = createNormalConnectionManager();
         spccm = createSocksConnectionManager();
     }
