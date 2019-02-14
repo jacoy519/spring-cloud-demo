@@ -24,6 +24,15 @@ spring:
      testOnBorrow: false
      testOnReturn: false
 
+  activemq:
+    broker-url: tcp://192.168.0.106:61616
+    in-memory: false
+    pool:
+      enabled: true
+      max-connections: 5
+      idle-timeout: 30000
+      expiry-timeout: 0
+
 flyway:
   baselineOnMigrate: true
   locations: classpath:db/migration/{vendor}
@@ -45,7 +54,7 @@ eureka:
 zimuzu:
   loginUrl: http://www.zimuzu.io/User/Login/ajaxLogin
   favUrl: http://www.zimuzu.io/user/fav
-  homeUrl: http://www.zimuzu.tv/
+  homeUrl: http://www.zimuzu.io/
   account: medivh519
   password: Qi5860Chen
   videoSaveDir: /owncloud/Video

@@ -19,7 +19,7 @@ public class GetUploadServiceTest {
     @Resource
     private PixivService pixivService;
 
-    //@Test
+    @Test
     public void test() throws Exception{
         String mainTag = "cm3d2_j";
         getUploadService.fetchAllFiles();

@@ -5,6 +5,8 @@ import com.devchen.crawler.common.Constant;
 import com.devchen.crawler.common.factory.HttpClientFactory;
 import com.devchen.crawler.common.util.HttpUtils;
 import com.devchen.crawler.getuploader.service.GetUploadService;
+import com.devchen.crawler.service.MqService;
+import com.google.gson.Gson;
 import com.netflix.discovery.provider.Serializer;
 import com.netflix.ribbon.proxy.annotation.Http;
 import org.apache.commons.codec.binary.Base64;
@@ -62,6 +64,7 @@ public class PixivService {
     @Resource
     private AppProperty appProperty;
 
+
     @PostConstruct
     public void init() throws Exception{
         File file= new File(appProperty.getPixivSaveDir());
@@ -97,7 +100,7 @@ public class PixivService {
 
     private void visitArtistWorkList(String id, String artist, CloseableHttpClient httpClient) throws Exception{
         String dirName = tryGetMainDirName(appProperty.getPixivSaveDir(), id);
-
+        Map<String, Boolean> workMap = getArtistWorkMap(httpClient, id);
         String saveRootDir = null;
         if(dirName == null) {
             saveRootDir = appProperty.getPixivSaveDir() + "/" + id + "_" +  artist;
@@ -105,11 +108,14 @@ public class PixivService {
         } else  {
             saveRootDir = appProperty.getPixivSaveDir() + "/" + dirName;
         }
-        for(int i=1;i<=30;i++) {
+        for(Map.Entry<String, Boolean> work : workMap.entrySet()) {
+            String workId = work.getKey();
+            if(work.getValue()) {
+                handleMangaPictureWork(workId, saveRootDir, httpClient);
+            } else {
 
-            String pageUrl = String.format("https://www.pixiv.net/member_illust.php?id=%s&type=all&p=%s", id, i);
-            visitArtistWorkPage(pageUrl, saveRootDir, httpClient);
-
+                handleOnePictureWork(workId, saveRootDir, httpClient);
+            }
         }
 
     }
@@ -120,14 +126,7 @@ public class PixivService {
         Matcher matcher = workPattern.matcher(html);
         while(matcher.find()) {
             try {
-                String id = matcher.group(1);
-                String result= matcher.group(0);
-                if(result.contains("page-count")) {
-                    handleMangaPictureWork(id, savePath, httpClient);
-                } else {
 
-                    handleOnePictureWork(id, savePath, httpClient);
-                }
             } catch (Exception e) {
                 logger.error(e);
             }
@@ -139,7 +138,7 @@ public class PixivService {
 
 
     private void handleOnePictureWork(String id,String savePath, CloseableHttpClient httpClient) throws Exception {
-        String refUrl =  String.format("https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=%s", id);
+        String refUrl =  String.format("http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=%s", id);
         String html = HttpUtils.getHtml(refUrl, httpClient);
         Pattern pattern = Pattern.compile("\"original\":\"([\\s\\S]*?)\"");
         Matcher matcher = pattern.matcher(html);
@@ -153,7 +152,7 @@ public class PixivService {
     }
 
     private void handleMangaPictureWork(String id, String savePath,  CloseableHttpClient httpClient) throws Exception{
-        String url =  String.format("https://www.pixiv.net/member_illust.php?mode=manga&amp;illust_id=%s", id);
+        String url =  String.format("http://www.pixiv.net/member_illust.php?mode=manga&amp;illust_id=%s", id);
         String html = HttpUtils.getHtml(url, httpClient);
         Pattern pattern1 = Pattern.compile("<section class=\"manga\">([\\s\\S]*?)</section>");
         Matcher matcher1 = pattern1.matcher(html);
@@ -162,7 +161,7 @@ public class PixivService {
             Pattern pattern2 = Pattern.compile("<div class=\"item-container\">[\\s\\S]*?href=\"([\\s\\S]*?)\"[\\s\\S]*?data-src=\"([\\s\\S]*?)\"[\\s\\S]*?</div>");
             Matcher matcher2 = pattern2.matcher(section);
             while(matcher2.find()) {
-                String refUrl = "https://www.pixiv.net" + matcher2.group(1);
+                String refUrl = "http://www.pixiv.net" + matcher2.group(1);
                 String fileUrl = matcher2.group(2);
                 downloadFile(fileUrl, savePath, httpClient, refUrl);
             }
@@ -226,7 +225,7 @@ public class PixivService {
         InetSocketAddress socksaddr = new InetSocketAddress(appProperty.getProxyIp(), appProperty.getProxySocket());
         HttpClientContext context = HttpClientContext.create();
         context.setAttribute("socks.address", socksaddr);
-        String accountUrl = "https://accounts.pixiv.net/login?lang=zh&source=pc&view_type=page&ref=wwwtop_accounts_index";
+        String accountUrl = "http://accounts.pixiv.net/login?lang=zh&source=pc&view_type=page&ref=wwwtop_accounts_index";
 
         String html = HttpUtils.getHtml(accountUrl, httpClient);
         Pattern postKeyPattern = Pattern.compile("\"pixivAccount.postKey\":\"([\\s\\S]*?)\"");
@@ -236,14 +235,14 @@ public class PixivService {
             key = postKeyMatcher.group(1);
         }
         logger.info(key);
-        String loginUrl = "https://accounts.pixiv.net/api/login?lang=zh";
+        String loginUrl = "http://accounts.pixiv.net/api/login?lang=zh";
         HttpPost loginPost = new HttpPost(loginUrl);
         List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("pixiv_id", "jacoy519"));
         params.add(new BasicNameValuePair("password", "medivh519"));
         params.add(new BasicNameValuePair("source", "pc"));
         params.add(new BasicNameValuePair("ref", "wwwtop_accounts_index"));
-        params.add(new BasicNameValuePair("return_to", "https://www.pixiv.net/"));
+        params.add(new BasicNameValuePair("return_to", "http://www.pixiv.net/"));
         params.add(new BasicNameValuePair("post_key", key));
         loginPost.setEntity(new UrlEncodedFormEntity(params));
         loginPost.setHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36");
@@ -272,7 +271,7 @@ public class PixivService {
     private Map<String, String> getArtistMap(CloseableHttpClient httpClient) throws Exception {
         Map<String, String> result = new HashMap<>();
         for(int i=1;i<=3;i++) {
-            String favUrl = "https://www.pixiv.net/bookmark.php?type=user&rest=hide&p=" + i;
+            String favUrl = "http://www.pixiv.net/bookmark.php?type=user&rest=hide&p=" + i;
             String html2 = HttpUtils.getHtml(favUrl, httpClient);
 
             Pattern favPattern = Pattern.compile("data-user_id=\"([\\s\\S]*?)\"[\\s\\S]*?data-user_name=\"([\\s\\S]*?)\"");
@@ -289,27 +288,75 @@ public class PixivService {
         return result;
     }
 
-    public static void main(String[] args) throws Exception {
-        HttpClient httpClient = new DefaultHttpClient();
-        HttpPost httpPost = new HttpPost("https://open.hscloud.cn/oauth2/oauth2/token");
-        String key="f7b38ce0-aa01-413d-96aa-bbdd4577575b";
-        String securit = "cc5e0887-7878-49eb-9a86-d163be8bcee4";
-        String value = key + ":" + securit;
+    private static Map<String ,Boolean> getArtistWorkMap(CloseableHttpClient httpClient,String artistId)throws Exception {
+        Profile profile = getProfileBody(httpClient,artistId);
+        List<String> artistWorkId = new ArrayList<>();
+        artistWorkId.addAll(profile.body.illusts.keySet());
+        artistWorkId.addAll(profile.body.manga.keySet());
+        int batch = 40;
+        int start =0;
+        int end = (start + batch) <= (artistWorkId.size()) ? (start + batch) : artistWorkId.size();
+        String mainUrl = String.format("http://www.pixiv.net/ajax/user/%s/profile/illusts?is_manga_top=0", artistId);
+        Map<String,Boolean> result = new HashMap<>();
+        while(start < artistWorkId.size()) {
+            String targetUrl = mainUrl;
+            for(int i=start ;i<end;i++) {
+                String workId = artistWorkId.get(i);
+                targetUrl = targetUrl + "&ids%5B%5D=" + workId;
+            }
+            WorkResponse workResponse = getWorkRespsone(httpClient,targetUrl);
+            for(Map.Entry<String, workProfile> entry: workResponse.body.works.entrySet()) {
+                int pageCount = entry.getValue().pageCount;
+                if(pageCount >1 ) {
+                    result.put(entry.getKey(), false);
+                } else {
+                    result.put(entry.getKey(), true);
+                }
+             }
+             start = end;
+            end = (start + batch) <= (artistWorkId.size()) ? (start + batch) : artistWorkId.size();
+        }
+        return result;
 
-        Base64 base64 = new Base64();
-        String encode = base64.encodeToString(value.getBytes());
-        encode = " Basic " + encode;
-        httpPost.addHeader("Authorization",encode);
-        httpPost.addHeader("Content-Type","application/x-www-form-urlencoded");
-        NameValuePair pai1 = new BasicNameValuePair("grant_type","client_credentials");
-        List< NameValuePair>list = new ArrayList< NameValuePair>();
-        list.add(pai1);
-        HttpEntity entity = new UrlEncodedFormEntity(list);
-        httpPost.setEntity(entity);
+    }
 
-        HttpResponse response = httpClient.execute(httpPost);
-        System.out.print(EntityUtils.toString(response.getEntity()));
+    private static WorkResponse getWorkRespsone(CloseableHttpClient httpClient, String url) throws Exception {
+        String response = HttpUtils.getHtml(url, httpClient);
+        Gson gson = new Gson();
+        return gson.fromJson(response, WorkResponse.class);
+    }
 
+
+    private static Profile getProfileBody(CloseableHttpClient httpClient,String artistId) throws Exception{
+        String allProfileUrl = String.format("http://www.pixiv.net/ajax/user/%s/profile/all", artistId);
+        String response = HttpUtils.getHtml(allProfileUrl,httpClient);
+        Gson gson = new Gson();
+        return gson.fromJson(response, Profile.class);
+    }
+
+    private class Profile {
+        private  ProfileBody body = new ProfileBody();
+    }
+
+    private class ProfileBody {
+        private Map<String,String> illusts = new HashMap<>();
+
+        private Map<String,String> manga = new HashMap<>();
+
+    }
+
+    private class WorkResponse {
+        private Work body = new Work();
+    }
+
+    private class Work {
+        Map<String, workProfile> works= new HashMap<>();
+    }
+
+    private class workProfile {
+        String id;
+        String title;
+        int pageCount;
     }
 
 

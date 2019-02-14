@@ -1,0 +1,1065 @@
+[INFO] [2018-09-04 21:37:28][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest], using SpringBootContextLoader
+[INFO] [2018-09-04 21:37:28][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-09-04 21:37:28][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: ZimuzuServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-09-04 21:37:29][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest
+[INFO] [2018-09-04 21:37:29][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-09-04 21:37:29][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@525b461a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@58c1c010, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@b7f23d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61d47554, org.springframework.test.context.transaction.TransactionalTestExecutionListener@69b794e2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f200884, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4d339552, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f0f2775, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a4aa2f2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6591f517, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@345965f2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@429bd883]
+[INFO] [2018-09-04 21:37:30][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf: startup date [Tue Sep 04 21:37:30 CST 2018]; root of context hierarchy
+[INFO] [2018-09-04 21:37:31][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-04 21:37:31][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-04 21:37:31][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba071140] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-04 21:37:33][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-04 21:37:33][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-04 21:37:33][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]The following profiles are active: dev
+[INFO] [2018-09-04 21:37:33][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@332a7fce: startup date [Tue Sep 04 21:37:33 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf
+[WARN] [2018-09-04 21:37:34][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-09-04 21:37:35][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=d13a4f4b-07ba-3618-8535-5c34f5f2d3d9
+[INFO] [2018-09-04 21:37:35][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-04 21:37:35][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba071140] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-04 21:37:35][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ded0e43] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-04 21:37:36][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2018-09-04 21:37:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@332a7fce: startup date [Tue Sep 04 21:37:33 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf
+[INFO] [2018-09-04 21:37:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-04 21:37:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-04 21:37:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-04 21:37:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-04 21:37:37][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-04 21:37:39][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-04 21:37:39][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-09-04 21:37:39][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-04 21:37:39][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-09-04 21:37:39][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-09-04 21:37:39][com.devchen.crawler.getuploader.service.GetUploadService]start to fetch file
+[INFO] [2018-09-04 21:37:39][com.devchen.crawler.pixiv.service.PixivService]start visit pixiv
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]Started ZimuzuServiceTest in 10.385 seconds (JVM running for 12.919)
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/1/date/desc
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.zimuzu.service.ZimuzuService]{"status":1,"info":"\u767b\u5f55\u6210\u529f\uff01","data":{"url_back":"http:\/\/www.zimuzu.tv\/"}}
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.zimuzu.service.ZimuzuService]{"status":1,"info":"\u767b\u5f55\u6210\u529f\uff01","data":{"url_back":"http:\/\/www.zimuzu.tv\/"}}
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 39
+[INFO] [2018-09-04 21:37:40][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fe8f5e8: startup date [Tue Sep 04 21:37:40 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@332a7fce
+[INFO] [2018-09-04 21:37:40][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 39
+[INFO] [2018-09-04 21:37:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-04 21:37:41][com.netflix.config.ChainedDynamicProperty]Flipping property: FILE-APP.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO] [2018-09-04 21:37:41][com.netflix.util.concurrent.ShutdownEnabledTimer]Shutdown hook installed for: NFLoadBalancer-PingTimer-FILE-APP
+[INFO] [2018-09-04 21:37:41][com.netflix.loadbalancer.BaseLoadBalancer]Client:FILE-APP instantiated a LoadBalancer:DynamicServerListLoadBalancer:{NFLoadBalancer:name=FILE-APP,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[INFO] [2018-09-04 21:37:41][com.netflix.loadbalancer.DynamicServerListLoadBalancer]Using serverListUpdater PollingServerListUpdater
+[INFO] [2018-09-04 21:37:41][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-09-04 21:37:41][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-09-04 21:37:41][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-09-04 21:37:41][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-09-04 21:37:41][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-09-04 21:37:42][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1536068262539 with initial instances count: 2
+[INFO] [2018-09-04 21:37:42][com.netflix.config.ChainedDynamicProperty]Flipping property: FILE-APP.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO] [2018-09-04 21:37:42][com.netflix.loadbalancer.DynamicServerListLoadBalancer]DynamicServerListLoadBalancer for client FILE-APP initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=FILE-APP,current list of Servers=[192.168.0.106:10401],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.0.106:10401;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2d38db6f
+[INFO] [2018-09-04 21:37:43][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/1
+[INFO] [2018-09-04 21:37:43][com.devchen.crawler.pixiv.service.PixivService]d14fe0eb3de3fdefcffbbde2c46a4239
+[INFO] [2018-09-04 21:37:43][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/2
+[INFO] [2018-09-04 21:37:44][com.devchen.crawler.pixiv.service.PixivService]{"error":false,"message":"","body":{"success":{"return_to":"https:\/\/www.pixiv.net\/"}}}
+[INFO] [2018-09-04 21:37:44][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/3
+[ERROR] [2018-09-04 21:37:45][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch fav list error
+org.springframework.web.client.HttpServerErrorException: 500 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:566)
+	at com.devchen.crawler.remote.service.FileAppRemoteService.submitMagnetDownLoadTaskWithFileName(FileAppRemoteService.java:41)
+	at com.devchen.crawler.zimuzu.service.ZimuzuService.fetchFavList(ZimuzuService.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] [2018-09-04 21:37:45][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4729544 name:黒崎 百利
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4729544 name:黒崎 百利
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:12947327 name:招
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:12947327 name:招
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:333556 name:Bison倉鼠
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:333556 name:Bison倉鼠
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2683956 name:水原優　FANBOX始めました
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2683956 name:水原優　FANBOX始めました
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:432332 name:羽霜ゆき
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:432332 name:羽霜ゆき
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1547390 name:琥珀銀
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1547390 name:琥珀銀
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:551699 name:蒼都かりん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:551699 name:蒼都かりん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2684135 name:七瀬瑞穂
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2684135 name:七瀬瑞穂
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:170464 name:しまじ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:170464 name:しまじ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:18095070 name:karory
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:18095070 name:karory
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:18158 name:呉マサヒロ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:18158 name:呉マサヒロ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1137649 name:ものと@1日目シ61b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1137649 name:ものと@1日目シ61b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:172088 name:犬江しんすけ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:172088 name:犬江しんすけ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:15282135 name:GG-e
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:15282135 name:GG-e
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2306287 name:Dκ. Senie
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2306287 name:Dκ. Senie
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:132878 name:梟森✧日曜日キ０１a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:132878 name:梟森✧日曜日キ０１a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3015512 name:MANA
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3015512 name:MANA
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:114848 name:sogaya
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:114848 name:sogaya
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2376032 name:珠乃なえ＠例大祭な15ｂ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2376032 name:珠乃なえ＠例大祭な15ｂ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1119201 name:比村奇石
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1119201 name:比村奇石
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:10600906 name:かるたも@3日目東シ-54a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:10600906 name:かるたも@3日目東シ-54a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:456306 name:晃田ヒカC94(金)東C26b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:456306 name:晃田ヒカC94(金)東C26b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:256946 name:武田弘光
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:256946 name:武田弘光
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:244908 name:蒼津ウミヒト
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:244908 name:蒼津ウミヒト
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:236592 name:さき千鈴
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:236592 name:さき千鈴
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:247125 name:KOU∞
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:247125 name:KOU∞
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:415059 name:しぐにゃん｜3日目セ09b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:415059 name:しぐにゃん｜3日目セ09b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1144585 name:みかん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1144585 name:みかん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2761932 name:（引退）LapisLazuli
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2761932 name:（引退）LapisLazuli
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:427676 name:フエタキシ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:427676 name:フエタキシ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:690092 name:タケユウ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:690092 name:タケユウ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:5287 name:かぐゆづ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:5287 name:かぐゆづ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:519963 name:柊はじめ@コミ1「15a」
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:519963 name:柊はじめ@コミ1「15a」
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4213162 name:三日目東オ16b ShiBi
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4213162 name:三日目東オ16b ShiBi
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:184199 name:てんけん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:184199 name:てんけん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:163113 name:おたべさくら
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:163113 name:おたべさくら
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:749619 name:一宮@3日目G-31b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:749619 name:一宮@3日目G-31b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:11207 name:淡夢＠C94 3日目東コ43b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:11207 name:淡夢＠C94 3日目東コ43b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4856899 name:掃除朋具
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4856899 name:掃除朋具
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:578571 name:アルデヒド
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:578571 name:アルデヒド
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:9002 name:ぜっきょ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:9002 name:ぜっきょ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:6728005 name:にゅうたいぷ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:6728005 name:にゅうたいぷ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:266769 name:白河子@コミトレ4号館ア26b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:266769 name:白河子@コミトレ4号館ア26b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:12666275 name:てんぴぼし
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:12666275 name:てんぴぼし
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:809099 name:うまくち醤油
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:809099 name:うまくち醤油
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2869005 name:朝峰テルc94三日目チ-53b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2869005 name:朝峰テルc94三日目チ-53b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1386632 name:みかみん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1386632 name:みかみん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3091818 name:セリカ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3091818 name:セリカ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:7444 name:銀一
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:7444 name:銀一
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:979621 name:守月史貴＠こみトレ キ17ab
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:979621 name:守月史貴＠こみトレ キ17ab
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3881 name:なかじまゆか
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3881 name:なかじまゆか
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1582051 name:tatapopo＠お仕事募集中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1582051 name:tatapopo＠お仕事募集中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:30174 name:ななろば華
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:30174 name:ななろば華
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:275527 name:結城リカ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:275527 name:結城リカ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:484160 name:橘由宇
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:484160 name:橘由宇
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1016682 name:おると
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1016682 name:おると
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:16026 name:つかこ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:16026 name:つかこ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:10948563 name:黒川いづみ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:10948563 name:黒川いづみ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:14840269 name:Twiska
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:14840269 name:Twiska
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2973809 name:ねこねここねこ（二見パラン）
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2973809 name:ねこねここねこ（二見パラン）
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:71634 name:藤ます
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:71634 name:藤ます
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4338012 name:hews
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4338012 name:hews
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:660275 name:O.N@C94金曜東Ｃ60ｂ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:660275 name:O.N@C94金曜東Ｃ60ｂ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:63652 name:中乃空@C94三日目東C29a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:63652 name:中乃空@C94三日目東C29a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3016 name:小林ちさと■コミケお疲れ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3016 name:小林ちさと■コミケお疲れ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:17019837 name:玉砂糖@新刊委託中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:17019837 name:玉砂糖@新刊委託中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:416263 name:やんよ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:416263 name:やんよ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:524329 name:すてりい/3日目東M-33b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:524329 name:すてりい/3日目東M-33b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:256 name:武田あらのぶ@コミケ日セ22a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:256 name:武田あらのぶ@コミケ日セ22a
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:264932 name:TwinBox
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:264932 name:TwinBox
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:464525 name:一葉モカ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:464525 name:一葉モカ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4757193 name:ひなづか 凉@お仕事募集中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:4757193 name:ひなづか 凉@お仕事募集中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:258003 name:Xin&amp;obiwan
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:258003 name:Xin&amp;obiwan
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2696273 name:ゆらん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2696273 name:ゆらん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:292644 name:えふぇ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:292644 name:えふぇ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1601715 name:M.vv
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1601715 name:M.vv
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:7356311 name:けけもつ＠C94新刊委託中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:7356311 name:けけもつ＠C94新刊委託中
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3066815 name:もねてぃ◎9/23諏訪神秋祭
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:3066815 name:もねてぃ◎9/23諏訪神秋祭
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:912652 name:西條サトル
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:912652 name:西條サトル
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1031224 name:天凪
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1031224 name:天凪
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:551282 name:みけおう
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:551282 name:みけおう
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:316240 name:もとみやみつき
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:316240 name:もとみやみつき
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:24392 name:おりょう
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:24392 name:おりょう
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2473967 name:あゆま紗由
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2473967 name:あゆま紗由
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:204506 name:にの子
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:204506 name:にの子
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:9343974 name:富士やま
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:9343974 name:富士やま
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:538551 name:黒井弘騎
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:538551 name:黒井弘騎
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:226272 name:三色網戸。
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:226272 name:三色網戸。
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:19949745 name:過ぎた卵白
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:19949745 name:過ぎた卵白
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:15305293 name:ましゅー
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:15305293 name:ましゅー
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:12088 name:丸和太郎
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:12088 name:丸和太郎
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1305983 name:kanata
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:1305983 name:kanata
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:871625 name:lambda
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:871625 name:lambda
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:6751 name:RYO@わんわん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:6751 name:RYO@わんわん
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2379837 name:みじんこ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:2379837 name:みじんこ
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:194231 name:にろ・3日目Ａ82b
+[INFO] [2018-09-04 21:37:46][com.devchen.crawler.pixiv.service.PixivService]find id:194231 name:にろ・3日目Ａ82b
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:920720 name:しおこんぶ
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:920720 name:しおこんぶ
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:4361214 name:千羅万象
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:4361214 name:千羅万象
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:1864423 name:魔太郎
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:1864423 name:魔太郎
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:961772 name:水無
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:961772 name:水無
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:641955 name:horosuke＠仕事募集中
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:641955 name:horosuke＠仕事募集中
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:4872213 name:N.G.
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:4872213 name:N.G.
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:9565067 name:僵僵僵酱
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:9565067 name:僵僵僵酱
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:490219 name:Hiten
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:490219 name:Hiten
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:117402 name:momi（もみ）
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:117402 name:momi（もみ）
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:197076 name:ぴょん吉
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:197076 name:ぴょん吉
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:2323358 name:きくらげ＠きくらげ屋
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:2323358 name:きくらげ＠きくらげ屋
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:7059005 name:逆流茶会
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:7059005 name:逆流茶会
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:190454 name:v-mag
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:190454 name:v-mag
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:68791 name:天路あや@3日目東L-23a
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:68791 name:天路あや@3日目東L-23a
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:711526 name:ダイアル(片織トケイ）
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:711526 name:ダイアル(片織トケイ）
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:2267440 name:空維深夜
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:2267440 name:空維深夜
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:3210645 name:秋蕎麦
+[INFO] [2018-09-04 21:37:47][com.devchen.crawler.pixiv.service.PixivService]find id:3210645 name:秋蕎麦
+[INFO] [2018-09-04 21:37:49][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/70480267_p0.png
+[INFO] [2018-09-04 21:37:49][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/70480267_p0.png, the file has exist
+[INFO] [2018-09-04 21:37:49][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/70433767_p0.png
+[INFO] [2018-09-04 21:37:49][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/70433767_p0.png, the file has exist
+[INFO] [2018-09-04 21:37:50][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/70367806_p0.png
+[INFO] [2018-09-04 21:37:50][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/70367806_p0.png, the file has exist
+[ERROR] [2018-09-04 21:37:50][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch fav list error
+org.springframework.web.client.HttpServerErrorException: 500 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:88)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:707)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:566)
+	at com.devchen.crawler.remote.service.FileAppRemoteService.submitMagnetDownLoadTaskWithFileName(FileAppRemoteService.java:41)
+	at com.devchen.crawler.zimuzu.service.ZimuzuService.fetchFavList(ZimuzuService.java:67)
+	at com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest.test(ZimuzuServiceTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+[INFO] [2018-09-04 21:37:50][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2018-09-04 21:37:50][com.netflix.loadbalancer.PollingServerListUpdater]Shutting down the Executor Pool for PollingServerListUpdater
+[INFO] [2018-09-04 21:37:50][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@332a7fce: startup date [Tue Sep 04 21:37:33 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf
+[INFO] [2018-09-04 21:37:50][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[WARN] [2018-09-04 21:37:50][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1536068270964, current=DOWN, previous=STARTING]
+[INFO] [2018-09-04 21:37:50][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-09-04 21:37:50][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1: registering service...
+[INFO] [2018-09-04 21:37:50][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-09-04 21:37:51][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - registration status: 204
+[INFO] [2018-09-04 21:37:51][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2018-09-04 21:37:51][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-09-04 21:37:51][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-09-04 21:37:51][org.springframework.context.annotation.AnnotationConfigApplicationContext]Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fe8f5e8: startup date [Tue Sep 04 21:37:40 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@332a7fce
+[INFO] [2018-09-04 21:37:51][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2018-09-04 21:37:51][com.netflix.util.concurrent.ShutdownEnabledTimer]Shutdown hook removed for: NFLoadBalancer-PingTimer-FILE-APP
+[INFO] [2018-09-04 21:37:51][com.netflix.util.concurrent.ShutdownEnabledTimer]Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:614)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:886)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:364)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:287)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1032)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1008)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:70)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1032)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1008)
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929)
+[INFO] [2018-09-04 21:37:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-09-04 21:37:51][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/70252940_p0.png
+[INFO] [2018-09-04 21:37:51][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/70252940_p0.png, the file has exist
+[INFO] [2018-09-04 21:37:52][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/70110256_p0.jpg
+[INFO] [2018-09-04 21:37:52][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/70110256_p0.jpg, the file has exist
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/70004687_p0_master1200.jpg
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/70004687_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/70004687_p1_master1200.jpg
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/70004687_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p0_master1200.jpg
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p1_master1200.jpg
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p2_master1200.jpg
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p3_master1200.jpg
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p4_master1200.jpg
+[INFO] [2018-09-04 21:37:53][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69905680_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p0_master1200.jpg
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p1_master1200.jpg
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p2_master1200.jpg
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p3_master1200.jpg
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p4_master1200.jpg
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p5_master1200.jpg
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p6_master1200.jpg
+[INFO] [2018-09-04 21:37:54][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/69888638_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:55][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68429190_p0.png
+[INFO] [2018-09-04 21:37:55][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68429190_p0.png, the file has exist
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68407243_p0.jpg
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68407243_p0.jpg, the file has exist
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.getuploader.service.GetUploadService]download もみあげを垂らさない前髪.zip in /root/getuploader/tokinagare/もみあげを垂らさない前髪.zip from http://dl1.getuploader.com/g/5b8e8aa9-5c88-4579-ae41-5093a010e467/tokinagare/3/%E3%82%82%E3%81%BF%E3%81%82%E3%81%92%E3%82%92%E5%9E%82%E3%82%89%E3%81%95%E3%81%AA%E3%81%84%E5%89%8D%E9%AB%AA.zip
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/4
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p0_master1200.jpg
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p1_master1200.jpg
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p2_master1200.jpg
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p3_master1200.jpg
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p4_master1200.jpg
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p5_master1200.jpg
+[INFO] [2018-09-04 21:37:56][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/68322656_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:57][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66451024_p0.png
+[INFO] [2018-09-04 21:37:57][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66451024_p0.png, the file has exist
+[INFO] [2018-09-04 21:37:58][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66398184_p0.jpg
+[INFO] [2018-09-04 21:37:58][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66398184_p0.jpg, the file has exist
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p0_master1200.jpg
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p1_master1200.jpg
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p2_master1200.jpg
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p3_master1200.jpg
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p4_master1200.jpg
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p5_master1200.jpg
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/66318729_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64276102_p0.png
+[INFO] [2018-09-04 21:37:59][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64276102_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:00][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64244738_p0.png
+[INFO] [2018-09-04 21:38:00][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64244738_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64117528_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p7_master1200.jpg
+[INFO] [2018-09-04 21:38:01][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64099180_p7_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:02][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/64018713_p0.png
+[INFO] [2018-09-04 21:38:02][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/64018713_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:03][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/63546265_p0.png
+[INFO] [2018-09-04 21:38:03][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/63546265_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:04][com.devchen.crawler.getuploader.service.GetUploadService]download 編み込みカチューシャ2.zip in /root/getuploader/tokinagare/編み込みカチューシャ2.zip from http://dl1.getuploader.com/g/5b8e8ab5-b300-467c-aa12-5055a010e467/tokinagare/4/%E7%B7%A8%E3%81%BF%E8%BE%BC%E3%81%BF%E3%82%AB%E3%83%81%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A32.zip
+[INFO] [2018-09-04 21:38:04][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/5
+[INFO] [2018-09-04 21:38:04][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/63227858_p0.png
+[INFO] [2018-09-04 21:38:04][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/63227858_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:05][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62590254_p0.png
+[INFO] [2018-09-04 21:38:05][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62590254_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:06][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62564331_p0.png
+[INFO] [2018-09-04 21:38:06][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62564331_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/62512083_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:07][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61524603_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:08][com.devchen.crawler.getuploader.service.GetUploadService]download 和風セミロング.zip in /root/getuploader/tokinagare/和風セミロング.zip from http://dl1.getuploader.com/g/5b8e8abc-71b4-4eee-8acc-5074a010e467/tokinagare/5/%E5%92%8C%E9%A2%A8%E3%82%BB%E3%83%9F%E3%83%AD%E3%83%B3%E3%82%B0.zip
+[INFO] [2018-09-04 21:38:08][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/6
+[INFO] [2018-09-04 21:38:08][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61303299_p0.png
+[INFO] [2018-09-04 21:38:08][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61303299_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:09][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61183994_p0.png
+[INFO] [2018-09-04 21:38:09][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61183994_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:10][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/61111996_p0.png
+[INFO] [2018-09-04 21:38:10][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/61111996_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:10][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60960223_p0.png
+[INFO] [2018-09-04 21:38:10][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60960223_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:11][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60865554_p0.png
+[INFO] [2018-09-04 21:38:11][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60865554_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:12][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60774578_p0.png
+[INFO] [2018-09-04 21:38:12][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60774578_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:12][com.devchen.crawler.getuploader.service.GetUploadService]download M字バング.zip in /root/getuploader/tokinagare/M字バング.zip from http://dl1.getuploader.com/g/5b8e8ac1-4420-4059-ae73-50b2a010e467/tokinagare/6/M%E5%AD%97%E3%83%90%E3%83%B3%E3%82%B0.zip
+[INFO] [2018-09-04 21:38:12][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/7
+[INFO] [2018-09-04 21:38:13][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60755072_p0.png
+[INFO] [2018-09-04 21:38:13][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60755072_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:14][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60552247_p0.png
+[INFO] [2018-09-04 21:38:14][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60552247_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:14][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60512085_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:14][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60512085_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:14][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60512085_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:14][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60512085_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p7_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p7_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p8_master1200.jpg
+[INFO] [2018-09-04 21:38:15][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/60401221_p8_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:16][com.devchen.crawler.getuploader.service.GetUploadService]download M字バング2.zip in /root/getuploader/tokinagare/M字バング2.zip from http://dl1.getuploader.com/g/5b8e8ac5-be50-4066-abf1-504fa010e467/tokinagare/7/M%E5%AD%97%E3%83%90%E3%83%B3%E3%82%B02.zip
+[INFO] [2018-09-04 21:38:16][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/8
+[INFO] [2018-09-04 21:38:16][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58318891_p0.png
+[INFO] [2018-09-04 21:38:16][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58318891_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58269851_p0.png
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58269851_p0.png, the file has exist
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:17][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58186880_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p7_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p7_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p8_master1200.jpg
+[INFO] [2018-09-04 21:38:18][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/58165878_p8_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:19][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/57555609_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:20][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56963538_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p0_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p1_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p2_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p3_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p4_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p5_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p6_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p7_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p7_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p8_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p8_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p9_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]cancel download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p9_master1200.jpg, the file has exist
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56704395_p10_master1200.jpg
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.getuploader.service.GetUploadService]download シンプルショート切り揃え.zip in /root/getuploader/tokinagare/シンプルショート切り揃え.zip from http://dl1.getuploader.com/g/5b8e8ac8-0188-43e6-9dd7-507ba010e467/tokinagare/8/%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E5%88%87%E3%82%8A%E6%8F%83%E3%81%88.zip
+[INFO] [2018-09-04 21:38:21][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/9
+[INFO] [2018-09-04 21:38:25][com.devchen.crawler.getuploader.service.GetUploadService]download サラツヤなサイドヘアー.zip in /root/getuploader/tokinagare/サラツヤなサイドヘアー.zip from http://dl1.getuploader.com/g/5b8e8ace-7a54-4aae-b356-508ea010e467/tokinagare/9/%E3%82%B5%E3%83%A9%E3%83%84%E3%83%A4%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%89%E3%83%98%E3%82%A2%E3%83%BC.zip
+[INFO] [2018-09-04 21:38:25][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/10
+[INFO] [2018-09-04 21:38:26][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56551606_p0.png
+[INFO] [2018-09-04 21:38:31][com.devchen.crawler.getuploader.service.GetUploadService]download ミディアムレイヤーふんわり.zip in /root/getuploader/tokinagare/ミディアムレイヤーふんわり.zip from http://dl1.getuploader.com/g/5b8e8ad2-325c-47e2-9399-5067a010e467/tokinagare/10/%E3%83%9F%E3%83%87%E3%82%A3%E3%82%A2%E3%83%A0%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%B5%E3%82%93%E3%82%8F%E3%82%8A.zip
+[INFO] [2018-09-04 21:38:31][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/11
+[INFO] [2018-09-04 21:38:33][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56474329_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:35][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56474329_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:36][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56474329_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:36][com.devchen.crawler.getuploader.service.GetUploadService]download フルシェード横髪.zip in /root/getuploader/tokinagare/フルシェード横髪.zip from http://dl1.getuploader.com/g/5b8e8ad8-2990-4844-8fd9-50a2a010e467/tokinagare/11/%E3%83%95%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%89%E6%A8%AA%E9%AB%AA.zip
+[INFO] [2018-09-04 21:38:36][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/13
+[INFO] [2018-09-04 21:38:36][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56474329_p3_master1200.jpg
+[INFO] [2018-09-04 21:38:37][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56474329_p4_master1200.jpg
+[INFO] [2018-09-04 21:38:38][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56474329_p5_master1200.jpg
+[INFO] [2018-09-04 21:38:39][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56474329_p6_master1200.jpg
+[INFO] [2018-09-04 21:38:40][com.devchen.crawler.getuploader.service.GetUploadService]download ふんわりセンター分けショート.zip in /root/getuploader/tokinagare/ふんわりセンター分けショート.zip from http://dl1.getuploader.com/g/5b8e8add-f310-4627-9bbe-50b1a010e467/tokinagare/13/%E3%81%B5%E3%82%93%E3%82%8F%E3%82%8A%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E5%88%86%E3%81%91%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88.zip
+[INFO] [2018-09-04 21:38:40][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/14
+[INFO] [2018-09-04 21:38:41][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/56446085_p0.png
+[INFO] [2018-09-04 21:38:43][com.devchen.crawler.common.factory.HttpClientFactory][NoHttpResponseException has retry request:org.apache.http.client.protocol.HttpClientContext@45ecda18][executionCount:1]
+[INFO] [2018-09-04 21:38:43][org.apache.http.impl.execchain.RetryExec]I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://www.pixiv.net:443: The target server failed to respond
+[INFO] [2018-09-04 21:38:43][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-09-04 21:38:45][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55496706_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:47][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55496706_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:48][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55496706_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:49][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55496706_p3_master1200.jpg
+[WARN] [2018-09-04 21:38:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Timed out while waiting for executor 'taskScheduler' to terminate
+[INFO] [2018-09-04 21:38:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-09-04 21:38:51][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55467852_p0.png
+[INFO] [2018-09-04 21:38:53][com.devchen.crawler.common.factory.HttpClientFactory][NoHttpResponseException has retry request:org.apache.http.client.protocol.HttpClientContext@58229193][executionCount:1]
+[INFO] [2018-09-04 21:38:53][org.apache.http.impl.execchain.RetryExec]I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://www.pixiv.net:443: The target server failed to respond
+[INFO] [2018-09-04 21:38:53][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-09-04 21:38:55][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55388193_p0_master1200.jpg
+[INFO] [2018-09-04 21:38:56][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55388193_p1_master1200.jpg
+[INFO] [2018-09-04 21:38:57][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55388193_p2_master1200.jpg
+[INFO] [2018-09-04 21:38:58][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55388193_p3_master1200.jpg
+[INFO] [2018-09-04 21:39:00][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55201475_p0.png
+[INFO] [2018-09-04 21:39:02][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55095153_p0_master1200.jpg
+[INFO] [2018-09-04 21:39:03][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55095153_p1_master1200.jpg
+[INFO] [2018-09-04 21:39:04][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/55095153_p2_master1200.jpg
+[INFO] [2018-09-04 21:39:07][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54984389_p0.jpg
+[INFO] [2018-09-04 21:39:09][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54866493_p0.jpg
+[INFO] [2018-09-04 21:39:12][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54847700_p0.jpg
+[INFO] [2018-09-04 21:39:14][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54800299_p0.jpg
+[INFO] [2018-09-04 21:39:19][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54781967_p0_master1200.jpg
+[INFO] [2018-09-04 21:39:20][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54781967_p1_master1200.jpg
+[INFO] [2018-09-04 21:39:23][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54742050_p0.jpg
+[INFO] [2018-09-04 21:39:25][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54727763_p0.jpg
+[INFO] [2018-09-04 21:39:28][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54674027_p0.jpg
+[INFO] [2018-09-04 21:39:30][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54619263_p0.jpg
+[INFO] [2018-09-04 21:39:32][com.devchen.crawler.common.factory.HttpClientFactory][NoHttpResponseException has retry request:org.apache.http.client.protocol.HttpClientContext@49dbbb15][executionCount:1]
+[INFO] [2018-09-04 21:39:32][org.apache.http.impl.execchain.RetryExec]I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://www.pixiv.net:443: The target server failed to respond
+[INFO] [2018-09-04 21:39:32][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-09-04 21:39:34][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54596817_p0_master1200.jpg
+[INFO] [2018-09-04 21:39:36][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54596817_p1_master1200.jpg
+[INFO] [2018-09-04 21:39:39][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54554296_p0_master1200.jpg
+[INFO] [2018-09-04 21:39:40][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54554296_p1_master1200.jpg
+[INFO] [2018-09-04 21:39:41][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54554296_p2_master1200.jpg
+[INFO] [2018-09-04 21:39:44][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54504396_p0.jpg
+[INFO] [2018-09-04 21:39:48][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54485338_p0.jpg
+[INFO] [2018-09-04 21:39:50][com.devchen.crawler.pixiv.service.PixivService]download /root/pixiv/690092_タケユウ@三日目コ-33b/54260485_p0.jpg
+[WARN] [2018-09-04 21:39:51][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Timed out while waiting for executor 'taskScheduler' to terminate
+[INFO] [2018-09-04 23:14:53][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest], using SpringBootContextLoader
+[INFO] [2018-09-04 23:14:53][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2018-09-04 23:14:53][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: ZimuzuServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2018-09-04 23:14:54][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest
+[INFO] [2018-09-04 23:14:54][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2018-09-04 23:14:54][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6da21078, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7fee8714, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4229bb3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56cdfb3b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2b91004a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@20ccf40b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2fb3536e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@169e6180, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@35aea049, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7205765b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@47987356, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@22ef9844]
+[INFO] [2018-09-04 23:14:55][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@52066604: startup date [Tue Sep 04 23:14:55 CST 2018]; root of context hierarchy
+[INFO] [2018-09-04 23:14:55][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2018-09-04 23:14:56][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-04 23:14:56][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ab22f053] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-04 23:14:57][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2018-09-04 23:14:57][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2018-09-04 23:14:57][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]The following profiles are active: dev
+[INFO] [2018-09-04 23:14:57][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@234a8f27: startup date [Tue Sep 04 23:14:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@52066604
+[WARN] [2018-09-04 23:14:58][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2018-09-04 23:14:59][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=d13a4f4b-07ba-3618-8535-5c34f5f2d3d9
+[INFO] [2018-09-04 23:14:59][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-04 23:14:59][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ab22f053] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-04 23:14:59][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f08ed56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2018-09-04 23:15:01][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2018-09-04 23:15:03][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@234a8f27: startup date [Tue Sep 04 23:14:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@52066604
+[INFO] [2018-09-04 23:15:03][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2018-09-04 23:15:03][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2018-09-04 23:15:03][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-04 23:15:03][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2018-09-04 23:15:03][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2018-09-04 23:15:05][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-04 23:15:05][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2018-09-04 23:15:05][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2018-09-04 23:15:05][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2018-09-04 23:15:05][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2018-09-04 23:15:05][com.devchen.crawler.getuploader.service.GetUploadService]start to fetch file
+[INFO] [2018-09-04 23:15:05][com.devchen.crawler.pixiv.service.PixivService]start visit pixiv
+[INFO] [2018-09-04 23:15:05][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2018-09-04 23:15:05][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]Started ZimuzuServiceTest in 11.197 seconds (JVM running for 15.013)
+[INFO] [2018-09-04 23:15:06][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/1/date/desc
+[INFO] [2018-09-04 23:15:06][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2018-09-04 23:15:06][com.devchen.crawler.zimuzu.service.ZimuzuService]{"status":1,"info":"\u767b\u5f55\u6210\u529f\uff01","data":{"url_back":"http:\/\/www.zimuzu.tv\/"}}
+[INFO] [2018-09-04 23:15:17][com.devchen.crawler.zimuzu.service.ZimuzuService]{"status":1,"info":"\u767b\u5f55\u6210\u529f\uff01","data":{"url_back":"http:\/\/www.zimuzu.tv\/"}}
+[INFO] [2018-09-04 23:15:26][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 40
+[INFO] [2018-09-04 23:15:26][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@17ae13d5: startup date [Tue Sep 04 23:15:26 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@234a8f27
+[INFO] [2018-09-04 23:16:25][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 40
+[INFO] [2018-09-04 23:16:25][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[ERROR] [2018-09-04 23:16:25][com.devchen.crawler.getuploader.service.GetUploadService]javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+[INFO] [2018-09-04 23:16:25][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/date/desc/1
+[INFO] [2018-09-04 23:16:25][com.devchen.crawler.pixiv.service.PixivService]error
+javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1002)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.devchen.crawler.common.util.HttpUtils.getHtml(HttpUtils.java:26)
+	at com.devchen.crawler.pixiv.service.PixivService.loginPixiv(PixivService.java:231)
+	at com.devchen.crawler.pixiv.service.PixivService.visitPixiv(PixivService.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983)
+	... 32 more
+[INFO] [2018-09-04 23:16:25][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@234a8f27: startup date [Tue Sep 04 23:14:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@52066604
+[INFO] [2018-09-04 23:16:25][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2018-09-04 23:16:25][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2018-09-04 23:16:25][com.netflix.config.ChainedDynamicProperty]Flipping property: FILE-APP.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO] [2018-09-04 23:16:25][com.netflix.util.concurrent.ShutdownEnabledTimer]Shutdown hook installed for: NFLoadBalancer-PingTimer-FILE-APP
+[WARN] [2018-09-04 23:16:25][org.springframework.context.annotation.AnnotationConfigApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ribbonLoadBalancingHttpClient' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$HttpClientRibbonConfiguration: Unsatisfied dependency expressed through method 'ribbonLoadBalancingHttpClient' parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+[INFO] [2018-09-04 23:16:25][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51bbbe3a: startup date [Tue Sep 04 23:16:25 CST 2018]; parent: org.springframework.web.context.support.GenericWebApplicationContext@234a8f27
+[ERROR] [2018-09-04 23:16:25][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch fav list error
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ribbonLoadBalancingHttpClient' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$HttpClientRibbonConfiguration: Unsatisfied dependency expressed through method 'ribbonLoadBalancingHttpClient' parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.cloud.context.named.NamedContextFactory.createContext(NamedContextFactory.java:110)
+	at org.springframework.cloud.context.named.NamedContextFactory.getContext(NamedContextFactory.java:79)
+	at org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:115)
+	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getInstance(SpringClientFactory.java:111)
+	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getLoadBalancer(SpringClientFactory.java:57)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.getLoadBalancer(RibbonLoadBalancerClient.java:141)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.execute(RibbonLoadBalancerClient.java:72)
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:659)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:566)
+	at com.devchen.crawler.remote.service.FileAppRemoteService.submitMagnetDownLoadTaskWithFileName(FileAppRemoteService.java:41)
+	at com.devchen.crawler.zimuzu.service.ZimuzuService.fetchFavList(ZimuzuService.java:67)
+	at com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest.test(ZimuzuServiceTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 58 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 71 more
+Caused by: java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.<init>(ShutdownEnabledTimer.java:60)
+	at com.netflix.loadbalancer.BaseLoadBalancer.setupPingTask(BaseLoadBalancer.java:257)
+	at com.netflix.loadbalancer.BaseLoadBalancer.setPing(BaseLoadBalancer.java:360)
+	at com.netflix.loadbalancer.BaseLoadBalancer.initWithConfig(BaseLoadBalancer.java:179)
+	at com.netflix.loadbalancer.BaseLoadBalancer.<init>(BaseLoadBalancer.java:156)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.<init>(DynamicServerListLoadBalancer.java:88)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.<init>(DynamicServerListLoadBalancer.java:75)
+	at com.netflix.loadbalancer.ZoneAwareLoadBalancer.<init>(ZoneAwareLoadBalancer.java:76)
+	at com.netflix.loadbalancer.LoadBalancerBuilder.buildDynamicServerListLoadBalancer(LoadBalancerBuilder.java:102)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration.ribbonLoadBalancer(RibbonClientConfiguration.java:240)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$6aba1194.CGLIB$ribbonLoadBalancer$6(<generated>)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$6aba1194$$FastClassBySpringCGLIB$$ad175d45.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$6aba1194.ribbonLoadBalancer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 72 more
+[INFO] [2018-09-04 23:16:25][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2018-09-04 23:16:25][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2018-09-04 23:16:25][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2018-09-04 23:16:25][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2018-09-04 23:16:26][com.netflix.config.ChainedDynamicProperty]Flipping property: FILE-APP.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO] [2018-09-04 23:16:26][com.netflix.util.concurrent.ShutdownEnabledTimer]Shutdown hook installed for: NFLoadBalancer-PingTimer-FILE-APP
+[WARN] [2018-09-04 23:16:26][org.springframework.context.annotation.AnnotationConfigApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ribbonLoadBalancingHttpClient' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$HttpClientRibbonConfiguration: Unsatisfied dependency expressed through method 'ribbonLoadBalancingHttpClient' parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+[ERROR] [2018-09-04 23:16:26][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch fav list error
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ribbonLoadBalancingHttpClient' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$HttpClientRibbonConfiguration: Unsatisfied dependency expressed through method 'ribbonLoadBalancingHttpClient' parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.cloud.context.named.NamedContextFactory.createContext(NamedContextFactory.java:110)
+	at org.springframework.cloud.context.named.NamedContextFactory.getContext(NamedContextFactory.java:79)
+	at org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:115)
+	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getInstance(SpringClientFactory.java:111)
+	at org.springframework.cloud.netflix.ribbon.SpringClientFactory.getLoadBalancer(SpringClientFactory.java:57)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.getLoadBalancer(RibbonLoadBalancerClient.java:141)
+	at org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient.execute(RibbonLoadBalancerClient.java:72)
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:53)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:659)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:566)
+	at com.devchen.crawler.remote.service.FileAppRemoteService.submitMagnetDownLoadTaskWithFileName(FileAppRemoteService.java:41)
+	at com.devchen.crawler.zimuzu.service.ZimuzuService.fetchFavList(ZimuzuService.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call$$$capture(Executors.java:511)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ribbonLoadBalancer' defined in org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.loadbalancer.ILoadBalancer]: Factory method 'ribbonLoadBalancer' threw exception; nested exception is java.lang.IllegalStateException: Shutdown in progress
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 56 more
+Caused by: java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.<init>(ShutdownEnabledTimer.java:60)
+	at com.netflix.loadbalancer.BaseLoadBalancer.setupPingTask(BaseLoadBalancer.java:257)
+	at com.netflix.loadbalancer.BaseLoadBalancer.setPing(BaseLoadBalancer.java:360)
+	at com.netflix.loadbalancer.BaseLoadBalancer.initWithConfig(BaseLoadBalancer.java:179)
+	at com.netflix.loadbalancer.BaseLoadBalancer.<init>(BaseLoadBalancer.java:156)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.<init>(DynamicServerListLoadBalancer.java:88)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.<init>(DynamicServerListLoadBalancer.java:75)
+	at com.netflix.loadbalancer.ZoneAwareLoadBalancer.<init>(ZoneAwareLoadBalancer.java:76)
+	at com.netflix.loadbalancer.LoadBalancerBuilder.buildDynamicServerListLoadBalancer(LoadBalancerBuilder.java:102)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration.ribbonLoadBalancer(RibbonClientConfiguration.java:240)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$6aba1194.CGLIB$ribbonLoadBalancer$6(<generated>)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$6aba1194$$FastClassBySpringCGLIB$$ad175d45.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.cloud.netflix.ribbon.RibbonClientConfiguration$$EnhancerBySpringCGLIB$$6aba1194.ribbonLoadBalancer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 57 more
+[INFO] [2018-09-04 23:16:26][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2018-09-04 23:16:26][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1536074187141 with initial instances count: 2
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2018-09-04 23:16:27][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/65
+[INFO] [2018-09-04 23:16:27][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2018-09-04 23:16:27][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2018-09-04 23:16:27][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-09-04 23:16:49][com.devchen.crawler.getuploader.service.GetUploadService]download DOD3_Zero.7z in /root/getuploader/tokinagare/DOD3_Zero.7z from http://download1.getuploader.com/g/5b8ea1cb-8d8c-4b6c-b45c-5835a010e467/tokinagare/65/DOD3_Zero.7z
+[INFO] [2018-09-04 23:16:49][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/64
+[INFO] [2018-09-04 23:16:54][com.devchen.crawler.getuploader.service.GetUploadService]download [COM3D2対応]キューティシンプル.7z in /root/getuploader/tokinagare/[COM3D2対応]キューティシンプル.7z from http://download1.getuploader.com/g/5b8ea1e2-87a4-4d88-864d-585ea010e467/tokinagare/64/%5BCOM3D2%E5%AF%BE%E5%BF%9C%5D%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB.7z
+[INFO] [2018-09-04 23:16:54][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/63
+[WARN] [2018-09-04 23:17:27][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Timed out while waiting for executor 'taskScheduler' to terminate
+[INFO] [2018-09-04 23:17:27][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2018-09-04 23:17:40][com.devchen.crawler.getuploader.service.GetUploadService]download [COM3D2対応]ダブルレイヤーセミショート.7z in /root/getuploader/tokinagare/[COM3D2対応]ダブルレイヤーセミショート.7z from http://dl1.getuploader.com/g/5b8ea1e7-aff0-4550-8685-5895a010e467/tokinagare/63/%5BCOM3D2%E5%AF%BE%E5%BF%9C%5D%E3%83%80%E3%83%96%E3%83%AB%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%82%BB%E3%83%9F%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88.7z
+[INFO] [2018-09-04 23:17:40][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/62
+[WARN] [2018-09-04 23:18:27][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Timed out while waiting for executor 'taskScheduler' to terminate

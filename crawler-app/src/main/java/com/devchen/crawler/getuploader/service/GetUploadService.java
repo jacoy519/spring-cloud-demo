@@ -5,6 +5,7 @@ import com.devchen.crawler.common.Constant;
 import com.devchen.crawler.common.factory.HttpClientFactory;
 import com.devchen.crawler.common.util.HttpUtils;
 import com.devchen.crawler.other.SockTest;
+import com.devchen.crawler.service.MqService;
 import com.netflix.ribbon.proxy.annotation.Http;
 import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpEntity;
@@ -54,6 +55,8 @@ public class GetUploadService {
     @Resource
     private HttpClientFactory httpClientFactory;
 
+    private MqService mqService;
+
     @Scheduled(fixedDelay = Constant.THREE_HOUR)
     public void fetchAllFiles() throws Exception{
 
@@ -63,7 +66,8 @@ public class GetUploadService {
         list.add("tokinagare");
         list.add("melala001");
         list.add("test_20160728");
-        list.add("cm3d2_");
+        list.add("cm3d2_l");
+        list.add("cm3d2_k");
         list.add("cm3d2_j");
         list.add("cm3d2_i");
         list.add("cm3d2_h");
@@ -159,6 +163,7 @@ public class GetUploadService {
                 downloadFile(localFileSavePath, download, httpClient);
                 if(isFileExist(localFileSavePath)) {
                     logger.info(String.format("download %s in %s from %s",fileName, localFileSavePath, download));
+                    mqService.sendMsgToNoticeMsgQueue(String.format("download cm3d2 mod %s", fileName));
                     return;
                 }
             }

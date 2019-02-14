@@ -6,6 +6,7 @@ import com.devchen.crawler.common.factory.HttpClientFactory;
 import com.devchen.crawler.common.util.HttpUtils;
 import com.devchen.crawler.remote.response.UnionResponse;
 import com.devchen.crawler.remote.service.FileAppRemoteService;
+import com.devchen.crawler.service.MqService;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.NoHttpResponseException;
@@ -50,6 +51,7 @@ public class ZimuzuService {
     @Resource
     private HttpClientFactory httpClientFactory;
 
+
     @Resource
     private FileAppRemoteService fileAppRemoteService;
 
@@ -68,6 +70,7 @@ public class ZimuzuService {
                 if(!isSuccessResponse(response)) {
                     logger.warn(String.format("fail to submit download with params[magnetAddress:%s,savedir:%s,videoName:%s]", info.getMagnetAddress(), saveDir, info.getVideoName()));
                 }
+
             }
         } catch (Exception e) {
             logger.error("fetch fav list error", e);

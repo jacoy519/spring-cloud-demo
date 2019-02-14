@@ -1,0 +1,36 @@
+[INFO] [2018-04-08 23:23:19][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:8080: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:23:19][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:8080
+[INFO] [2018-04-08 23:23:20][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:8080: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:23:20][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:8080
+[INFO] [2018-04-08 23:23:21][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:8080: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:23:21][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:8080
+[INFO] [2018-04-08 23:26:41][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:8080: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:26:41][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:8080
+[INFO] [2018-04-08 23:26:42][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:8080: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:26:42][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:8080
+[INFO] [2018-04-08 23:26:43][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:8080: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:26:43][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:8080
+[INFO] [2018-04-08 23:27:00][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:80: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:27:00][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:80
+[INFO] [2018-04-08 23:27:01][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:80: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:27:01][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:80
+[INFO] [2018-04-08 23:27:02][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:80: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:27:02][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:80
+[INFO] [2018-04-08 23:27:39][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:27:39][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:27:40][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:27:40][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:27:41][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:27:41][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:28:19][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:28:19][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:28:20][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:28:20][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:28:21][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:28:21][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:29:12][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:29:12][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:29:13][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:29:13][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
+[INFO] [2018-04-08 23:29:14][org.apache.http.impl.execchain.RetryExec]I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.pixiv.net:443: 拒绝连接 (Connection refused)
+[INFO] [2018-04-08 23:29:14][org.apache.http.impl.execchain.RetryExec]Retrying request to {s}->https://www.pixiv.net:443
