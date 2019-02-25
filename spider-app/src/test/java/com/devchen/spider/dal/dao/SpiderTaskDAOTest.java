@@ -3,6 +3,7 @@ package com.devchen.spider.dal.dao;
 
 import com.devchen.spider.dal.entity.SpiderTaskEntity;
 import com.devchen.spider.service.biz.getupload.GetUploadSpiderTaskService;
+import com.devchen.spider.service.biz.hexun.HexunSpiderTaskService;
 import com.devchen.spider.service.biz.zimuzu.ZimuzuSpiderTaskService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,6 +26,9 @@ public class SpiderTaskDAOTest {
 
     @Resource
     private GetUploadSpiderTaskService getUploadSpiderTaskService;
+
+    @Resource
+    private HexunSpiderTaskService hexunSpiderTaskService;
 
     //@Test
     public void test() {
@@ -59,7 +63,7 @@ public class SpiderTaskDAOTest {
     @Test
     public void test3() throws Exception {
         for(int i=0;i<100000;i++) {
-            getUploadSpiderTaskService.run();
+            hexunSpiderTaskService.run();
             Thread.sleep(1000);
         }
 

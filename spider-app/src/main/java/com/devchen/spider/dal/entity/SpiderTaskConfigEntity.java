@@ -22,6 +22,8 @@ public class SpiderTaskConfigEntity {
 
     private String keyValue;
 
+    private String isValid;
+
 
     @Override
     public String toString() {
@@ -91,5 +93,13 @@ public class SpiderTaskConfigEntity {
 
     public void setKeyValue(String keyValue) {
         this.keyValue = keyValue;
+    }
+
+    public String getIsValid() {
+        return isValid;
+    }
+
+    public void setIsValid(String isValid) {
+        this.isValid = isValid;
     }
 }

@@ -4,6 +4,7 @@ import com.devchen.spider.dal.dao.SpiderTaskDAO;
 import com.devchen.spider.dal.entity.SpiderTaskEntity;
 import com.devchen.spider.enums.SpiderTaskJob;
 import com.devchen.spider.enums.SpiderTaskStatus;
+import com.devchen.spider.service.common.spider.SpiderRedisScheduler;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,10 @@ public class MonitorTaskHandler implements ITaskHandler {
     @Resource
     private SpiderTaskDAO spiderTaskDAO;
 
-    private final static long maxTime = 1800000;
+    @Resource
+    private SpiderRedisScheduler spiderRedisScheduler;
+
+    private final static long maxTime = 3600000L;
 
     private final static Logger logger = Logger.getLogger(MonitorTaskHandler.class);
 
@@ -56,7 +60,19 @@ public class MonitorTaskHandler implements ITaskHandler {
 
     private boolean handleNotRunExecutorTask(SpiderTaskEntity spiderTaskEntity) {
         logger.info(String.format("end task. monitor task:%s", spiderTaskEntity.toString()));
-        return true;
+        if(spiderRedisScheduler.getLeftRequestCount(spiderTaskEntity.getSpiderId()) > 0) {
+            SpiderTaskEntity newSpiderTaskEntity = new SpiderTaskEntity();
+            newSpiderTaskEntity.setSpiderId(spiderTaskEntity.getSpiderId());
+            newSpiderTaskEntity.setTaskType(spiderTaskEntity.getTaskType());
+            newSpiderTaskEntity.setTaskJob(SpiderTaskJob.E.name());
+            newSpiderTaskEntity.setTaskTime(spiderTaskEntity.getTaskTime());
+            newSpiderTaskEntity.setTaskStatus(SpiderTaskStatus.NEW.name());
+            spiderTaskDAO.insertOne(spiderTaskEntity);
+            return false;
+        } else {
+            spiderRedisScheduler.cleanRedis(spiderTaskEntity.getSpiderId());
+            return true;
+        }
     }
 
     private List<SpiderTaskEntity> getExecutorTask(SpiderTaskEntity spiderTaskEntity) {

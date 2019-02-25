@@ -83,6 +83,8 @@ public class GetUploadPipeline implements Pipeline {
         }
     }
 
+
+
     private boolean isFileExist(String filePath) {
         File file =new File(filePath);
         return file.exists();

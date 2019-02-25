@@ -11,7 +11,7 @@ spring:
     store-type: redis
 
   datasource:
-    url: jdbc:mysql://192.168.0.106/spider_test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false
+    url: jdbc:mysql://192.168.0.106/spider_test?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=false&serverTimezone=GMT
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -40,7 +40,7 @@ flyway:
   sql-migration-suffix: .sql
 
 server:
-  port: 10401
+  port: 10801
 
 eureka:
   client:

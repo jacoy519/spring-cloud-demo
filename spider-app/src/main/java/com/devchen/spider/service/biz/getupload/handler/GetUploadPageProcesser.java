@@ -10,6 +10,7 @@ import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Selectable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -26,7 +27,7 @@ public class GetUploadPageProcesser  implements PageProcessor {
     public void process(Page page) {
 
         String url = page.getUrl().get();
-        if(url.contains("/date/desc")) {
+        if(page.getRequest().getExtra("download") == null) {
             handleFileListInfo(page);
         } else if(url.contains("/download/")) {
             handleFileInfoPage(page);
@@ -48,6 +49,9 @@ public class GetUploadPageProcesser  implements PageProcessor {
         for(String pageHref : pageHrefList) {
             Matcher matcher = hrefPattern.matcher(pageHref);
             if(matcher.find()) {
+                Request request = new Request();
+                request.setUrl(matcher.group(1));
+                request.putExtra("download", "download");
                 page.addTargetRequest(matcher.group(1));
                 logger.info(matcher.group(1));
             }
