@@ -10,7 +10,10 @@ import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Selectable;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.HashMap;
+=======
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -27,7 +30,7 @@ public class GetUploadPageProcesser  implements PageProcessor {
     public void process(Page page) {
 
         String url = page.getUrl().get();
-        if(page.getRequest().getExtra("download") == null) {
+        if(url.contains("/date/desc")) {
             handleFileListInfo(page);
         } else if(url.contains("/download/")) {
             handleFileInfoPage(page);

@@ -4,7 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.devchen</groupId>
+<<<<<<< HEAD
 	<artifactId>spider</artifactId>
+=======
+	<artifactId>file</artifactId>
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -47,6 +51,7 @@
 
 	<dependencies>
 
+<<<<<<< HEAD
 
 		<dependency>
 			<groupId>net.sourceforge.htmlunit</groupId>
@@ -61,6 +66,8 @@
 			<scope>compile</scope>
 		</dependency>
 
+=======
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>

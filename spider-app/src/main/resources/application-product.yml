@@ -3,7 +3,11 @@ spring:
     name: spider-app
 
   redis:
+<<<<<<< HEAD
     host: 192.168.0.106
+=======
+    host: localhost
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
     port: 6379
 
 
@@ -11,7 +15,11 @@ spring:
     store-type: redis
 
   datasource:
+<<<<<<< HEAD
     url: jdbc:mysql://192.168.0.106/spider?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false
+=======
+    url: jdbc:mysql://192.168.0.106/file?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -40,12 +48,16 @@ flyway:
   sql-migration-suffix: .sql
 
 server:
+<<<<<<< HEAD
   port: 10801
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://192.168.0.106:10001/eureka/
+=======
+  port: 10401
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
@@ -54,6 +66,7 @@ mybatis:
   check-config-location: true
 
 
+<<<<<<< HEAD
 zimuzu:
   loginUrl: http://www.zimuzu.io/User/Login/ajaxLogin
   favUrl: http://www.zimuzu.io/user/fav
@@ -73,3 +86,12 @@ sock5:
 
 pixiv:
   localSaveDir: /root/pixiv
+=======
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.0.106:10001/eureka/
+
+download:
+  logSaveDir: /root/spring-cloud/file-app/download-logs
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5

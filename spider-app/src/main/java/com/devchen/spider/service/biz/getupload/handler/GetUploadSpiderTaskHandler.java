@@ -4,7 +4,10 @@ import com.devchen.spider.component.download.SocksHttpDownloader;
 import com.devchen.spider.dal.dao.SpiderTaskDAO;
 import com.devchen.spider.dal.entity.SpiderTaskEntity;
 import com.devchen.spider.service.common.handler.ITaskHandler;
+<<<<<<< HEAD
 import com.devchen.spider.service.common.spider.SpiderRedisScheduler;
+=======
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,9 +36,12 @@ public class GetUploadSpiderTaskHandler implements ITaskHandler {
     @Resource
     private SpiderTaskDAO spiderTaskDAO;
 
+<<<<<<< HEAD
     @Resource
     private SpiderRedisScheduler spiderRedisScheduler;
 
+=======
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
     @Override
     public boolean isStatisfied(SpiderTaskEntity spiderTaskEntity) {
         return true;
@@ -50,6 +56,7 @@ public class GetUploadSpiderTaskHandler implements ITaskHandler {
         spider.setUUID(spiderTaskEntity.getSpiderId())
                 .setSpiderListeners(spiderListenerList)
                 .addPipeline(getUploadPipeline)
+<<<<<<< HEAD
                 .setScheduler(spiderRedisScheduler)
                 .setDownloader(socksHttpDownloader)
                 .addUrl("https://ux.getuploader.com/cm3d2/index/date/desc/1")
@@ -69,6 +76,11 @@ public class GetUploadSpiderTaskHandler implements ITaskHandler {
                 .addUrl("https://ux.getuploader.com/tokinagare/index/date/desc/1")
                 .addUrl("https://ux.getuploader.com/reaper7092/index/date/desc/1")
                 .thread(1).run();
+=======
+                .setScheduler(new RedisScheduler("192.168.0.106"))
+                .setDownloader(socksHttpDownloader)
+                .addUrl("https://ux.getuploader.com/cm3d2_k/index/date/desc/1").thread(3).run();
+>>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
 
         return true;
     }
