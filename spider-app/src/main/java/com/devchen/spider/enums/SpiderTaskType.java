@@ -4,5 +4,6 @@ public enum  SpiderTaskType {
 
     ZIMUZU_FAV_SPIDER,
     GETUPLOAD_FAV,
-    HEXUN
+    HEXUN,
+    WEIXIN_LC_FUNDS
 }
