@@ -3,11 +3,8 @@ package com.devchen.spider.dal.dao;
 
 import com.devchen.spider.dal.entity.SpiderTaskEntity;
 import com.devchen.spider.service.biz.getupload.GetUploadSpiderTaskService;
-<<<<<<< HEAD
 import com.devchen.spider.service.biz.hexun.HexunSpiderTaskService;
 import com.devchen.spider.service.biz.weixin.lcFunds.LcFundsSpiderTaskService;
-=======
->>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
 import com.devchen.spider.service.biz.zimuzu.ZimuzuSpiderTaskService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,15 +28,12 @@ public class SpiderTaskDAOTest {
     @Resource
     private GetUploadSpiderTaskService getUploadSpiderTaskService;
 
-<<<<<<< HEAD
     @Resource
     private HexunSpiderTaskService hexunSpiderTaskService;
 
     @Resource
     private LcFundsSpiderTaskService lcFundsSpiderTaskService;
 
-=======
->>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
     //@Test
     public void test() {
         SpiderTaskEntity spiderTaskEntity = new SpiderTaskEntity();
@@ -73,11 +67,7 @@ public class SpiderTaskDAOTest {
     @Test
     public void test3() throws Exception {
         for(int i=0;i<100000;i++) {
-<<<<<<< HEAD
             lcFundsSpiderTaskService.run();
-=======
-            getUploadSpiderTaskService.run();
->>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
             Thread.sleep(1000);
         }
 
