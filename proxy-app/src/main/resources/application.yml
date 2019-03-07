@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: proxy-app
+
+server:
+  port: 10501
+
+
