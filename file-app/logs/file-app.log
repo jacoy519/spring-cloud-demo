@@ -1,207 +1,165 @@
-[INFO] [2018-05-16 22:52:44][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1622f1b: startup date [Wed May 16 22:52:44 CST 2018]; root of context hierarchy
-[INFO] [2018-05-16 22:52:44][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
-[INFO] [2018-05-16 22:52:44][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[INFO] [2018-05-16 22:52:44][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a60eac89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO] [2018-05-16 22:52:45][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
-[WARN] [2018-05-16 22:52:45][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/file-app/dev": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
-[INFO] [2018-05-16 22:52:45][com.devchen.file.FileAppApplication]The following profiles are active: dev
-[INFO] [2018-05-16 22:52:45][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f6f61c8: startup date [Wed May 16 22:52:45 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1622f1b
-[INFO] [2018-05-16 22:52:47][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=a98a8fa7-47d1-3f9e-9633-10bbb649c500
-[INFO] [2018-05-16 22:52:47][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-[INFO] [2018-05-16 22:52:47][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a60eac89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO] [2018-05-16 22:52:47][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$89f4a98c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[INFO] [2018-05-16 22:52:47][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10401 (http)
-[INFO] [2018-05-16 22:52:48][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2345 ms
-[INFO] [2018-05-16 22:52:48][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
-[INFO] [2018-05-16 22:52:48][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
-[INFO] [2018-05-16 22:52:48][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-[INFO] [2018-05-16 22:52:48][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
-[INFO] [2018-05-16 22:52:48][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
-[INFO] [2018-05-16 22:52:48][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'commonMsgHandler'
-[INFO] [2018-05-16 22:52:48][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'errorMsgHandler'
-[INFO] [2018-05-16 22:52:48][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'downloadTaskHandler'
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f6f61c8: startup date [Wed May 16 22:52:45 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1622f1b
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/download-task-resource/submit-magnet-download-task-with-file-name],methods=[POST]}" onto public com.devchen.file.resource.entity.UnionResponse com.devchen.file.resource.DownloadTaskResource.submitMagnetDownLoadTaskWithFileName(java.lang.String,java.lang.String,java.lang.String)
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/download-task-resource/submit-magnet-download-task],methods=[POST]}" onto public com.devchen.file.resource.entity.UnionResponse com.devchen.file.resource.DownloadTaskResource.submitMagnetDownLoadTask(java.lang.String,java.lang.String)
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/download-task-resource/submit-remote-torrent-download-task],methods=[POST]}" onto public com.devchen.file.resource.entity.UnionResponse com.devchen.file.resource.DownloadTaskResource.submitRemoteTorrentDownLoadTask(java.lang.String,java.lang.String)
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/executor],methods=[GET]}" onto public java.lang.String com.devchen.file.resource.TestResource.test2(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/]}" onto public java.lang.String com.devchen.file.resource.TestResource.test1()
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO] [2018-05-16 22:52:49][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-[INFO] [2018-05-16 22:52:52][org.flywaydb.core.internal.util.VersionPrinter]Flyway 3.2.1 by Boxfuse
-[INFO] [2018-05-16 22:52:52][org.flywaydb.core.internal.dbsupport.DbSupportFactory]Database: jdbc:mysql://192.168.0.106/file_test?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC (MySQL 5.7)
-[INFO] [2018-05-16 22:52:53][org.flywaydb.core.internal.command.DbValidate]Validated 1 migration (execution time 00:00.809s)
-[INFO] [2018-05-16 22:52:53][org.flywaydb.core.internal.command.DbMigrate]Current version of schema `file_test`: 20180108
-[INFO] [2018-05-16 22:52:53][org.flywaydb.core.internal.command.DbMigrate]Schema `file_test` is up to date. No migration necessary.
-[WARN] [2018-05-16 22:52:54][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
-[INFO] [2018-05-16 22:52:54][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[WARN] [2018-05-16 22:52:54][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
-[INFO] [2018-05-16 22:52:54][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[INFO] [2018-05-16 22:52:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
-[INFO] [2018-05-16 22:52:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'environmentManager' has been autodetected for JMX exposure
-[INFO] [2018-05-16 22:52:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-[INFO] [2018-05-16 22:52:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Bean with name 'refreshScope' has been autodetected for JMX exposure
-[INFO] [2018-05-16 22:52:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-[INFO] [2018-05-16 22:52:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-[INFO] [2018-05-16 22:52:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7f6f61c8,type=ConfigurationPropertiesRebinder]
-[INFO] [2018-05-16 22:52:54][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
-[INFO] [2018-05-16 22:52:54][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.DiscoveryClient]Disable delta property : false
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.DiscoveryClient]Application is null : false
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.DiscoveryClient]Application version is -1: true
-[INFO] [2018-05-16 22:52:55][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
-[INFO] [2018-05-16 22:52:56][com.netflix.discovery.DiscoveryClient]The response status is 200
-[INFO] [2018-05-16 22:52:56][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
-[INFO] [2018-05-16 22:52:56][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
-[INFO] [2018-05-16 22:52:56][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1526482376162 with initial instances count: 2
-[INFO] [2018-05-16 22:52:56][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Registering application file-app with eureka with status UP
-[INFO] [2018-05-16 22:52:56][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1526482376179, current=UP, previous=STARTING]
-[INFO] [2018-05-16 22:52:56][com.netflix.discovery.DiscoveryClient]DiscoveryClient_FILE-APP/10.0.2.15:file-app:10401: registering service...
-[INFO] [2018-05-16 22:52:56][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-[INFO] [2018-05-16 22:52:56][com.devchen.file.service.DownloadService]try clean download process
-[INFO] [2018-05-16 22:52:56][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10401 (http)
-[INFO] [2018-05-16 22:52:56][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Updating port to 10401
-[INFO] [2018-05-16 22:52:56][com.devchen.file.FileAppApplication]Started FileAppApplication in 12.796 seconds (JVM running for 14.823)
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.DownloadService]run task [taskId:行尸走肉.The.Walking.Dead.S08E15.中英字幕.HDTVrip.720P-人人影视.mp4, localSaveDir:/owncloud/Video/【美剧】《行尸走肉》, remoteAdress:magnet:?xt=urn:btih:520effe0f193819d6f20b02046a8f7541b19df22&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.ProcessDownloadService]create download process. fileName:行尸走肉.The.Walking.Dead.S08E15.中英字幕.HDTVrip.720P-人人影视.mp4, cmd:transmission-cli magnet:?xt=urn:btih:520effe0f193819d6f20b02046a8f7541b19df22&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《行尸走肉》 --port 46455
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.DownloadService]run task [taskId:权力的游戏.Game.of.Thrones.S07E07.End.中英字幕.BDrip.720p-人人影视.V2.mp4, localSaveDir:/owncloud/Video/【美剧】《权力的游戏》, remoteAdress:magnet:?xt=urn:btih:def1716a3eb87f15b112e4826df3821eb9834609&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.ProcessDownloadService]create download process. fileName:权力的游戏.Game.of.Thrones.S07E07.End.中英字幕.BDrip.720p-人人影视.V2.mp4, cmd:transmission-cli magnet:?xt=urn:btih:def1716a3eb87f15b112e4826df3821eb9834609&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《权力的游戏》 --port 52732
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.DownloadService]run task [taskId:神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E16.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4, localSaveDir:/owncloud/Video/【美剧】《神盾局特工》, remoteAdress:magnet:?xt=urn:btih:e05adc11436cfb292b8e4610aebc0a73fea07106&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.ProcessDownloadService]create download process. fileName:神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E16.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4, cmd:transmission-cli magnet:?xt=urn:btih:e05adc11436cfb292b8e4610aebc0a73fea07106&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《神盾局特工》 --port 53659
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.DownloadService]run task [taskId:生活大爆炸.The.Big.Bang.Theory.S11E19.中英字幕.HDTVrip.720P-人人影视.mp4, localSaveDir:/owncloud/Video/【美剧】《生活大爆炸》, remoteAdress:magnet:?xt=urn:btih:f5233c4163313b8cbc264fbd08ee35f8a532dab4&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[INFO] [2018-05-16 22:52:57][com.devchen.file.service.ProcessDownloadService]create download process. fileName:生活大爆炸.The.Big.Bang.Theory.S11E19.中英字幕.HDTVrip.720P-人人影视.mp4, cmd:transmission-cli magnet:?xt=urn:btih:f5233c4163313b8cbc264fbd08ee35f8a532dab4&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《生活大爆炸》 --port 45187
-[INFO] [2018-05-16 22:52:58][com.devchen.file.service.DownloadService]run task [taskId:9号秘事.Inside.No.9.S04E06.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4, localSaveDir:/owncloud/Video/【英剧】《9号秘事》, remoteAdress:magnet:?xt=urn:btih:9bca17794af2a4901731a96725a0aa391e2aecfa&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[INFO] [2018-05-16 22:52:58][com.devchen.file.service.ProcessDownloadService]create download process. fileName:9号秘事.Inside.No.9.S04E06.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4, cmd:transmission-cli magnet:?xt=urn:btih:9bca17794af2a4901731a96725a0aa391e2aecfa&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【英剧】《9号秘事》 --port 51125
-[INFO] [2018-05-16 22:53:00][com.netflix.discovery.DiscoveryClient]DiscoveryClient_FILE-APP/10.0.2.15:file-app:10401 - registration status: 204
-[INFO] [2018-05-16 22:53:07][com.devchen.file.service.TransmissionDownloadService]行尸走肉.The.Walking.Dead.S08E15.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
-[INFO] [2018-05-16 22:53:07][com.devchen.file.service.TransmissionDownloadService]权力的游戏.Game.of.Thrones.S07E07.End.中英字幕.BDrip.720p-人人影视.V2.mp4 : 0.0%
-[INFO] [2018-05-16 22:53:08][com.devchen.file.service.TransmissionDownloadService]神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E16.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4 : 0.0%
-[INFO] [2018-05-16 22:53:08][com.devchen.file.service.TransmissionDownloadService]生活大爆炸.The.Big.Bang.Theory.S11E19.中英字幕.HDTVrip.720P-人人影视.mp4 : 0.0%
-[INFO] [2018-05-16 22:53:08][com.devchen.file.service.TransmissionDownloadService]9号秘事.Inside.No.9.S04E06.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4 : 0.0%
-[INFO] [2018-05-16 22:55:26][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f6f61c8: startup date [Wed May 16 22:52:45 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1622f1b
-[INFO] [2018-05-16 22:55:26][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application file-app with eureka with status DOWN
-[WARN] [2018-05-16 22:55:26][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1526482526894, current=DOWN, previous=UP]
-[INFO] [2018-05-16 22:55:26][com.netflix.discovery.DiscoveryClient]DiscoveryClient_FILE-APP/10.0.2.15:file-app:10401: registering service...
-[INFO] [2018-05-16 22:55:26][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
-[INFO] [2018-05-16 22:55:26][com.netflix.discovery.DiscoveryClient]Unregistering ...
-[INFO] [2018-05-16 22:55:27][com.netflix.discovery.DiscoveryClient]DiscoveryClient_FILE-APP/10.0.2.15:file-app:10401 - registration status: 204
-[INFO] [2018-05-16 22:55:27][com.devchen.file.service.DownloadService]magent download task success [taskId:神盾局特工.Marvels.Agents.of.S.H.I.E.L.D.S05E16.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4, localSaveDir:/owncloud/Video/【美剧】《神盾局特工》, remoteAdress:magnet:?xt=urn:btih:e05adc11436cfb292b8e4610aebc0a73fea07106&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[INFO] [2018-05-16 22:55:27][com.devchen.file.service.DownloadService]magent download task success [taskId:9号秘事.Inside.No.9.S04E06.中英字幕.WEB-HR.AAC.720P.x264-人人影视.mp4, localSaveDir:/owncloud/Video/【英剧】《9号秘事》, remoteAdress:magnet:?xt=urn:btih:9bca17794af2a4901731a96725a0aa391e2aecfa&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[INFO] [2018-05-16 22:55:27][com.netflix.discovery.DiscoveryClient]DiscoveryClient_FILE-APP/10.0.2.15:file-app:10401 - deregister  status: 200
-[INFO] [2018-05-16 22:55:28][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
-[INFO] [2018-05-16 22:55:28][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
-[INFO] [2018-05-16 22:55:28][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
-[INFO] [2018-05-16 22:55:28][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans
-[INFO] [2018-05-16 22:55:28][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'downloadTaskHandler'
-[ERROR] [2018-05-16 22:55:28][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:520effe0f193819d6f20b02046a8f7541b19df22&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《行尸走肉》 --port 46455
-java.lang.InterruptedException
-	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
-	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
-	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:36)
-	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:110)
-	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:157)
-	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:23)
-	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:85)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[INFO] [2018-05-16 22:55:28][com.devchen.file.service.DownloadService]magent download task fail [taskId:行尸走肉.The.Walking.Dead.S08E15.中英字幕.HDTVrip.720P-人人影视.mp4, localSaveDir:/owncloud/Video/【美剧】《行尸走肉》, remoteAdress:magnet:?xt=urn:btih:520effe0f193819d6f20b02046a8f7541b19df22&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[ERROR] [2018-05-16 22:55:28][com.devchen.file.service.TransmissionDownloadService]行尸走肉.The.Walking.Dead.S08E15.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
-java.io.IOException: Stream closed
-	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
-	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:52)
-	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:139)
-	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:126)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[INFO] [2018-05-16 22:55:28][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'errorMsgHandler'
-[ERROR] [2018-05-16 22:55:28][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:def1716a3eb87f15b112e4826df3821eb9834609&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《权力的游戏》 --port 52732
-java.lang.InterruptedException
-	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
-	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
-	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:36)
-	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:110)
-	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:157)
-	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:23)
-	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:85)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[INFO] [2018-05-16 22:55:28][com.devchen.file.service.DownloadService]magent download task fail [taskId:权力的游戏.Game.of.Thrones.S07E07.End.中英字幕.BDrip.720p-人人影视.V2.mp4, localSaveDir:/owncloud/Video/【美剧】《权力的游戏》, remoteAdress:magnet:?xt=urn:btih:def1716a3eb87f15b112e4826df3821eb9834609&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
-[ERROR] [2018-05-16 22:55:28][com.devchen.file.service.ProcessDownloadService]download file fail when exec transmission-cli magnet:?xt=urn:btih:f5233c4163313b8cbc264fbd08ee35f8a532dab4&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz --download-dir /owncloud/Video/【美剧】《生活大爆炸》 --port 45187
-java.lang.InterruptedException
-	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:404)
-	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
-	at com.devchen.file.service.ProcessDownloadService.runDownloadCmd(ProcessDownloadService.java:36)
-	at com.devchen.file.service.TransmissionDownloadService.submitDownloadTask(TransmissionDownloadService.java:110)
-	at com.devchen.file.service.DownloadService.handleMagentDownloadTask(DownloadService.java:157)
-	at com.devchen.file.service.DownloadService.access$000(DownloadService.java:23)
-	at com.devchen.file.service.DownloadService$1.run(DownloadService.java:85)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[ERROR] [2018-05-16 22:55:28][com.devchen.file.service.TransmissionDownloadService]权力的游戏.Game.of.Thrones.S07E07.End.中英字幕.BDrip.720p-人人影视.V2.mp4 io thread error
-java.io.IOException: Stream closed
-	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
-	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:52)
-	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:139)
-	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:126)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[INFO] [2018-05-16 22:55:28][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'commonMsgHandler'
-[ERROR] [2018-05-16 22:55:28][com.devchen.file.service.TransmissionDownloadService]生活大爆炸.The.Big.Bang.Theory.S11E19.中英字幕.HDTVrip.720P-人人影视.mp4 io thread error
-java.io.IOException: Stream closed
-	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:336)
-	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at com.devchen.file.service.TransmissionDownloadService.handleCommonMsg(TransmissionDownloadService.java:52)
-	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:139)
-	at com.devchen.file.service.ProcessDownloadService$CommonMsgMonitorCallable.call(ProcessDownloadService.java:126)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[INFO] [2018-05-16 22:55:28][com.devchen.file.service.DownloadService]magent download task fail [taskId:生活大爆炸.The.Big.Bang.Theory.S11E19.中英字幕.HDTVrip.720P-人人影视.mp4, localSaveDir:/owncloud/Video/【美剧】《生活大爆炸》, remoteAdress:magnet:?xt=urn:btih:f5233c4163313b8cbc264fbd08ee35f8a532dab4&tr=udp://9.rarbg.to:2710/announce&tr=udp://9.rarbg.me:2710/announce&tr=http://tr.cili001.com:8070/announce&tr=http://tracker.trackerfix.com:80/announce&tr=udp://open.demonii.com:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://p4p.arenabg.com:1337&tr=wss://tracker.openwebtorrent.com&tr=wss://tracker.btorrent.xyz&tr=wss://tracker.fastcast.nz]
+[INFO] [2019-04-02 00:16:05][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest], using SpringBootContextLoader
+[INFO] [2019-04-02 00:16:05][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2019-04-02 00:16:05][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.file.dal.dao.DownloadTaskDaoTest]: DownloadTaskDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2019-04-02 00:16:05][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.file.FileAppApplication for test class com.devchen.file.dal.dao.DownloadTaskDaoTest
+[INFO] [2019-04-02 00:16:05][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2019-04-02 00:16:06][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6279cee3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4206a205, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@29ba4338, org.springframework.test.context.support.DirtiesContextTestExecutionListener@57175e74, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7bb58ca3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@c540f5a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@770c2e6b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1a052a00, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4d826d77, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61009542, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@77e9807f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@448ff1a8]
+[INFO] [2019-04-02 00:16:07][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37d4349f: startup date [Tue Apr 02 00:16:07 CST 2019]; root of context hierarchy
+[INFO] [2019-04-02 00:16:08][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-02 00:16:09][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-04-02 00:16:09][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$14e523b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-02 00:16:09][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2019-04-02 00:16:10][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2019-04-02 00:16:10][com.devchen.file.dal.dao.DownloadTaskDaoTest]No active profile set, falling back to default profiles: default
+[INFO] [2019-04-02 00:16:10][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62435e70: startup date [Tue Apr 02 00:16:10 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37d4349f
+[INFO] [2019-04-02 00:16:12][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=734dfdea-bf53-3b5f-939d-bc621e1a0f0e
+[INFO] [2019-04-02 00:16:12][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-02 00:16:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$14e523b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-02 00:16:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8cb20b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-02 00:16:12][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'commonMsgHandler'
+[INFO] [2019-04-02 00:16:12][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService  'errorMsgHandler'
+[WARN] [2019-04-02 00:16:12][org.springframework.web.context.support.GenericWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'downloadTaskResource': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'downloadService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'downloadTaskDao' defined in file [/root/projects/spring-cloud-demo/file-app/target/classes/com/devchen/file/dal/dao/DownloadTaskDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+[INFO] [2019-04-02 00:16:12][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'errorMsgHandler'
+[INFO] [2019-04-02 00:16:12][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService 'commonMsgHandler'
+[INFO] [2019-04-02 00:16:12][org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer]
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ERROR] [2019-04-02 00:16:12][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+[ERROR] [2019-04-02 00:16:12][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@6279cee3] to prepare test instance [com.devchen.file.dal.dao.DownloadTaskDaoTest@12abdfb]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'downloadTaskResource': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'downloadService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'downloadTaskDao' defined in file [/root/projects/spring-cloud-demo/file-app/target/classes/com/devchen/file/dal/dao/DownloadTaskDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'downloadService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'downloadTaskDao' defined in file [/root/projects/spring-cloud-demo/file-app/target/classes/com/devchen/file/dal/dao/DownloadTaskDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:522)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:627)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 40 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'downloadTaskDao' defined in file [/root/projects/spring-cloud-demo/file-app/target/classes/com/devchen/file/dal/dao/DownloadTaskDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:522)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:627)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 53 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 66 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 79 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 92 more
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:247)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:184)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:42)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat.dataSource(DataSourceConfiguration.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 93 more

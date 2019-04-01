@@ -5,6 +5,8 @@ public enum SpiderTimeModel {
     ONE_DAY(24L*60L*60L*1000L),
 
     TEN_MIN(10L*60L*1000L),
+
+    HALF_HOUR(30L*60L*1000L),
     THREE_DAY(3L*24L*60L*60L*1000L),
 
     ONE_MIN(60L*1000L);

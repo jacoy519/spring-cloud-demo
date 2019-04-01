@@ -16,7 +16,7 @@ public class SpiderConfigService {
 
     private final static String CONFIG_TIME_MODEL_KEY = "TIME_MODEL";
 
-    private final static SpiderTimeModel DEFAULT_TIME_MODEL = SpiderTimeModel.ONE_MIN;
+    private final static SpiderTimeModel DEFAULT_TIME_MODEL = SpiderTimeModel.HALF_HOUR;
 
     public SpiderTimeModel getSpiderTimeModel(SpiderTaskType spiderTaskType) {
         SpiderTaskConfigEntity spiderTaskConfigEntity = spiderTaskConfigDAO.selectByGroupNameAndKeyName(

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: proxyout-app
+
+
+
+
+flyway:
+  baselineOnMigrate: true
+  locations: classpath:db/migration/{vendor}
+  enabled: true
+  sql-migration-prefix: V
+  sql-migration-suffix: .sql
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.devchen.proxy.dal.entity
+  config-location: classpath:mybatis-config.xml
+  check-config-location: true

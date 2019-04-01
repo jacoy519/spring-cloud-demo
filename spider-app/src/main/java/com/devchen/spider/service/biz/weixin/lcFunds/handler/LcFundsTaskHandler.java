@@ -17,6 +17,9 @@ public class LcFundsTaskHandler  implements ITaskHandler {
     @Resource
     private SpiderRedisScheduler spiderRedisScheduler;
 
+    @Resource
+    private LcFundDownloader lcFundDownloader;
+
     @Override
     public boolean isStatisfied(SpiderTaskEntity spiderTaskEntity) {
         return true;
@@ -27,7 +30,8 @@ public class LcFundsTaskHandler  implements ITaskHandler {
         Spider spider = Spider.create(lcFundsPageProcesser);
         spider.setUUID(spiderTaskEntity.getSpiderId())
                 .setScheduler(spiderRedisScheduler)
-                .addUrl("http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_=").thread(3).run();
+                .setDownloader(lcFundDownloader)
+                .addUrl("http://mp.weixin.qq.com/profile?src=3&timestamp=1552096504&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36Qgv3SeG5LzgbO4Pm5z0PThZVQ==").thread(3).run();
 
         return true;
     }

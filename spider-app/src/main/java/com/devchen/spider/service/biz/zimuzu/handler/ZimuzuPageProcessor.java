@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 public class ZimuzuPageProcessor implements PageProcessor {
 
 
-    private Site site = Site.me().setSleepTime(100);
+    private Site site = Site.me().setSleepTime(100).setTimeOut(30000);
 
     @Override
     public void process(Page page) {

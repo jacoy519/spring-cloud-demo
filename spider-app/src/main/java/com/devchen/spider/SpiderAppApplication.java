@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableScheduling
+//@EnableScheduling
 public class SpiderAppApplication {
 
 	public static void main(String[] args) {

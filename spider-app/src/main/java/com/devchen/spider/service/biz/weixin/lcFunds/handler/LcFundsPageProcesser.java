@@ -1,21 +1,32 @@
 package com.devchen.spider.service.biz.weixin.lcFunds.handler;
 
+import com.devchen.spider.factory.HttpClientFactory;
+import com.devchen.spider.util.HttpUtils;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import sun.net.www.http.HttpClient;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Selectable;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Set;
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,8 +37,14 @@ public class LcFundsPageProcesser  implements PageProcessor {
     private final static Logger logger = Logger.getLogger(LcFundsPageProcesser.class);
 
 
-    private Site site = Site.me().setSleepTime(100)
-            .addHeader("User-Agent","Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0");
+    private Site site = Site.me().setSleepTime(5000).setTimeOut(30000)
+            .addHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+
+    @Resource
+    private ThreadPoolTaskExecutor downloadPool;
+
+    @Resource
+    private HttpClientFactory httpClientFactory;
 
     @Override
     public void process(Page page) {
@@ -77,7 +94,83 @@ public class LcFundsPageProcesser  implements PageProcessor {
 
     private void handlePageList(Page page) {
         Selectable node = page.getHtml().xpath("//div[@class='rich_media_content ']");
-        int i=0;
+        String html = node.get();
+        Document htmlDoc = Jsoup.parse(html);
+        Iterator<Element> iter = htmlDoc.select("img").iterator();
+
+        while(iter.hasNext()) {
+            Element ele =iter.next();
+            String src = ele.attr("data-src");
+            if(StringUtils.isEmpty(src)) {
+                src = ele.attr(src);
+            }
+
+            if(!StringUtils.isEmpty(src)) {
+                src = src.replace("https", "http");
+                final String imageSrc=src;
+                downloadPool.submit(new Runnable() {
+                    @Override
+                    public void run() {
+                        downloadFile(imageSrc);
+                    }
+                });
+            }
+        }
+
+    }
+
+    private void downloadFile(String url) {
+        CloseableHttpClient httpClient = null;
+        OutputStream out = null;
+        InputStream in = null;
+        CloseableHttpResponse httpResponse = null;
+        try {
+            httpClient = httpClientFactory.createHttpClient();
+            HttpGet request = new HttpGet(url);
+            String prefix = url.substring(url.lastIndexOf("=")+ 1);
+            if(StringUtils.isEmpty(prefix)) {
+                return;
+            }
+            String fileName = UUID.randomUUID().toString() + "." + prefix;
+            String filePath = "/root/download-file/" + fileName;
+            httpResponse = httpClient.execute(request);
+            HttpEntity entity = httpResponse.getEntity();
+            in = entity.getContent();
+            long length = entity.getContentLength();
+            if (length <= 0) {
+                return;
+            }
+            File file = new File(filePath);
+            if(!file.exists()){
+                file.createNewFile();
+            }
+            out = new FileOutputStream(file);
+            byte[] buffer = new byte[4096];
+            int readLength = 0;
+            while ((readLength=in.read(buffer)) > 0) {
+                byte[] bytes = new byte[readLength];
+                System.arraycopy(buffer, 0, bytes, 0, readLength);
+                out.write(bytes);
+            }
+            out.flush();
+        } catch (Exception e) {
+           logger.error("download file error");
+        } finally {
+            try {
+                if(out !=null ) {
+                    out.close();
+                }
+                if(in != null) {
+                    in.close();
+                }
+                if(httpResponse!=null) {
+                    httpResponse.close();
+                }
+            } catch (Exception e) {
+                logger.info("close file error", e);
+            }
+
+        }
     }
 
     @Override

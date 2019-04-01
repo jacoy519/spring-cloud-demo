@@ -51,7 +51,6 @@
 
 	<dependencies>
 
-<<<<<<< HEAD
 
 		<dependency>
 			<groupId>net.sourceforge.htmlunit</groupId>
@@ -66,8 +65,7 @@
 			<scope>compile</scope>
 		</dependency>
 
-=======
->>>>>>> 5d9c7d42bd0f07d5186e7ee32dff8bb0572fd9e5
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>

@@ -23,4 +23,13 @@ public class ThreadPoolConfig {
         return taskExecutor;
     }
 
+
+    @Bean
+    ThreadPoolTaskExecutor downloadPool() {
+        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
+        taskExecutor.setCorePoolSize(3);
+        taskExecutor.setKeepAliveSeconds(300);
+        return taskExecutor;
+    }
+
 }
