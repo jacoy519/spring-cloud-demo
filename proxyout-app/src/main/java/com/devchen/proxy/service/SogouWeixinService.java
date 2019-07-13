@@ -1,7 +1,9 @@
 package com.devchen.proxy.service;
 
 import com.devchen.proxy.dal.dao.WeixinPageSourceDAO;
+import com.devchen.proxy.dal.dao.WeixinSpiderTargetDAO;
 import com.devchen.proxy.dal.entity.WeixinPageSourceEntity;
+import com.devchen.proxy.dal.entity.WeixinSpiderTargetEntity;
 import com.devchen.proxy.entity.ProxyIpEntity;
 import com.devchen.proxy.webDriver.IWebDriverHandler;
 import com.devchen.proxy.webDriver.SogouWexinHandler;
@@ -27,19 +29,22 @@ public class SogouWeixinService {
     private ProxyIpService proxyIpService;
 
     @Resource
+    private WeixinSpiderTargetDAO weixinSpiderTargetDAO;
+
+    @Resource
     private WeixinPageSourceDAO weixinPageSourceDAO;
 
     private final static Logger logger = LoggerFactory.getLogger(SogouWeixinService.class);
 
     private String sogouWeixinTemplate= "https://weixin.sogou.com/weixin?type=1&s_from=input&query=%s&ie=utf8&_sug_=n&_sug_type_=";
 
-    public String getWeixinPageList(String weixin) {
+    public WeixinPageSourceEntity getWeixinPageList(String weixin) {
         WeixinPageSourceEntity page =  weixinPageSourceDAO.selectOne(weixin);
-        return page.getPageUrl();
+        return page;
     }
 
     public void saveWeixinPageUrl(String weixinId) {
-        String url = getWeixinPageList(weixinId);
+        String url = getWeixinPageList(weixinId).getPageUrl();
         WeixinPageSourceEntity page =weixinPageSourceDAO.selectOne(weixinId);
         if(page == null) {
             page = new WeixinPageSourceEntity();
@@ -53,13 +58,12 @@ public class SogouWeixinService {
 
     }
 
+
     public  void runSpider() {
-        List<String> test = new ArrayList<>();
-        test.add("lc_funds");
-        test.add("fuguo1999");
-        for(String url : test) {
+        List<WeixinSpiderTargetEntity> targets = weixinSpiderTargetDAO.selectAll();
+        for(WeixinSpiderTargetEntity url : targets) {
             try {
-                saveWeixinPageUrl(url);
+                saveWeixinPageUrl(url.getWeixinId());
             }catch (Exception e) {
                 logger.error("error", e);
             }

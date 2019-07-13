@@ -24,14 +24,6 @@ spring:
      testOnBorrow: false
      testOnReturn: false
 
-  activemq:
-    broker-url: tcp://192.168.0.106:61616
-    in-memory: false
-    pool:
-      enabled: true
-      max-connections: 5
-      idle-timeout: 30000
-      expiry-timeout: 0
 
 flyway:
   baselineOnMigrate: true
@@ -52,17 +44,17 @@ eureka:
 
 
 zimuzu:
-  loginUrl: http://www.zimuzu.io/User/Login/ajaxLogin
-  favUrl: http://www.zimuzu.io/user/fav
-  homeUrl: http://www.zimuzu.io/
+  loginUrl: http://www.zmz2019.com/User/Login/ajaxLogin
+  favUrl: http://www.zmz2019.com/user/fav
+  homeUrl: http://www.zmz2019.com/
   account: medivh519
   password: Qi5860Chen
-  videoSaveDir: /owncloud/Video
+  videoSaveDir: /root/owncloud/videos
 
 
 
 getuploader:
-  localSaveDir: /owncloud/cm3d2/getuploader
+  localSaveDir: /root/owncloud/backup/cm3d2/mod
 
 
 sock5:

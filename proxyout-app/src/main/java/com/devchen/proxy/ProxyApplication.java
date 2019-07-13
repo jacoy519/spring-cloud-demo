@@ -10,7 +10,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableScheduling
 public class ProxyApplication {
 
 	public static void main(String[] args) {

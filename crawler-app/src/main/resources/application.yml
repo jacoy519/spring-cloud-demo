@@ -52,9 +52,9 @@ eureka:
 
 
 zimuzu:
-  loginUrl: http://www.zimuzu.io/User/Login/ajaxLogin
-  favUrl: http://www.zimuzu.io/user/fav
-  homeUrl: http://www.zimuzu.io/
+  loginUrl: http://www.zmz2019.com/User/Login/ajaxLogin
+  favUrl: http://www.zmz2019.com/user/fav
+  homeUrl: http://www.zmz2019.com/
   account: medivh519
   password: Qi5860Chen
   videoSaveDir: /owncloud/Video

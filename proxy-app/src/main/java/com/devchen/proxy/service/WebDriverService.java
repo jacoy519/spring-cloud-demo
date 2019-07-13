@@ -37,7 +37,7 @@ public class WebDriverService {
 
         prefs.put("profile.managed_default_content_settings.images",2); //禁止下载加载图片
         co.setExperimentalOption("prefs", prefs);
-        System.setProperty("webdriver.chrome.driver","/root/chromedriver/2.35/chromedriver");
+        System.setProperty("webdriver.chrome.driver","/root/applications/chrome-driver/2.35/chromedriver");
 
         WebDriver driver = new ChromeDriver(co);
         String result =null;

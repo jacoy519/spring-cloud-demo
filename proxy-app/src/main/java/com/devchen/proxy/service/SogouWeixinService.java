@@ -1,7 +1,9 @@
 package com.devchen.proxy.service;
 
 import com.devchen.proxy.dal.dao.WeixinPageSourceDAO;
+import com.devchen.proxy.dal.dao.WeixinSpiderTargetDAO;
 import com.devchen.proxy.dal.entity.WeixinPageSourceEntity;
+import com.devchen.proxy.dal.entity.WeixinSpiderTargetEntity;
 import com.devchen.proxy.entity.ProxyIpEntity;
 import com.devchen.proxy.webDriver.IWebDriverHandler;
 import com.devchen.proxy.webDriver.SogouWexinHandler;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class SogouWeixinService {
@@ -25,6 +28,10 @@ public class SogouWeixinService {
 
     @Resource
     private ProxyIpService proxyIpService;
+
+
+    @Resource
+    private WeixinSpiderTargetDAO weixinSpiderTargetDAO;
 
     @Resource
     private WeixinPageSourceDAO weixinPageSourceDAO;
@@ -55,18 +62,18 @@ public class SogouWeixinService {
 
     @Scheduled(fixedDelay = 5L* 3600L * 1000L)
     public  void runSpider() {
-        List<String> test = new ArrayList<>();
-        test.add("lc_funds");
-        test.add("fuguo1999");
-        for(String url : test) {
+        logger.info("start run weixin spider");
+        List<WeixinSpiderTargetEntity> targets = weixinSpiderTargetDAO.selectAll();
+        for(WeixinSpiderTargetEntity url : targets) {
             try {
-                saveWeixinPageUrl(url);
+                saveWeixinPageUrl(url.getWeixinId());
             }catch (Exception e) {
                 logger.error("error", e);
             }
 
             try {
-              Thread.sleep(5L * 60L * 1000L);
+                int randMillis = Math.abs((new Random()).nextInt()%(1*60*1000)) + 1*60*1000;
+              Thread.sleep(1L * 60L * 1000L + randMillis);
             } catch (Exception e) {
                 logger.error("error", e);
             }

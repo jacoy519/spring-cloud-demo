@@ -27,7 +27,7 @@ public class SogouWexinHandler implements IWebDriverHandler {
             logger.info("may meet verfiy code and quit");
             throw new Exception("not get target url");
         }
-        int randMillis = Math.abs((new Random()).nextInt()%3000) + 1000;
+        int randMillis = Math.abs((new Random()).nextInt()%(10*1000)) + 10*1000;
         logger.info("wait " + randMillis);
         Thread.sleep(randMillis);
 
