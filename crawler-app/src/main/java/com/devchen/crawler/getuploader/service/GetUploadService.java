@@ -78,6 +78,12 @@ public class GetUploadService {
         list.add("cm3d2_c");
         list.add("cm3d2_b");
         list.add("cm3d2");
+        list.add("reaper7092");
+        list.add("com3d2_mod_kyouyu_e");
+        list.add("com3d2_mod_kyouyu_d");
+        list.add("com3d2_mod_kyouyu_c");
+        list.add("com3d2_mod_kyouyu_b");
+        list.add("com3d2_mod_kyouyu");
         for(String mainTag: list) {
             fetchFiles(mainTag, httpClient);
         }

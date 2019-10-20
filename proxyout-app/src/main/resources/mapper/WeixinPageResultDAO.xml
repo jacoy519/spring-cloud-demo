@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.devchen.proxy.dal.dao.WeixinPageResultDAO">
+
+
+	<resultMap id="WeixinPageResultEntityMap" type="com.devchen.proxy.dal.entity.WeixinPageResultEntity">
+
+        <result column="created_at" property="createdAt" jdbcType="TIMESTAMP"/>
+        <result column="created_by" property="createdBy" jdbcType="VARCHAR"/>
+        <result column="updated_at" property="updatedAt" jdbcType="TIMESTAMP"/>
+        <result column="updated_by" property="updatedBy" jdbcType="VARCHAR"/>
+        <result column="weixin_id" property="weixinId" jdbcType="VARCHAR"/>
+        <result column="page_url" property="pageUrl" jdbcType="VARCHAR"/>
+
+    </resultMap>
+
+
+
+    <insert id="insertOne">
+        insert into weixin_page_result(
+        weixin_id,
+        page_url,
+        created_at,
+        created_by,
+        updated_at,
+        updated_by)
+        value(
+        #{page.weixinId},
+        #{page.pageUrl},
+        sysdate(),
+        'proxy-app',
+        sysdate(),
+        'proxy-app')
+    </insert>
+
+    <update id="updatePageUrl">
+        update weixin_page_result
+        set page_url= #{page.pageUrl},
+        updated_at = sysdate()
+        where id= #{page.id}
+    </update>
+
+    <select id="selectOne" resultMap="WeixinPageResultEntityMap">
+        select *
+        from weixin_page_result
+        where weixin_id = #{weixinId}
+    </select>
+
+</mapper>

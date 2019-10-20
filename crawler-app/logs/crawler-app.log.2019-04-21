@@ -1,0 +1,214 @@
+[INFO] [2019-04-21 20:06:31][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest], using SpringBootContextLoader
+[INFO] [2019-04-21 20:06:31][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2019-04-21 20:06:31][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: ZimuzuServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2019-04-21 20:06:32][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest
+[INFO] [2019-04-21 20:06:32][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2019-04-21 20:06:32][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d826d77, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61009542, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@77e9807f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@448ff1a8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a38c59b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7f77e91b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@44a664f2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f9fcf7f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2357d90a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6328d34a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@145eaa29, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@15bb6bea]
+[INFO] [2019-04-21 20:06:33][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4: startup date [Sun Apr 21 20:06:33 CST 2019]; root of context hierarchy
+[INFO] [2019-04-21 20:06:33][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-21 20:06:33][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e516445e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-21 20:06:34][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-04-21 20:06:34][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2019-04-21 20:06:35][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2019-04-21 20:06:35][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]No active profile set, falling back to default profiles: default
+[INFO] [2019-04-21 20:06:35][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4de025bf: startup date [Sun Apr 21 20:06:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4
+[WARN] [2019-04-21 20:06:36][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2019-04-21 20:06:37][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=7d82dcc2-0852-3ce4-b28d-07475ac27da6
+[INFO] [2019-04-21 20:06:37][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-21 20:06:37][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e516445e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-21 20:06:37][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c8fc4161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-21 20:06:38][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2019-04-21 20:06:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4de025bf: startup date [Sun Apr 21 20:06:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4
+[INFO] [2019-04-21 20:06:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-04-21 20:06:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-04-21 20:06:39][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-04-21 20:06:39][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-04-21 20:06:40][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2019-04-21 20:06:41][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2019-04-21 20:06:41][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2019-04-21 20:06:41][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2019-04-21 20:06:41][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2019-04-21 20:06:42][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2019-04-21 20:06:42][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+[INFO] [2019-04-21 20:06:42][com.devchen.crawler.getuploader.service.GetUploadService]start to fetch file
+[INFO] [2019-04-21 20:06:42][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2019-04-21 20:06:42][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]Started ZimuzuServiceTest in 9.74 seconds (JVM running for 11.9)
+[INFO] [2019-04-21 20:06:42][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2019-04-21 20:06:42][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/1/date/desc
+[INFO] [2019-04-21 20:06:43][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 0
+[INFO] [2019-04-21 20:06:43][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 0
+[INFO] [2019-04-21 20:06:43][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2019-04-21 20:06:43][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2019-04-21 20:06:43][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@4de025bf: startup date [Sun Apr 21 20:06:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3c7f66c4
+[INFO] [2019-04-21 20:06:43][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2019-04-21 20:06:43][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2019-04-21 20:06:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2019-04-21 20:06:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2019-04-21 20:06:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2019-04-21 20:06:43][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1555848404514 with initial instances count: 1
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2019-04-21 20:06:44][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2019-04-21 20:06:44][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+[INFO] [2019-04-21 20:06:44][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2019-04-21 20:06:44][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2019-04-21 20:06:47][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/1
+[INFO] [2019-04-21 20:06:48][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/2
+[INFO] [2019-04-21 20:06:49][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/3
+[INFO] [2019-04-21 20:06:50][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/4
+[INFO] [2019-04-21 20:06:50][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/5
+[INFO] [2019-04-21 20:06:51][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/6
+[INFO] [2019-04-21 20:06:52][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/7
+[INFO] [2019-04-21 20:06:53][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/8
+[INFO] [2019-04-21 20:06:54][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/9
+[INFO] [2019-04-21 20:06:55][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/10
+[INFO] [2019-04-21 20:06:55][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/11
+[INFO] [2019-04-21 20:06:56][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/13
+[INFO] [2019-04-21 20:06:58][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/14
+[INFO] [2019-04-21 20:06:59][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/15
+[INFO] [2019-04-21 20:06:59][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/16
+[INFO] [2019-04-21 20:07:00][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/date/desc/1
+[INFO] [2019-04-21 20:07:01][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/71
+[INFO] [2019-04-21 20:07:02][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/69
+[INFO] [2019-04-21 20:07:03][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/67
+[INFO] [2019-04-21 20:07:04][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/66
+[INFO] [2019-04-21 20:07:05][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/65
+[INFO] [2019-04-21 20:07:05][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/64
+[INFO] [2019-04-21 20:07:06][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/63
+[INFO] [2019-04-21 20:07:07][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/62
+[INFO] [2019-04-21 20:07:08][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/61
+[INFO] [2019-04-21 20:07:08][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/60
+[INFO] [2019-04-21 20:07:09][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/59
+[INFO] [2019-04-21 20:07:10][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/58
+[INFO] [2019-04-21 20:07:10][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/56
+[INFO] [2019-04-21 20:07:11][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/54
+[INFO] [2019-04-21 20:07:12][com.devchen.crawler.getuploader.service.GetUploadService]visit file info page url https://ux.getuploader.com/tokinagare/download/53
+[INFO] [2019-04-21 20:07:13][com.devchen.crawler.getuploader.service.GetUploadService]visit file list page url http://ux.getuploader.com/tokinagare/index/2/date/desc
+[INFO] [2019-04-21 20:08:01][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest], using SpringBootContextLoader
+[INFO] [2019-04-21 20:08:01][org.springframework.test.context.support.AbstractContextLoader]Could not detect default resource locations for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] [2019-04-21 20:08:01][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils]Could not detect default configuration classes for test class [com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]: ZimuzuServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[INFO] [2019-04-21 20:08:01][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Found @SpringBootConfiguration com.devchen.crawler.CrawlerApplication for test class com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest
+[INFO] [2019-04-21 20:08:01][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2019-04-21 20:08:01][org.springframework.boot.test.context.SpringBootTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29ba4338, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@57175e74, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7bb58ca3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c540f5a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@770c2e6b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1a052a00, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d826d77, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@61009542, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@77e9807f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@448ff1a8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1a38c59b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f77e91b]
+[INFO] [2019-04-21 20:08:02][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@434a63ab: startup date [Sun Apr 21 20:08:02 CST 2019]; root of context hierarchy
+[INFO] [2019-04-21 20:08:03][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-21 20:08:03][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e63d7b64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-21 20:08:04][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-04-21 20:08:05][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Fetching config from server at: http://localhost:8888
+[WARN] [2019-04-21 20:08:05][org.springframework.cloud.config.client.ConfigServicePropertySourceLocator]Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/crawler-app/default": 拒绝连接 (Connection refused); nested exception is java.net.ConnectException: 拒绝连接 (Connection refused)
+[INFO] [2019-04-21 20:08:05][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]No active profile set, falling back to default profiles: default
+[INFO] [2019-04-21 20:08:05][org.springframework.web.context.support.GenericWebApplicationContext]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@61d9efe0: startup date [Sun Apr 21 20:08:05 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@434a63ab
+[WARN] [2019-04-21 20:08:07][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.devchen.crawler]' package. Please check your configuration.
+[INFO] [2019-04-21 20:08:07][org.springframework.cloud.context.scope.GenericScope]BeanFactory id=aa814f93-fd1f-3d87-b134-5d81b556bc39
+[INFO] [2019-04-21 20:08:07][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-21 20:08:08][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e63d7b64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-21 20:08:08][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca237867] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2019-04-21 20:08:08][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'taskScheduler'
+[INFO] [2019-04-21 20:08:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@61d9efe0: startup date [Sun Apr 21 20:08:05 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@434a63ab
+[INFO] [2019-04-21 20:08:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-04-21 20:08:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-04-21 20:08:10][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-04-21 20:08:10][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-04-21 20:08:10][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN] [2019-04-21 20:08:12][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2019-04-21 20:08:12][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN] [2019-04-21 20:08:12][com.netflix.config.sources.URLConfigurationSource]No URLs will be polled as dynamic configuration sources.
+[INFO] [2019-04-21 20:08:12][com.netflix.config.sources.URLConfigurationSource]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO] [2019-04-21 20:08:12][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 0
+[INFO] [2019-04-21 20:08:12][org.springframework.context.support.DefaultLifecycleProcessor]Starting beans in phase 2147483647
+[INFO] [2019-04-21 20:08:12][com.devchen.crawler.zimuzu.scheduler.ZimuzuServiceTest]Started ZimuzuServiceTest in 10.723 seconds (JVM running for 12.304)
+[INFO] [2019-04-21 20:08:12][com.devchen.crawler.zimuzu.service.ZimuzuService]start fetch fav list
+[INFO] [2019-04-21 20:08:16][com.devchen.crawler.zimuzu.service.ZimuzuService]{"status":1,"info":"\u767b\u5f55\u6210\u529f\uff01","data":{"url_back":"http:\/\/www.zmz2019.com\/"}}
+[INFO] [2019-04-21 20:08:18][com.devchen.crawler.zimuzu.service.ZimuzuService]fetch list: 38
+[INFO] [2019-04-21 20:08:18][org.springframework.context.annotation.AnnotationConfigApplicationContext]Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7cc1f72c: startup date [Sun Apr 21 20:08:18 CST 2019]; parent: org.springframework.web.context.support.GenericWebApplicationContext@61d9efe0
+[INFO] [2019-04-21 20:08:18][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-21 20:08:19][com.netflix.config.ChainedDynamicProperty]Flipping property: FILE-APP.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO] [2019-04-21 20:08:19][com.netflix.util.concurrent.ShutdownEnabledTimer]Shutdown hook installed for: NFLoadBalancer-PingTimer-FILE-APP
+[INFO] [2019-04-21 20:08:19][com.netflix.loadbalancer.BaseLoadBalancer]Client:FILE-APP instantiated a LoadBalancer:DynamicServerListLoadBalancer:{NFLoadBalancer:name=FILE-APP,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[INFO] [2019-04-21 20:08:19][com.netflix.loadbalancer.DynamicServerListLoadBalancer]Using serverListUpdater PollingServerListUpdater
+[INFO] [2019-04-21 20:08:19][org.springframework.cloud.netflix.eureka.InstanceInfoFactory]Setting initial instance status as: STARTING
+[INFO] [2019-04-21 20:08:19][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON encoding codec LegacyJacksonJson
+[INFO] [2019-04-21 20:08:19][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using JSON decoding codec LegacyJacksonJson
+[INFO] [2019-04-21 20:08:19][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML encoding codec XStreamXml
+[INFO] [2019-04-21 20:08:19][com.netflix.discovery.provider.DiscoveryJerseyProvider]Using XML decoding codec XStreamXml
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver]Resolving eureka endpoints via configuration
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Disable delta property : false
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Single vip registry refresh property : null
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Force full registry fetch : false
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Application is null : false
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Registered Applications size is zero : true
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Application version is -1: true
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Getting all instance registry info from the eureka server
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]The response status is 200
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Starting heartbeat executor: renew interval is: 30
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.InstanceInfoReplicator]InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO] [2019-04-21 20:08:20][com.netflix.discovery.DiscoveryClient]Discovery Client initialized at timestamp 1555848500496 with initial instances count: 1
+[INFO] [2019-04-21 20:08:20][com.netflix.config.ChainedDynamicProperty]Flipping property: FILE-APP.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO] [2019-04-21 20:08:20][com.netflix.loadbalancer.DynamicServerListLoadBalancer]DynamicServerListLoadBalancer for client FILE-APP initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=FILE-APP,current list of Servers=[192.168.0.106:10401],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.0.106:10401;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@23708f14
+[INFO] [2019-04-21 20:08:26][com.devchen.crawler.zimuzu.service.ZimuzuService]end fetch fav list
+[INFO] [2019-04-21 20:08:26][com.netflix.loadbalancer.PollingServerListUpdater]Shutting down the Executor Pool for PollingServerListUpdater
+[INFO] [2019-04-21 20:08:26][org.springframework.web.context.support.GenericWebApplicationContext]Closing org.springframework.web.context.support.GenericWebApplicationContext@61d9efe0: startup date [Sun Apr 21 20:08:05 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@434a63ab
+[INFO] [2019-04-21 20:08:26][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[WARN] [2019-04-21 20:08:26][com.netflix.discovery.DiscoveryClient]Saw local status change event StatusChangeEvent [timestamp=1555848506020, current=DOWN, previous=STARTING]
+[INFO] [2019-04-21 20:08:26][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1: registering service...
+[INFO] [2019-04-21 20:08:26][com.netflix.discovery.DiscoveryClient]Shutting down DiscoveryClient ...
+[INFO] [2019-04-21 20:08:26][com.netflix.discovery.DiscoveryClient]Unregistering ...
+[INFO] [2019-04-21 20:08:26][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - deregister  status: 404
+[INFO] [2019-04-21 20:08:26][com.netflix.discovery.DiscoveryClient]DiscoveryClient_CRAWLER-APP/10.0.2.15:crawler-app:-1 - registration status: 204
+[INFO] [2019-04-21 20:08:26][com.netflix.discovery.DiscoveryClient]Completed shut down of DiscoveryClient
+[INFO] [2019-04-21 20:08:26][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 2147483647
+[INFO] [2019-04-21 20:08:26][org.springframework.context.support.DefaultLifecycleProcessor]Stopping beans in phase 0
+[INFO] [2019-04-21 20:08:26][org.springframework.context.annotation.AnnotationConfigApplicationContext]Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7cc1f72c: startup date [Sun Apr 21 20:08:18 CST 2019]; parent: org.springframework.web.context.support.GenericWebApplicationContext@61d9efe0
+[INFO] [2019-04-21 20:08:26][org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration]Unregistering application crawler-app with eureka with status DOWN
+[INFO] [2019-04-21 20:08:26][com.netflix.util.concurrent.ShutdownEnabledTimer]Shutdown hook removed for: NFLoadBalancer-PingTimer-FILE-APP
+[INFO] [2019-04-21 20:08:26][com.netflix.util.concurrent.ShutdownEnabledTimer]Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:614)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:886)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:364)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:287)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1032)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1008)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:70)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1032)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1008)
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929)
+[INFO] [2019-04-21 20:08:26][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'
+[INFO] [2019-04-21 20:08:26][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'taskScheduler'

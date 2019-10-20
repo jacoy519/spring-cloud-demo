@@ -65,8 +65,8 @@ getuploader:
 
 
 sock5:
-  ip: 192.168.0.106
-  socket: 1090
+  ip: 192.168.0.104
+  socket: 18923
 
 pixiv:
   localSaveDir: /root/pixiv

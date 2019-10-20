@@ -1,0 +1,738 @@
+[INFO] [2019-03-08 21:04:25][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 3251 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 21:04:25][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 21:04:25][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 21:04:25 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 21:04:27][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 21:04:29][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 21:04:29][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3739 ms
+[INFO] [2019-03-08 21:04:30][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 21:04:30][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 21:04:30][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 21:04:30][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 21:04:30][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 21:04:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 21:04:25 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 21:04:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST],consumes=[application/json]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 21:04:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 21:04:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 21:04:32][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 21:04:32][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 21:04:32][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 21:04:32][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 21:04:32][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 21:04:32][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 21:04:32][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 8.123 seconds (JVM running for 10.144)
+[INFO] [2019-03-08 21:04:33][com.devchen.proxy.service.ProxyIpService]add new ip 36.99.206.239:16099
+[INFO] [2019-03-08 21:05:25][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization started
+[INFO] [2019-03-08 21:05:25][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+[INFO] [2019-03-08 21:05:33][com.devchen.proxy.service.ProxyIpService]add new ip 1.197.178.211:15470
+[INFO] [2019-03-08 21:06:33][com.devchen.proxy.service.ProxyIpService]add new ip 150.255.189.221:15983
+[INFO] [2019-03-08 21:07:33][com.devchen.proxy.service.ProxyIpService]add new ip 140.237.114.241:16965
+[INFO] [2019-03-08 21:08:34][com.devchen.proxy.service.ProxyIpService]add new ip 49.87.136.158:18193
+[INFO] [2019-03-08 21:21:36][com.devchen.proxy.service.ProxyIpService]remove 49.87.136.158:18193 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:21:36][com.devchen.proxy.service.ProxyIpService]add new ip 180.120.204.0:21345
+[INFO] [2019-03-08 21:25:37][com.devchen.proxy.service.ProxyIpService]remove 1.197.178.211:15470 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:25:37][com.devchen.proxy.service.ProxyIpService]add new ip 123.53.118.73:20402
+[INFO] [2019-03-08 21:27:37][com.devchen.proxy.service.ProxyIpService]remove 150.255.189.221:15983 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:27:37][com.devchen.proxy.service.ProxyIpService]add new ip 113.58.234.205:21146
+[INFO] [2019-03-08 21:28:37][com.devchen.proxy.service.ProxyIpService]remove 36.99.206.239:16099 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:28:37][com.devchen.proxy.service.ProxyIpService]add new ip 117.91.240.62:19483
+[INFO] [2019-03-08 21:30:38][com.devchen.proxy.service.ProxyIpService]remove 140.237.114.241:16965 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:30:38][com.devchen.proxy.service.ProxyIpService]add new ip 110.18.202.219:16095
+[INFO] [2019-03-08 21:35:38][com.devchen.proxy.service.ProxyIpService]remove 117.91.240.62:19483 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:35:39][com.devchen.proxy.service.ProxyIpService]add new ip 42.178.139.112:22614
+[INFO] [2019-03-08 21:42:39][com.devchen.proxy.service.ProxyIpService]remove 110.18.202.219:16095 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:42:40][com.devchen.proxy.service.ProxyIpService]add new ip 125.106.23.204:15291
+[INFO] [2019-03-08 21:50:41][com.devchen.proxy.service.ProxyIpService]remove 180.120.204.0:21345 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:50:41][com.devchen.proxy.service.ProxyIpService]add new ip 117.26.222.31:22395
+[INFO] [2019-03-08 21:53:41][com.devchen.proxy.service.ProxyIpService]remove 113.58.234.205:21146 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:53:41][com.devchen.proxy.service.ProxyIpService]add new ip 125.82.246.39:17272
+[INFO] [2019-03-08 21:55:41][com.devchen.proxy.service.ProxyIpService]remove 123.53.118.73:20402 from the ip pool due to invalidate
+[INFO] [2019-03-08 21:55:42][com.devchen.proxy.service.ProxyIpService]add new ip 140.224.134.232:19985
+[INFO] [2019-03-08 22:05:43][com.devchen.proxy.service.ProxyIpService]remove 42.178.139.112:22614 from ip pool due to out of time. currentTime Fri Mar 08 22:05:43 CST 2019. requestTime Fri Mar 08 21:35:39 CST 2019
+[INFO] [2019-03-08 22:05:43][com.devchen.proxy.service.ProxyIpService]add new ip 113.222.82.14:17227
+[INFO] [2019-03-08 22:08:43][com.devchen.proxy.service.ProxyIpService]remove 125.82.246.39:17272 from the ip pool due to invalidate
+[INFO] [2019-03-08 22:08:44][com.devchen.proxy.service.ProxyIpService]add new ip 111.181.99.43:22504
+[INFO] [2019-03-08 22:10:44][com.devchen.proxy.service.ProxyIpService]remove 140.224.134.232:19985 from the ip pool due to invalidate
+[INFO] [2019-03-08 22:10:44][com.devchen.proxy.service.ProxyIpService]add new ip 123.160.74.171:22573
+[INFO] [2019-03-08 22:12:44][com.devchen.proxy.service.ProxyIpService]remove 125.106.23.204:15291 from ip pool due to out of time. currentTime Fri Mar 08 22:12:44 CST 2019. requestTime Fri Mar 08 21:42:40 CST 2019
+[INFO] [2019-03-08 22:12:44][com.devchen.proxy.service.ProxyIpService]add new ip 182.240.229.230:19574
+[ERROR] [2019-03-08 22:14:04][org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler]Unexpected error occurred in scheduled task.
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://dps.kdlapi.com/api/checkdpsvalid": dps.kdlapi.com; nested exception is java.net.UnknownHostException: dps.kdlapi.com
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:673)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:620)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:538)
+	at com.devchen.proxy.service.ProxyIpService.cleanMap(ProxyIpService.java:79)
+	at com.devchen.proxy.service.ProxyIpService.handleIpMap(ProxyIpService.java:52)
+	at sun.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: dps.kdlapi.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:659)
+	... 16 more
+[INFO] [2019-03-08 22:21:05][com.devchen.proxy.service.ProxyIpService]remove 117.26.222.31:22395 from the ip pool due to invalidate
+[INFO] [2019-03-08 22:21:05][com.devchen.proxy.service.ProxyIpService]add new ip 59.32.37.21:16852
+[INFO] [2019-03-08 22:22:05][com.devchen.proxy.service.ProxyIpService]remove 123.160.74.171:22573 from the ip pool due to invalidate
+[INFO] [2019-03-08 22:22:06][com.devchen.proxy.service.ProxyIpService]add new ip 123.160.193.184:18356
+[INFO] [2019-03-08 22:25:06][com.devchen.proxy.service.ProxyIpService]remove 182.240.229.230:19574 from the ip pool due to invalidate
+[INFO] [2019-03-08 22:25:06][com.devchen.proxy.service.ProxyIpService]add new ip 113.121.242.44:15055
+[INFO] [2019-03-08 22:36:07][com.devchen.proxy.service.ProxyIpService]remove 113.222.82.14:17227 from ip pool due to out of time. currentTime Fri Mar 08 22:36:07 CST 2019. requestTime Fri Mar 08 22:05:43 CST 2019
+[INFO] [2019-03-08 22:36:08][com.devchen.proxy.service.ProxyIpService]add new ip 183.163.40.218:17070
+[INFO] [2019-03-08 22:38:08][com.devchen.proxy.service.ProxyIpService]remove 113.121.242.44:15055 from the ip pool due to invalidate
+[INFO] [2019-03-08 22:38:08][com.devchen.proxy.service.ProxyIpService]add new ip 121.206.84.42:18757
+[INFO] [2019-03-08 22:39:08][com.devchen.proxy.service.ProxyIpService]remove 111.181.99.43:22504 from ip pool due to out of time. currentTime Fri Mar 08 22:39:08 CST 2019. requestTime Fri Mar 08 22:08:44 CST 2019
+[INFO] [2019-03-08 22:39:08][com.devchen.proxy.service.ProxyIpService]add new ip 171.15.88.213:21485
+[INFO] [2019-03-08 22:40:21][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 21:04:25 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 22:40:21][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2019-03-08 22:40:34][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 4533 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 22:40:34][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 22:40:34][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 22:40:34 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 22:40:36][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 22:40:37][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 22:40:37][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2563 ms
+[INFO] [2019-03-08 22:40:37][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 22:40:37][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 22:40:37][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 22:40:37][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 22:40:37][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 22:40:38][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 22:40:34 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 22:40:38][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 22:40:38][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 22:40:38][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 22:40:38][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 22:40:38][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 22:40:38][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 22:40:39][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 22:40:39][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 22:40:39][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 22:40:39][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 5.479 seconds (JVM running for 6.157)
+[INFO] [2019-03-08 22:40:39][com.devchen.proxy.service.ProxyIpService]add new ip 175.174.80.247:17098
+[INFO] [2019-03-08 22:41:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization started
+[INFO] [2019-03-08 22:41:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization completed in 65 ms
+[INFO] [2019-03-08 22:41:40][com.devchen.proxy.service.ProxyIpService]add new ip 60.169.218.38:20473
+[INFO] [2019-03-08 22:41:53][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 22:40:34 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 22:41:53][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2019-03-08 22:41:59][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 4683 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 22:41:59][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 22:42:00][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 22:42:00 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 22:42:00][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 22:42:02][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 22:42:02][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2789 ms
+[INFO] [2019-03-08 22:42:03][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 22:42:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 22:42:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 22:42:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 22:42:03][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 22:42:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 22:42:00 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 22:42:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 22:42:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 22:42:04][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 22:42:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 22:42:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 22:42:04][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 22:42:05][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 22:42:05][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 22:42:05][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 22:42:05][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 6.586 seconds (JVM running for 7.604)
+[INFO] [2019-03-08 22:42:05][com.devchen.proxy.service.ProxyIpService]add new ip 36.6.146.59:18045
+[INFO] [2019-03-08 22:42:32][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization started
+[INFO] [2019-03-08 22:42:32][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+[INFO] [2019-03-08 22:43:05][com.devchen.proxy.service.ProxyIpService]add new ip 61.145.48.3:16795
+[INFO] [2019-03-08 22:44:06][com.devchen.proxy.service.ProxyIpService]add new ip 27.156.232.97:18451
+[INFO] [2019-03-08 22:44:47][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://27.156.232.97:18451 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[ERROR] [2019-03-08 22:44:48][com.devchen.proxy.service.ProxyService]test1
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 断开的管道
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:321)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:284)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.devchen.proxy.service.ProxyService.proxy(ProxyService.java:125)
+	at com.devchen.proxy.controller.ProxyController.proxyRequest(ProxyController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 断开的管道
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1267)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:607)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:597)
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:581)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:272)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1560)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:283)
+	at org.apache.coyote.Response.action(Response.java:173)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:317)
+	... 58 more
+[INFO] [2019-03-08 22:45:06][com.devchen.proxy.service.ProxyIpService]add new ip 223.198.230.127:20401
+[INFO] [2019-03-08 22:45:33][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://223.198.230.127:20401 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:45:40][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552056334&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvMNHGAfi3qbjSo2Ol0dg2AQ== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://36.6.146.59:18045 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552056334\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvMNHGAfi3qbjSo2Ol0dg2AQ\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:46:06][com.devchen.proxy.service.ProxyIpService]add new ip 115.226.137.159:23948
+[INFO] [2019-03-08 22:47:45][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://223.198.230.127:20401 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:47:56][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552056466&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvH87cp7M70rlLV4hUV5vEaQ== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://61.145.48.3:16795 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552056466\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvH87cp7M70rlLV4hUV5vEaQ\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:50:40][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://36.6.146.59:18045 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:50:47][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552056641&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvjkESIHzzMMDqEKhmLqKkiA== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://27.156.232.97:18451 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552056641\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvjkESIHzzMMDqEKhmLqKkiA\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:51:49][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://36.6.146.59:18045 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:51:55][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552056710&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvGzccwgRGwD9RRSFgkE*YjQ== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://36.6.146.59:18045 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552056710\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvGzccwgRGwD9RRSFgkE*YjQ\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:52:13][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://223.198.230.127:20401 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:52:19][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552056734&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvLmgFbpwomTi4XZ1PIAd4fw== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://61.145.48.3:16795 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552056734\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvLmgFbpwomTi4XZ1PIAd4fw\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:52:36][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://115.226.137.159:23948 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:52:53][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://223.198.230.127:20401 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[ERROR] [2019-03-08 22:52:53][com.devchen.proxy.service.ProxyService]test1
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 断开的管道
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:321)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:284)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.devchen.proxy.service.ProxyService.proxy(ProxyService.java:125)
+	at com.devchen.proxy.controller.ProxyController.proxyRequest(ProxyController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 断开的管道
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1267)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:607)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:597)
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:581)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:272)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1560)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:283)
+	at org.apache.coyote.Response.action(Response.java:173)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:317)
+	... 58 more
+[INFO] [2019-03-08 22:52:59][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552056774&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36Qgvkk17oxSBthRwPMfw0inEbg== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://36.6.146.59:18045 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552056774\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36Qgvkk17oxSBthRwPMfw0inEbg\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:53:44][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://61.145.48.3:16795 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 22:53:54][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 22:42:00 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 22:53:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2019-03-08 23:04:18][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 6706 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 23:04:18][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 23:04:19][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:04:19 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:04:20][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 23:04:23][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 23:04:24][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 5506 ms
+[INFO] [2019-03-08 23:04:25][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 23:04:25][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 23:04:25][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 23:04:25][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 23:04:25][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 23:04:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:04:19 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:04:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 23:04:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 23:04:27][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 23:04:27][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:04:27][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:04:28][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:04:28][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 23:04:28][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 23:04:29][com.devchen.proxy.service.ProxyIpService]add new ip 117.91.237.62:21722
+[INFO] [2019-03-08 23:04:29][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 23:04:29][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 11.95 seconds (JVM running for 13.172)
+[INFO] [2019-03-08 23:05:29][com.devchen.proxy.service.ProxyIpService]add new ip 117.67.247.196:21049
+[INFO] [2019-03-08 23:05:42][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization started
+[INFO] [2019-03-08 23:05:42][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+[INFO] [2019-03-08 23:05:42][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://117.91.237.62:21722 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 23:06:07][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://117.67.247.196:21049 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 23:06:14][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552057568&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36Qgv6NoH*iWw1haQGYTznFlOiw== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://117.67.247.196:21049 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552057568\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36Qgv6NoH*iWw1haQGYTznFlOiw\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 23:06:30][com.devchen.proxy.service.ProxyIpService]add new ip 60.162.245.10:18883
+[INFO] [2019-03-08 23:06:54][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:04:19 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:06:54][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2019-03-08 23:07:04][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 6824 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 23:07:04][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 23:07:04][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 23:07:04 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:07:05][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 23:07:07][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 23:07:08][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4030 ms
+[INFO] [2019-03-08 23:07:08][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 23:07:09][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 23:07:09][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 23:07:09][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 23:07:09][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 23:07:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 23:07:04 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:07:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 23:07:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 23:07:10][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 23:07:10][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:07:10][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:07:10][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:07:11][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 23:07:11][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 23:07:11][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 23:07:11][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 8.426 seconds (JVM running for 10.171)
+[INFO] [2019-03-08 23:07:11][com.devchen.proxy.service.ProxyIpService]add new ip 125.79.11.182:20495
+[INFO] [2019-03-08 23:07:14][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 23:07:04 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:07:14][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2019-03-08 23:07:26][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 6888 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 23:07:26][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 23:07:26][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:07:26 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:07:27][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 23:07:30][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 23:07:30][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4089 ms
+[INFO] [2019-03-08 23:07:31][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 23:07:31][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 23:07:31][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 23:07:31][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 23:07:31][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 23:07:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:07:26 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:07:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 23:07:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 23:07:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 23:07:33][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:07:33][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:07:33][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:07:33][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 23:07:33][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 23:07:33][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 23:07:33][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 7.892 seconds (JVM running for 8.787)
+[INFO] [2019-03-08 23:07:34][com.devchen.proxy.service.ProxyIpService]add new ip 111.226.188.138:18948
+[INFO] [2019-03-08 23:08:34][com.devchen.proxy.service.ProxyIpService]add new ip 117.28.96.14:21892
+[INFO] [2019-03-08 23:09:34][com.devchen.proxy.service.ProxyIpService]add new ip 175.155.211.5:18616
+[INFO] [2019-03-08 23:10:34][com.devchen.proxy.service.ProxyIpService]add new ip 1.199.70.181:17426
+[INFO] [2019-03-08 23:11:35][com.devchen.proxy.service.ProxyIpService]add new ip 60.18.27.110:23848
+[INFO] [2019-03-08 23:13:01][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:07:26 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:13:01][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2019-03-08 23:13:37][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 7001 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 23:13:37][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 23:13:37][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:13:37 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:13:38][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 23:13:40][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 23:13:40][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3321 ms
+[INFO] [2019-03-08 23:13:41][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 23:13:41][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 23:13:41][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 23:13:41][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 23:13:41][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 23:13:42][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:13:37 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:13:42][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 23:13:42][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 23:13:42][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 23:13:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:13:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:13:42][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:13:43][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 23:13:43][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 23:13:43][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 23:13:43][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 6.792 seconds (JVM running for 7.685)
+[INFO] [2019-03-08 23:13:43][com.devchen.proxy.service.ProxyIpService]add new ip 124.112.223.222:16420
+[INFO] [2019-03-08 23:14:01][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization started
+[INFO] [2019-03-08 23:14:01][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization completed in 87 ms
+[INFO] [2019-03-08 23:14:01][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://124.112.223.222:16420 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[ERROR] [2019-03-08 23:14:07][com.devchen.proxy.service.ProxyService]test1
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 断开的管道
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:321)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:284)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.devchen.proxy.service.ProxyService.proxy(ProxyService.java:125)
+	at com.devchen.proxy.controller.ProxyController.proxyRequest(ProxyController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 断开的管道
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1267)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:607)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:597)
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:581)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:272)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1560)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:283)
+	at org.apache.coyote.Response.action(Response.java:173)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:317)
+	... 58 more
+[INFO] [2019-03-08 23:14:23][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://124.112.223.222:16420 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[ERROR] [2019-03-08 23:14:33][com.devchen.proxy.service.ProxyService]test1
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 断开的管道
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:321)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:284)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.devchen.proxy.service.ProxyService.proxy(ProxyService.java:125)
+	at com.devchen.proxy.controller.ProxyController.proxyRequest(ProxyController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 断开的管道
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1267)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:607)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:597)
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:581)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:272)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1560)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:283)
+	at org.apache.coyote.Response.action(Response.java:173)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:317)
+	... 58 more
+[INFO] [2019-03-08 23:14:40][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://124.112.223.222:16420 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[ERROR] [2019-03-08 23:14:47][com.devchen.proxy.service.ProxyService]test1
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 断开的管道
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:321)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:284)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.devchen.proxy.service.ProxyService.proxy(ProxyService.java:125)
+	at com.devchen.proxy.controller.ProxyController.proxyRequest(ProxyController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 断开的管道
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:157)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1267)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:670)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:607)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:597)
+	at org.apache.coyote.http11.Http11OutputBuffer.flushBuffer(Http11OutputBuffer.java:581)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:272)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1560)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:283)
+	at org.apache.coyote.Response.action(Response.java:173)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:317)
+	... 58 more
+[INFO] [2019-03-08 23:15:53][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://124.112.223.222:16420 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 23:16:07][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552058161&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvQBIiUr5VML0J0z5EE0pOBA== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://124.112.223.222:16420 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552058161\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvQBIiUr5VML0J0z5EE0pOBA\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0"},"cookies":{}}
+[INFO] [2019-03-08 23:19:28][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://124.112.223.222:16420 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"},"cookies":{}}
+[INFO] [2019-03-08 23:19:35][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552058369&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36Qgvxyi485regPsoa*v6ePCpyA== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://124.112.223.222:16420 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552058369\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36Qgvxyi485regPsoa*v6ePCpyA\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"},"cookies":{}}
+[INFO] [2019-03-08 23:19:48][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2357d90a: startup date [Fri Mar 08 23:13:37 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:19:48][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown
+[INFO] [2019-03-08 23:22:14][com.devchen.proxy.ProxyApplication]Starting ProxyApplication on chenqi173-VirtualBox with PID 7312 (/root/projects/spring-cloud-demo/proxy-app/target/classes started by root in /root/projects/spring-cloud-demo/proxy-app)
+[INFO] [2019-03-08 23:22:14][com.devchen.proxy.ProxyApplication]No active profile set, falling back to default profiles: default
+[INFO] [2019-03-08 23:22:14][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 23:22:14 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:22:17][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.3.6.Final
+[INFO] [2019-03-08 23:22:22][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat initialized with port(s): 10501 (http)
+[INFO] [2019-03-08 23:22:22][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 7622 ms
+[INFO] [2019-03-08 23:22:22][org.springframework.boot.web.servlet.ServletRegistrationBean]Mapping servlet: 'dispatcherServlet' to [/]
+[INFO] [2019-03-08 23:22:22][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO] [2019-03-08 23:22:22][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO] [2019-03-08 23:22:22][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO] [2019-03-08 23:22:22][org.springframework.boot.web.servlet.FilterRegistrationBean]Mapping filter: 'requestContextFilter' to: [/*]
+[INFO] [2019-03-08 23:22:23][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 23:22:14 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/proxy],methods=[POST]}" onto public void com.devchen.proxy.controller.ProxyController.proxyRequest(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+[INFO] [2019-03-08 23:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO] [2019-03-08 23:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [2019-03-08 23:22:24][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:22:24][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:22:24][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [2019-03-08 23:22:24][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Registering beans for JMX exposure on startup
+[INFO] [2019-03-08 23:22:24][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor]No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[INFO] [2019-03-08 23:22:24][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer]Tomcat started on port(s): 10501 (http)
+[INFO] [2019-03-08 23:22:24][com.devchen.proxy.ProxyApplication]Started ProxyApplication in 12.103 seconds (JVM running for 13.774)
+[INFO] [2019-03-08 23:22:25][com.devchen.proxy.service.ProxyIpService]add new ip 182.202.220.193:20643
+[INFO] [2019-03-08 23:23:08][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization started
+[INFO] [2019-03-08 23:23:08][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+[INFO] [2019-03-08 23:23:26][com.devchen.proxy.service.ProxyService]Executing request GET http://weixin.sogou.com/weixin?type=1&s_from=input&query=lc_funds&ie=utf8&_sug_=n&_sug_type_= HTTP/1.1 to http://weixin.sogou.com:80 via http://182.202.220.193:20643 request json{"url":"http://weixin.sogou.com/weixin?type\u003d1\u0026s_from\u003dinput\u0026query\u003dlc_funds\u0026ie\u003dutf8\u0026_sug_\u003dn\u0026_sug_type_\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"},"cookies":{}}
+[INFO] [2019-03-08 23:23:34][com.devchen.proxy.service.ProxyService]Executing request GET http://mp.weixin.qq.com/profile?src=3&timestamp=1552058608&ver=1&signature=ogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvV6irxpZIVJ*wY8Iyi3A5dg== HTTP/1.1 to http://mp.weixin.qq.com:80 via http://182.202.220.193:20643 request json{"url":"http://mp.weixin.qq.com/profile?src\u003d3\u0026timestamp\u003d1552058608\u0026ver\u003d1\u0026signature\u003dogho7oxxB5aay*eNC7aDEf2t5RrDPOKhAOTmZ65qXtDcnDaaZutiBH9zXxD36QgvV6irxpZIVJ*wY8Iyi3A5dg\u003d\u003d","headers":{"User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"},"cookies":{}}
+[INFO] [2019-03-08 23:51:02][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext]Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cecf639: startup date [Fri Mar 08 23:22:14 CST 2019]; root of context hierarchy
+[INFO] [2019-03-08 23:51:02][org.springframework.jmx.export.annotation.AnnotationMBeanExporter]Unregistering JMX-exposed beans on shutdown

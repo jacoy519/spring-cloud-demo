@@ -30,7 +30,3 @@ zod:
   password: Chen5860Qi
 
 
-proxy:
-  out: 162.219.122.251:10801
-
-

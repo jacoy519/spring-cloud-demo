@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.devchen.proxy.dal.dao.ProxyConfigDAO">
+
+
+	<resultMap id="proxyConfig" type="com.devchen.proxy.dal.entity.ProxyConfigEntity">
+
+        <result column="created_at" property="createdAt" jdbcType="TIMESTAMP"/>
+        <result column="created_by" property="createdBy" jdbcType="VARCHAR"/>
+        <result column="updated_at" property="updatedAt" jdbcType="TIMESTAMP"/>
+        <result column="updated_by" property="updatedBy" jdbcType="VARCHAR"/>
+        <result column="key_name" property="keyName" jdbcType="VARCHAR"/>
+        <result column="key_value" property="keyValue" jdbcType="VARCHAR"/>
+
+    </resultMap>
+
+    <select id="selectOne" resultMap="proxyConfig">
+        select *
+        from proxy_config
+        where key_name = #{keyName}
+    </select>
+
+</mapper>

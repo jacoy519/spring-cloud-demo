@@ -32,7 +32,8 @@ public class ProxyController {
 
     @RequestMapping(value = "/weixin-proxy", method = RequestMethod.GET)
     public String proxyRequest(@RequestParam("id") String id) throws Exception{
-        return sogouWeixinService.getWeixinPageList(id);
+       // return sogouWeixinService.getWeixinPageList(id);
+        return null;
 
     }
 
