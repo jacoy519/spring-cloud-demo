@@ -48,6 +48,8 @@ public class ZodChromeService {
     }
 
     public void runWithLogon()  {
+        WebDriver driver = null;
+        try {
         ChromeOptions co = new ChromeOptions();
         //co.addExtensions(new File(proxyIpEntity.getChromeProxyZip()));      //将proxy的信息添加到ChromeOptions中
         co.addArguments("--no-sandbox","--disable-dev-shm-usage");
@@ -60,7 +62,7 @@ public class ZodChromeService {
         System.setProperty("webdriver.chrome.driver","/root/applications/chrome-driver/2.35/chromedriver");
 
 
-        WebDriver driver = new ChromeDriver(co);
+        driver = new ChromeDriver(co);
 
         String cookieStr = proxyConfigDAO.selectOne("zod_game").getKeyValue();
 
@@ -82,7 +84,7 @@ public class ZodChromeService {
         }
 
         String result =null;
-        try {
+
 
             logger.info(String.format("start logon zod"));
             //driver.manage().deleteAllCookies();
@@ -129,8 +131,12 @@ public class ZodChromeService {
 
         }catch (Exception e) {
             logger.error(String.format("sign zod error"),e);
+        } finally {
+            if(driver != null) {
+                driver.quit();
+            }
         }
-        driver.quit();
+
     }
 
 

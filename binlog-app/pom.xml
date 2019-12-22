@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.devchen</groupId>
+	<artifactId>binlog</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>binlog-app</name>
+	<description>binlog-app</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Camden.SR7</spring-cloud.version>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>product</id>
+			<properties>
+				<profiles.active>product</profiles.active>
+			</properties>
+		</profile>
+
+		<profile>
+			<!-- 本地开发环境 -->
+			<id>dev</id>
+			<properties>
+				<profiles.active>dev</profiles.active>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+
+	<dependencies>
+
+
+		<dependency>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit-core-js</artifactId>
+			<version>2.9</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit</artifactId>
+			<version>2.9</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- 引入log4j支持 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j</artifactId>
+			<version>1.3.8.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- MYSQL -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version> 5.1.18 </version>
+		</dependency>
+
+		<!-- 使用Mybatis-->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-pool</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>us.codecraft</groupId>
+			<artifactId>webmagic-core</artifactId>
+			<version>0.7.3</version>
+		</dependency>
+		<dependency>
+			<groupId>us.codecraft</groupId>
+			<artifactId>webmagic-extension</artifactId>
+			<version>0.7.3</version>
+		</dependency>
+
+
+		<!-- redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<!--
+		<dependency>
+			<groupId>com.github.linux-china</groupId>
+			<artifactId>spring-boot-starter-redisson</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson</artifactId>
+			<version>3.5.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.shyiko</groupId>
+			<artifactId>mysql-binlog-connector-java</artifactId>
+			<version>0.18.1</version>
+		</dependency>
+
+
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<finalName>binlog-app</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<executable>true</executable>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+</project>

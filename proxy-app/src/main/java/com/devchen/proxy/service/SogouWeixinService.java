@@ -114,7 +114,6 @@ public class SogouWeixinService {
 
     }
 
-    @Scheduled(fixedDelay = 5L* 3600L * 1000L)
     public  void runSpider() {
         logger.info("start run weixin spider");
         List<WeixinSpiderTargetEntity> targets = weixinSpiderTargetDAO.selectAll();
