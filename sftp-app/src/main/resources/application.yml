@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spider-app-test
+
+server:
+  port: 10801
+
+sftp:
+    local:
+      path: /wls/applications/sftp

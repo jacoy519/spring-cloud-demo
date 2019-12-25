@@ -1,17 +1,18 @@
 package com.devchen.common.task.loader;
 
+import com.devchen.common.task.constant.TaskType;
 import com.devchen.common.task.dto.AbstractTaskDTO;
 import com.devchen.common.task.handler.TaskHandler;
 import org.apache.log4j.Logger;
 
 import javax.annotation.PostConstruct;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public abstract class TaskHandlerFactory<T extends AbstractTaskDTO> {
 
     private Map<String, TaskHandler<T>> taskMap = new HashMap<>();
+
+    private Set<TaskType> taskTypeSet = new HashSet<>();
 
     private final static Logger logger = Logger.getLogger(TaskHandlerFactory.class);
 
@@ -33,6 +34,7 @@ public abstract class TaskHandlerFactory<T extends AbstractTaskDTO> {
                     taskType, taskJob, taskHandler.getClass().getName()));
         }
         taskMap.put(key, taskHandler);
+        taskTypeSet.add(taskHandler.getTaskType());
         logger.warn(String.format("[registTask] register task handler success. task type [%s]. task job [%s]. task handler [%s]",
                 taskType, taskJob, taskHandler.getClass().getName()));
     }
@@ -44,4 +46,7 @@ public abstract class TaskHandlerFactory<T extends AbstractTaskDTO> {
         return taskMap.get(key);
     }
 
+    public Set<TaskType> getTaskTypeSet() {
+        return taskTypeSet;
+    }
 }
